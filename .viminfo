@@ -21,7 +21,7 @@ $
 
 # Command Line History (newest to oldest):
 :x
-|2,0,1550750203,,"x"
+|2,0,1550750236,,"x"
 :noh
 |2,0,1550750142,,"noh"
 :q
@@ -235,9 +235,9 @@ $
 "0	CHAR	0
 	@perform/decrypt-service@
 |3,0,0,0,1,0,1550748867,"@perform/decrypt-service@"
-""1@	LINE	0
+"1@	LINE	0
 	!test/
-|3,3,1,1,1,0,1550750201,"!test/"
+|3,2,1,1,1,0,1550750201,"!test/"
 "2	LINE	0
 	             npm config set unsafe-perm false
 |3,0,2,1,1,0,1550741864,"             npm config set unsafe-perm false"
@@ -270,43 +270,57 @@ $
 "q	CHAR	0
 	€kr€kr;
 |3,0,26,0,1,0,1548350747,"€kr€kr;"
-"-	CHAR	0
-	*
-|3,0,36,0,1,0,1550750153,"*"
+""-	CHAR	0
+	M
+|3,1,36,0,1,0,1550750232,"M"
 
 # File marks:
-'0  8  0  ~/.gitignore
-|4,48,8,0,1550750203,"~/.gitignore"
-'1  8  4  ~/.gitignore
-|4,49,8,4,1550750191,"~/.gitignore"
-'2  8  6  ~/.gitignore
-|4,50,8,6,1550750172,"~/.gitignore"
+'0  1  0  ~/.git/MERGE_MSG
+|4,48,1,0,1550750236,"~/.git/MERGE_MSG"
+'1  8  0  ~/.gitignore
+|4,49,8,0,1550750203,"~/.gitignore"
+'2  8  4  ~/.gitignore
+|4,50,8,4,1550750191,"~/.gitignore"
 '3  8  6  ~/.gitignore
 |4,51,8,6,1550750172,"~/.gitignore"
-'4  8  1  ~/.gitignore
-|4,52,8,1,1550750157,"~/.gitignore"
+'4  8  6  ~/.gitignore
+|4,52,8,6,1550750172,"~/.gitignore"
 '5  8  1  ~/.gitignore
 |4,53,8,1,1550750157,"~/.gitignore"
 '6  8  1  ~/.gitignore
 |4,54,8,1,1550750157,"~/.gitignore"
 '7  8  1  ~/.gitignore
 |4,55,8,1,1550750157,"~/.gitignore"
-'8  9  1  ~/.gitignore
-|4,56,9,1,1550750157,"~/.gitignore"
-'9  8  1  ~/.gitignore
-|4,57,8,1,1550750157,"~/.gitignore"
+'8  8  1  ~/.gitignore
+|4,56,8,1,1550750157,"~/.gitignore"
+'9  9  1  ~/.gitignore
+|4,57,9,1,1550750157,"~/.gitignore"
 
 # Jumplist (newest first):
+-'  1  0  ~/.git/MERGE_MSG
+|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
+-'  8  0  ~/.gitignore
+|4,39,8,0,1550750203,"~/.gitignore"
 -'  8  0  ~/.gitignore
 |4,39,8,0,1550750203,"~/.gitignore"
 -'  1  0  ~/.gitignore
 |4,39,1,0,1550750199,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1550750199,"~/.gitignore"
+-'  8  4  ~/.gitignore
+|4,39,8,4,1550750191,"~/.gitignore"
 -'  8  4  ~/.gitignore
 |4,39,8,4,1550750191,"~/.gitignore"
 -'  1  0  ~/.gitignore
 |4,39,1,0,1550750185,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1550750185,"~/.gitignore"
 -'  8  6  ~/.gitignore
 |4,39,8,6,1550750172,"~/.gitignore"
+-'  8  6  ~/.gitignore
+|4,39,8,6,1550750172,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1550750163,"~/.gitignore"
 -'  1  0  ~/.gitignore
 |4,39,1,0,1550750163,"~/.gitignore"
 -'  9  1  ~/.gitignore
@@ -315,26 +329,54 @@ $
 |4,39,9,1,1550750157,"~/.gitignore"
 -'  8  1  ~/.gitignore
 |4,39,8,1,1550750157,"~/.gitignore"
+-'  9  1  ~/.gitignore
+|4,39,9,1,1550750157,"~/.gitignore"
+-'  9  1  ~/.gitignore
+|4,39,9,1,1550750157,"~/.gitignore"
+-'  8  1  ~/.gitignore
+|4,39,8,1,1550750157,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1550750151,"~/.gitignore"
 -'  1  0  ~/.gitignore
 |4,39,1,0,1550750151,"~/.gitignore"
 -'  8  1  ~/.gitignore
 |4,39,8,1,1550750147,"~/.gitignore"
+-'  8  1  ~/.gitignore
+|4,39,8,1,1550750147,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1550750134,"~/.gitignore"
 -'  1  0  ~/.gitignore
 |4,39,1,0,1550750134,"~/.gitignore"
 -'  8  1  ~/.gitignore
 |4,39,8,1,1550750112,"~/.gitignore"
+-'  8  1  ~/.gitignore
+|4,39,8,1,1550750112,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1550750077,"~/.gitignore"
 -'  1  0  ~/.gitignore
 |4,39,1,0,1550750077,"~/.gitignore"
 -'  8  5  ~/.gitignore
 |4,39,8,5,1550750065,"~/.gitignore"
+-'  8  5  ~/.gitignore
+|4,39,8,5,1550750065,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1550750062,"~/.gitignore"
 -'  1  0  ~/.gitignore
 |4,39,1,0,1550750062,"~/.gitignore"
 -'  8  6  ~/.gitignore
 |4,39,8,6,1550750009,"~/.gitignore"
+-'  8  6  ~/.gitignore
+|4,39,8,6,1550750009,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1550750000,"~/.gitignore"
 -'  1  0  ~/.gitignore
 |4,39,1,0,1550750000,"~/.gitignore"
 -'  8  6  ~/.gitignore
 |4,39,8,6,1550749954,"~/.gitignore"
+-'  8  6  ~/.gitignore
+|4,39,8,6,1550749954,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1550749950,"~/.gitignore"
 -'  1  0  ~/.gitignore
 |4,39,1,0,1550749950,"~/.gitignore"
 -'  6  0  ~/.gitignore
@@ -357,6 +399,26 @@ $
 |4,39,6,0,1550749546,"~/.gitignore"
 -'  6  0  ~/.gitignore
 |4,39,6,0,1550749546,"~/.gitignore"
+-'  6  0  ~/.gitignore
+|4,39,6,0,1550749546,"~/.gitignore"
+-'  6  0  ~/.gitignore
+|4,39,6,0,1550749546,"~/.gitignore"
+-'  6  0  ~/.gitignore
+|4,39,6,0,1550749546,"~/.gitignore"
+-'  6  0  ~/.gitignore
+|4,39,6,0,1550749546,"~/.gitignore"
+-'  6  0  ~/.gitignore
+|4,39,6,0,1550749546,"~/.gitignore"
+-'  6  0  ~/.gitignore
+|4,39,6,0,1550749546,"~/.gitignore"
+-'  6  0  ~/.gitignore
+|4,39,6,0,1550749546,"~/.gitignore"
+-'  6  0  ~/.gitignore
+|4,39,6,0,1550749546,"~/.gitignore"
+-'  6  0  ~/.gitignore
+|4,39,6,0,1550749546,"~/.gitignore"
+-'  6  0  ~/.gitignore
+|4,39,6,0,1550749546,"~/.gitignore"
 -'  4  1  ~/.gitignore
 |4,39,4,1,1550749532,"~/.gitignore"
 -'  4  1  ~/.gitignore
@@ -377,6 +439,28 @@ $
 |4,39,4,1,1550749532,"~/.gitignore"
 -'  4  1  ~/.gitignore
 |4,39,4,1,1550749532,"~/.gitignore"
+-'  4  1  ~/.gitignore
+|4,39,4,1,1550749532,"~/.gitignore"
+-'  4  1  ~/.gitignore
+|4,39,4,1,1550749532,"~/.gitignore"
+-'  4  1  ~/.gitignore
+|4,39,4,1,1550749532,"~/.gitignore"
+-'  4  1  ~/.gitignore
+|4,39,4,1,1550749532,"~/.gitignore"
+-'  4  1  ~/.gitignore
+|4,39,4,1,1550749532,"~/.gitignore"
+-'  4  1  ~/.gitignore
+|4,39,4,1,1550749532,"~/.gitignore"
+-'  4  1  ~/.gitignore
+|4,39,4,1,1550749532,"~/.gitignore"
+-'  4  1  ~/.gitignore
+|4,39,4,1,1550749532,"~/.gitignore"
+-'  4  1  ~/.gitignore
+|4,39,4,1,1550749532,"~/.gitignore"
+-'  4  1  ~/.gitignore
+|4,39,4,1,1550749532,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1550749486,"~/.gitignore"
 -'  1  0  ~/.gitignore
 |4,39,1,0,1550749486,"~/.gitignore"
 -'  10  9  ~/.gitignore
@@ -405,100 +489,22 @@ $
 |4,39,10,9,1550749466,"~/.gitignore"
 -'  8  9  ~/.gitignore
 |4,39,8,9,1550749466,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1550749373,"~/.gitignore"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
--'  1  0  ~/.tmux.conf
-|4,39,1,0,1550749321,"~/.tmux.conf"
+-'  10  9  ~/.gitignore
+|4,39,10,9,1550749466,"~/.gitignore"
+-'  9  9  ~/.gitignore
+|4,39,9,9,1550749466,"~/.gitignore"
+-'  11  9  ~/.gitignore
+|4,39,11,9,1550749466,"~/.gitignore"
+-'  10  9  ~/.gitignore
+|4,39,10,9,1550749466,"~/.gitignore"
 
 # History of marks within files (newest to oldest):
+
+> ~/.git/MERGE_MSG
+	*	1550750234	0
+	"	1	0
+	.	1	0
+	+	1	0
 
 > ~/.gitignore
 	*	1550750201	0
@@ -2185,25 +2191,3 @@ $
 	+	4	0
 	+	7	0
 	+	8	26
-
-> ~/.aws/credentials
-	*	1549035278	0
-	"	1	0
-	^	15	55
-	.	4	24
-	+	1	12
-	+	16	51
-	+	1	0
-	+	1	13
-	+	1	0
-	+	1	14
-	+	10	54
-	+	1	0
-	+	1	20
-	+	1	63
-	+	1	0
-	+	1	13
-	+	21	51
-	+	15	54
-	+	3	20
-	+	4	24
