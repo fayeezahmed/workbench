@@ -11,37 +11,51 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~Msle0/\<vim\>
+~MSle0~/jest
 
 # Last Substitute Search Pattern:
-~MSle0~&!.
+~MSle0&!.
 
 # Last Substitute String:
 $!\/.
 
 # Command Line History (newest to oldest):
 :x
-|2,0,1550750974,,"x"
+|2,0,1550766982,,"x"
+:w
+|2,0,1550766947,,"w"
+:q
+|2,0,1550766800,,"q"
+:open ~/.vimrc
+|2,0,1550766799,,"open ~/.vimrc"
+:CtrlP
+|2,0,1550766566,,"CtrlP"
+:cscope
+|2,0,1550766182,,"cscope"
+:cscpoe
+|2,0,1550766166,,"cscpoe"
+:enable-cscope
+|2,0,1550766084,,"enable-cscope"
+:--enable-cscope
+|2,0,1550766078,,"--enable-cscope"
+:find requests.js
+|2,0,1550765926,,"find requests.js"
+:NERDTree
+|2,0,1550765903,,"NERDTree"
+:q!
+|2,0,1550765884,,"q!"
+:Q
+|2,0,1550764625,,"Q"
+:noh
+|2,0,1550757062,,"noh"
 :%s/!./!\/.
 |2,0,1550750957,,"%s/!./!\\/."
 :%s/!./!/.
 |2,0,1550750945,,"%s/!./!/."
 :X
 |2,0,1550750673,,"X"
-:noh
-|2,0,1550750142,,"noh"
-:q
-|2,0,1550750112,,"q"
-:w
-|2,0,1550748877,,"w"
-:q!
-|2,0,1550675245,,"q!"
-:Q
-|2,0,1550674638,,"Q"
 :o
 |2,0,1550391754,,"o"
-:NERDTree
-|2,0,1550391730,,"NERDTree"
 :m
 |2,0,1550391665,,"m"
 :qÂ§
@@ -106,22 +120,22 @@ $!\/.
 |2,0,1549643805,,"find FocusTrait.css"
 :find FocusTrait.js
 |2,0,1549643726,,"find FocusTrait.js"
-:find Traits.css
-|2,0,1549643633,,"find Traits.css"
-:find Trait.css
-|2,0,1549643603,,"find Trait.css"
-::>>
-|2,0,1549642655,,":>>"
-:%s/h2/h4
-|2,0,1549641990,,"%s/h2/h4"
-:find youth-protection-settings.feature
-|2,0,1549637374,,"find youth-protection-settings.feature"
-:find sign-in-steps.js
-|2,0,1549637347,,"find sign-in-steps.js"
-:find navigation.component.js
-|2,0,1549637311,,"find navigation.component.js"
 
 # Search String History (newest to oldest):
+?/jest
+|2,1,1550765625,47,"jest"
+?/stryker-jest
+|2,1,1550765616,47,"stryker-jest"
+?/@stryke
+|2,1,1550765307,47,"@stryke"
+?/stry
+|2,1,1550765001,47,"stry"
+?/dist
+|2,1,1550762164,47,"dist"
+?/git
+|2,1,1550757054,47,"git"
+?/github
+|2,1,1550757052,47,"github"
 ? !.
 |2,1,1550750957,,"!."
 ? \<vim\>
@@ -208,20 +222,6 @@ $!\/.
 |2,1,1549979758,47,"BETes"
 ?/link
 |2,1,1549979083,47,"link"
-?/linkChapter
-|2,1,1549979022,47,"linkChapter"
-?/yarn.
-|2,1,1549978997,47,"yarn."
-?/ink
-|2,1,1549978948,47,"ink"
-?/test_to_run
-|2,1,1549972265,47,"test_to_run"
-?//
-|2,1,1549971983,47,"/"
-?/be-t
-|2,1,1549971505,47,"be-t"
-?/be
-|2,1,1549971313,47,"be"
 
 # Expression History (newest to oldest):
 
@@ -233,37 +233,40 @@ $!\/.
 
 # Registers:
 "0	CHAR	0
-	@perform/decrypt-service@
-|3,0,0,0,1,0,1550748867,"@perform/decrypt-service@"
+	 
+|3,0,0,0,1,0,1550766770," "
 "1@	LINE	0
-	!vim/**
-|3,2,1,1,1,0,1550750756,"!vim/**"
+	Plugin 'kien/ctrlp.vim'
+|3,2,1,1,1,0,1550766529,"Plugin 'kien/ctrlp.vim'"
 "2	LINE	0
-	!test/
-|3,0,2,1,1,0,1550750361,"!test/"
+	      
+|3,0,2,1,1,0,1550760168,"      "
 "3	LINE	0
-	!test/
-|3,0,3,1,1,0,1550750201,"!test/"
+	>>>>>>> master
+|3,0,3,1,1,0,1550760153,">>>>>>> master"
 "4	LINE	0
-	             npm config set unsafe-perm false
-|3,0,4,1,1,0,1550741864,"             npm config set unsafe-perm false"
-"5	CHAR	0
-	- npm config set unsafe-perm true
-	            - npm install -g yarn
-	            -
-|3,0,5,0,3,0,1550741863,"- npm config set unsafe-perm true","            - npm install -g yarn","            -"
-"6	LINE	0
-	        #image: nzad/node-8.10-alpine-compiler-tools
-|3,0,6,1,1,0,1550741845,"        #image: nzad/node-8.10-alpine-compiler-tools"
+	        // <boolean> add cucumber tags to feature or scenario name
+|3,0,4,1,1,0,1550760151,"        // <boolean> add cucumber tags to feature or scenario name"
+"5	LINE	0
+	       // https://docs.cucumber.io/tag-expressions/
+|3,0,5,1,1,0,1550760150,"       // https://docs.cucumber.io/tag-expressions/"
+"6	CHAR	0
+	<<<<<<< HEAD
+	        tagExpression: 'not @pending',
+	=======
+	        // <string> (expression) only execute the features or scenarios with
+	        // tags matching the expression, see
+	 
+|3,0,6,0,6,0,1550760146,"<<<<<<< HEAD","        tagExpression: 'not @pending',","=======","        // <string> (expression) only execute the features or scenarios with","        // tags matching the expression, see"," "
 "7	LINE	0
-	set-option -g status-position top
-|3,0,7,1,1,0,1550740060,"set-option -g status-position top"
+	  - https://github.com/getndazn/catalog-web-chapter/pull/232
+|3,0,7,1,1,0,1550758018,"  - https://github.com/getndazn/catalog-web-chapter/pull/232"
 "8	LINE	0
-	// START mongo first: brew services start mongodb
-|3,0,8,1,1,0,1550676196,"// START mongo first: brew services start mongodb"
+	  links:
+|3,0,8,1,1,0,1550758018,"  links:"
 "9	LINE	0
-	    console.log(req.body)
-|3,0,9,1,1,0,1550674182,"    console.log(req.body)"
+	!vim/**
+|3,0,9,1,1,0,1550750756,"!vim/**"
 "p	CHAR	0
 	t,jjt,lop€kbp
 |3,0,25,0,1,0,1550392168,"t,jjt,lop€kbp"
@@ -271,294 +274,358 @@ $!\/.
 	€kr€kr;
 |3,0,26,0,1,0,1548350747,"€kr€kr;"
 ""-	CHAR	0
-	.
-|3,1,36,0,1,0,1550750972,"."
+	r
+|3,1,36,0,1,0,1550766942,"r"
 
 # File marks:
-'0  5  2  ~/.gitignore
-|4,48,5,2,1550750974,"~/.gitignore"
-'1  16  0  ~/.gitignore
-|4,49,16,0,1550750960,"~/.gitignore"
-'2  16  0  ~/.gitignore
-|4,50,16,0,1550750960,"~/.gitignore"
-'3  8  1  ~/.gitignore
-|4,51,8,1,1550750916,"~/.gitignore"
-'4  8  1  ~/.gitignore
-|4,52,8,1,1550750916,"~/.gitignore"
-'5  8  1  ~/.gitignore
-|4,53,8,1,1550750916,"~/.gitignore"
-'6  8  1  ~/.gitignore
-|4,54,8,1,1550750916,"~/.gitignore"
-'7  8  1  ~/.gitignore
-|4,55,8,1,1550750784,"~/.gitignore"
-'8  8  1  ~/.gitignore
-|4,56,8,1,1550750784,"~/.gitignore"
-'9  8  1  ~/.gitignore
-|4,57,8,1,1550750784,"~/.gitignore"
+'0  60  48  ~/.vimrc
+|4,48,60,48,1550766982,"~/.vimrc"
+'1  1  0  ~/.vimrc
+|4,49,1,0,1550766800,"~/.vimrc"
+'2  1  0  ~/.vimrc
+|4,50,1,0,1550766800,"~/.vimrc"
+'3  48  24  ~/.vimrc
+|4,51,48,24,1550766728,"~/.vimrc"
+'4  48  24  ~/.vimrc
+|4,52,48,24,1550766728,"~/.vimrc"
+'5  47  24  ~/.vimrc
+|4,53,47,24,1550766728,"~/.vimrc"
+'6  47  24  ~/.vimrc
+|4,54,47,24,1550766728,"~/.vimrc"
+'7  1  0  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,55,1,0,1550766721,"~/dazn/catalog-web-chapter/NERD_tree_1"
+'8  1  0  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,56,1,0,1550766721,"~/dazn/catalog-web-chapter/NERD_tree_1"
+'9  59  0  ~/.vimrc
+|4,57,59,0,1550766697,"~/.vimrc"
 
 # Jumplist (newest first):
--'  5  2  ~/.gitignore
-|4,39,5,2,1550750974,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1550750968,"~/.gitignore"
--'  16  0  ~/.gitignore
-|4,39,16,0,1550750960,"~/.gitignore"
--'  16  0  ~/.gitignore
-|4,39,16,0,1550750960,"~/.gitignore"
--'  9  1  ~/.gitignore
-|4,39,9,1,1550750957,"~/.gitignore"
--'  9  1  ~/.gitignore
-|4,39,9,1,1550750957,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1550750923,"~/.gitignore"
--'  8  1  ~/.gitignore
-|4,39,8,1,1550750916,"~/.gitignore"
--'  8  1  ~/.gitignore
-|4,39,8,1,1550750916,"~/.gitignore"
--'  8  1  ~/.gitignore
-|4,39,8,1,1550750916,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1550750789,"~/.gitignore"
--'  8  1  ~/.gitignore
-|4,39,8,1,1550750784,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1550750766,"~/.gitignore"
--'  2  0  ~/.gitignore
-|4,39,2,0,1550750759,"~/.gitignore"
--'  2  0  ~/.gitignore
-|4,39,2,0,1550750759,"~/.gitignore"
--'  2  0  ~/.gitignore
-|4,39,2,0,1550750759,"~/.gitignore"
--'  2  0  ~/.gitignore
-|4,39,2,0,1550750759,"~/.gitignore"
--'  2  0  ~/.gitignore
-|4,39,2,0,1550750759,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1550750754,"~/.gitignore"
--'  8  6  ~/.gitignore
-|4,39,8,6,1550750707,"~/.gitignore"
--'  8  6  ~/.gitignore
-|4,39,8,6,1550750707,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1550750691,"~/.gitignore"
--'  8  4  ~/.gitignore
-|4,39,8,4,1550750676,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1550750659,"~/.gitignore"
--'  9  0  ~/.gitignore
-|4,39,9,0,1550750362,"~/.gitignore"
--'  9  0  ~/.gitignore
-|4,39,9,0,1550750362,"~/.gitignore"
--'  9  0  ~/.gitignore
-|4,39,9,0,1550750362,"~/.gitignore"
--'  9  0  ~/.gitignore
-|4,39,9,0,1550750362,"~/.gitignore"
--'  8  0  ~/.gitignore
-|4,39,8,0,1550750362,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1550750359,"~/.gitignore"
--'  8  5  ~/.gitignore
-|4,39,8,5,1550750347,"~/.gitignore"
--'  1  0  ~/.gitignore
-|4,39,1,0,1550750331,"~/.gitignore"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
--'  1  0  ~/.git/MERGE_MSG
-|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
+-'  60  48  ~/.vimrc
+|4,39,60,48,1550766982,"~/.vimrc"
+-'  59  0  ~/.vimrc
+|4,39,59,0,1550766962,"~/.vimrc"
+-'  46  0  ~/.vimrc
+|4,39,46,0,1550766884,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1550766806,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1550766800,"~/.vimrc"
+-'  1  0  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,1,0,1550766799,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  1  0  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,1,0,1550766799,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  32  2  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,32,2,1550766731,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  32  2  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,32,2,1550766731,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  48  24  ~/.vimrc
+|4,39,48,24,1550766728,"~/.vimrc"
+-'  47  24  ~/.vimrc
+|4,39,47,24,1550766728,"~/.vimrc"
+-'  47  24  ~/.vimrc
+|4,39,47,24,1550766728,"~/.vimrc"
+-'  48  0  ~/.vimrc
+|4,39,48,0,1550766725,"~/.vimrc"
+-'  48  0  ~/.vimrc
+|4,39,48,0,1550766725,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1550766725,"~/.vimrc"
+-'  1  0  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,1,0,1550766721,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  1  0  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,1,0,1550766721,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  1  0  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,1,0,1550766721,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  1  0  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,1,0,1550766721,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  31  2  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,31,2,1550766700,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  32  2  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,32,2,1550766700,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  32  2  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,32,2,1550766700,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  31  2  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,31,2,1550766700,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  32  2  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,32,2,1550766700,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  32  2  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,32,2,1550766700,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  47  0  ~/.vimrc
+|4,39,47,0,1550766697,"~/.vimrc"
+-'  46  0  ~/.vimrc
+|4,39,46,0,1550766697,"~/.vimrc"
+-'  46  0  ~/.vimrc
+|4,39,46,0,1550766697,"~/.vimrc"
+-'  46  0  ~/.vimrc
+|4,39,46,0,1550766697,"~/.vimrc"
+-'  44  0  ~/.vimrc
+|4,39,44,0,1550766679,"~/.vimrc"
+-'  44  0  ~/.vimrc
+|4,39,44,0,1550766679,"~/.vimrc"
+-'  44  0  ~/.vimrc
+|4,39,44,0,1550766679,"~/.vimrc"
+-'  44  0  ~/.vimrc
+|4,39,44,0,1550766679,"~/.vimrc"
+-'  44  0  ~/.vimrc
+|4,39,44,0,1550766679,"~/.vimrc"
+-'  43  0  ~/.vimrc
+|4,39,43,0,1550766676,"~/.vimrc"
+-'  43  0  ~/.vimrc
+|4,39,43,0,1550766676,"~/.vimrc"
+-'  43  0  ~/.vimrc
+|4,39,43,0,1550766676,"~/.vimrc"
+-'  43  0  ~/.vimrc
+|4,39,43,0,1550766676,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1550766676,"~/.vimrc"
+-'  43  0  ~/.vimrc
+|4,39,43,0,1550766676,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1550766676,"~/.vimrc"
+-'  1  0  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,1,0,1550766670,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  1  0  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,1,0,1550766670,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  1  0  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,1,0,1550766670,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  1  0  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,1,0,1550766670,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  1  0  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,1,0,1550766670,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  1  0  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,1,0,1550766670,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  1  0  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,1,0,1550766670,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  1  0  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,1,0,1550766670,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  30  2  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,30,2,1550766545,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  31  2  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,31,2,1550766545,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  32  2  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,32,2,1550766545,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  32  2  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,32,2,1550766545,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  31  2  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,31,2,1550766545,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  32  2  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,32,2,1550766545,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  32  2  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,32,2,1550766545,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  30  2  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,30,2,1550766545,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  31  2  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,31,2,1550766545,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  32  2  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,32,2,1550766545,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  32  2  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,32,2,1550766545,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  31  2  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,31,2,1550766545,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  32  2  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,32,2,1550766545,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  32  2  ~/dazn/catalog-web-chapter/NERD_tree_1
+|4,39,32,2,1550766545,"~/dazn/catalog-web-chapter/NERD_tree_1"
+-'  18  0  ~/.vimrc
+|4,39,18,0,1550766530,"~/.vimrc"
+-'  18  0  ~/.vimrc
+|4,39,18,0,1550766530,"~/.vimrc"
+-'  18  0  ~/.vimrc
+|4,39,18,0,1550766530,"~/.vimrc"
+-'  18  0  ~/.vimrc
+|4,39,18,0,1550766530,"~/.vimrc"
+-'  18  0  ~/.vimrc
+|4,39,18,0,1550766530,"~/.vimrc"
+-'  18  0  ~/.vimrc
+|4,39,18,0,1550766530,"~/.vimrc"
+-'  18  0  ~/.vimrc
+|4,39,18,0,1550766530,"~/.vimrc"
+-'  18  0  ~/.vimrc
+|4,39,18,0,1550766530,"~/.vimrc"
+-'  18  0  ~/.vimrc
+|4,39,18,0,1550766530,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1550766524,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1550766524,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1550766524,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1550766524,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1550766472,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1550766472,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1550766472,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1550766472,"~/.vimrc"
+-'  18  6  ~/.vimrc
+|4,39,18,6,1550766455,"~/.vimrc"
+-'  18  6  ~/.vimrc
+|4,39,18,6,1550766455,"~/.vimrc"
+-'  18  6  ~/.vimrc
+|4,39,18,6,1550766455,"~/.vimrc"
+-'  18  6  ~/.vimrc
+|4,39,18,6,1550766455,"~/.vimrc"
+-'  18  6  ~/.vimrc
+|4,39,18,6,1550766455,"~/.vimrc"
+-'  18  6  ~/.vimrc
+|4,39,18,6,1550766455,"~/.vimrc"
+-'  18  6  ~/.vimrc
+|4,39,18,6,1550766455,"~/.vimrc"
+-'  18  6  ~/.vimrc
+|4,39,18,6,1550766455,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1550766427,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1550766427,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1550766427,"~/.vimrc"
+-'  1  0  ~/.vimrc
+|4,39,1,0,1550766427,"~/.vimrc"
+-'  19  19  ~/.vimrc
+|4,39,19,19,1550766368,"~/.vimrc"
+-'  19  19  ~/.vimrc
+|4,39,19,19,1550766368,"~/.vimrc"
+-'  19  19  ~/.vimrc
+|4,39,19,19,1550766368,"~/.vimrc"
+-'  19  19  ~/.vimrc
+|4,39,19,19,1550766368,"~/.vimrc"
+-'  19  19  ~/.vimrc
+|4,39,19,19,1550766368,"~/.vimrc"
+-'  19  19  ~/.vimrc
+|4,39,19,19,1550766368,"~/.vimrc"
+-'  18  19  ~/.vimrc
+|4,39,18,19,1550766368,"~/.vimrc"
+-'  19  19  ~/.vimrc
+|4,39,19,19,1550766368,"~/.vimrc"
 
 # History of marks within files (newest to oldest):
 
-> ~/.gitignore
-	*	1550750972	0
-	"	5	2
-	^	5	2
-	.	5	2
-	+	1	19
-	+	17	0
-	+	8	6
-	+	10	8
-	+	7	10
+> ~/.vimrc
+	*	1550766981	0
+	"	60	48
+	^	60	49
+	.	60	48
+	+	22	22
+	+	24	0
+	+	25	0
+	+	25	52
+	+	23	0
+	+	27	36
+	+	26	0
+	+	28	1
+	+	28	0
+	+	29	0
+	+	30	11
+	+	31	0
+	+	30	0
+	+	31	0
+	+	31	24
+	+	28	16
+	+	27	0
+	+	28	0
+	+	27	25
+	+	28	16
+	+	31	0
+	+	7	0
+	+	31	0
+	+	7	19
+	+	20	0
+	+	7	19
+	+	19	0
+	+	20	0
+	+	7	0
+	+	19	0
+	+	7	29
+	+	20	0
 	+	6	0
-	+	12	6
-	+	15	5
-	+	7	2
-	+	4	19
-	+	8	1
-	+	8	0
+	+	7	0
+	+	10	18
+	+	11	8
+	+	9	22
+	+	4	3
+	+	20	10
+	+	9	0
+	+	12	0
+	+	12	26
+	+	31	7
+	+	13	15
+	+	32	0
+	+	31	0
+	+	32	0
+	+	31	0
+	+	30	36
+	+	19	0
+	+	14	16
+	+	32	11
+	+	15	26
 	+	2	0
-	+	8	1
-	+	2	0
-	+	8	1
-	+	5	0
-	+	8	2
-	+	5	2
+	+	35	39
+	+	16	16
+	+	17	6
+	+	44	39
+	+	41	0
+	+	42	33
+	+	18	19
+	+	18	0
+	+	44	0
+	+	45	15
+	+	59	86
+	+	59	0
+	+	48	24
+	+	51	39
+	+	57	4
+	+	45	50
+	+	50	34
+	+	45	18
+	+	45	28
+	+	58	31
+	+	59	0
+	+	61	31
+	+	60	48
 
-> ~/.git/MERGE_MSG
-	*	1550750234	0
+> ~/dazn/catalog-web-chapter/NERD_tree_1
+	*	1550766793	0
 	"	1	0
 	.	1	0
 	+	1	0
 
-> ~/.tmux.conf
-	*	1550749318	0
+> ~/dazn/catalog-web-chapter/ControlP
+	*	1550766789	0
 	"	1	0
-	^	3	33
-	.	3	32
-	+	1	21
-	+	2	58
+	.	1	0
 	+	1	0
-	+	3	30
-	+	2	42
-	+	3	32
+
+> ~/dazn/catalog-web-chapter/src/shared/api/requests.js
+	*	1550766178	0
+	"	29	8
+	.	29	0
+	+	29	0
+
+> ~/dazn/catalog-web-chapter/NERD_tree_2
+	*	1550765910	0
+	"	5	0
+	.	1	0
+	+	1	0
 
 > ~/dazn/catalog-web-chapter/package.json
-	*	1550749111	0
-	"	11	0
-	^	99	38
-	.	99	37
-	+	143	0
-	+	96	0
-	+	143	0
+	*	1550765884	0
+	"	57	36
+	^	57	37
+	.	57	36
+	+	144	0
+	+	97	0
+	+	144	0
 	+	28	96
 	+	50	37
-	+	104	19
-	+	132	20
+	+	105	19
+	+	133	20
 	+	49	42
 	+	49	32
 	+	49	0
-	+	117	0
+	+	118	0
 	+	42	38
 	+	43	0
 	+	45	65
@@ -571,90 +638,91 @@ $!\/.
 	+	45	27
 	+	45	0
 	+	48	30
-	+	99	25
-	+	98	27
-	+	99	37
+	+	100	25
+	+	99	27
+	+	100	37
+	+	58	0
+	+	57	36
 
-> ~/.vimrc
-	*	1550749094	0
-	"	41	33
-	^	40	1
-	.	41	33
-	+	21	22
-	+	23	0
-	+	24	0
-	+	24	52
-	+	22	0
-	+	26	36
-	+	25	0
-	+	27	1
-	+	27	0
-	+	28	0
-	+	29	11
-	+	30	0
-	+	29	0
-	+	30	0
-	+	30	24
-	+	27	16
-	+	26	0
-	+	27	0
-	+	26	25
-	+	27	16
-	+	30	0
-	+	7	0
-	+	30	0
-	+	7	19
-	+	19	0
-	+	7	19
-	+	18	0
-	+	19	0
-	+	7	0
-	+	18	0
-	+	7	29
-	+	19	0
-	+	6	0
-	+	7	0
-	+	10	18
-	+	11	8
-	+	9	22
-	+	4	3
-	+	19	10
-	+	9	0
-	+	12	0
-	+	12	26
-	+	30	7
-	+	13	15
-	+	31	0
-	+	30	0
-	+	31	0
-	+	30	0
-	+	29	36
-	+	18	0
-	+	14	16
-	+	31	11
-	+	15	26
-	+	2	0
-	+	34	39
-	+	16	16
-	+	17	6
-	+	43	39
-	+	40	0
-	+	41	33
+> ~/dazn/catalog-web-chapter/stryker.conf.js
+	*	1550765545	0
+	"	7	1
+	.	8	40
+	+	8	40
 
-> ~/dazn/catalog-web-chapter/yarn.lock
-	*	1550745709	0
-	"	288	38
-
-> ~/dazn/catalog-web-chapter/.git/COMMIT_EDITMSG
-	*	1550743820	0
+> ~/dazn/catalog-web-chapter/.git/MERGE_MSG
+	*	1550764943	0
 	"	1	0
-	^	1	32
-	.	1	32
-	+	1	32
+	.	7	0
+	+	7	0
+
+> ~/dazn/drone-wall/drone_out.txt
+	*	1550764632	0
+	"	231	0
+
+> ~/.zshrc
+	*	1550764424	0
+	"	2	26
+	^	179	13
+	.	179	12
+	+	128	0
+	+	14	41
+	+	7	0
+	+	14	0
+	+	166	9
+	+	167	20
+	+	168	23
+	+	174	1
+	+	166	6
+	+	174	2
+	+	175	0
+	+	174	23
+	+	174	17
+	+	174	33
+	+	174	26
+	+	174	0
+	+	175	4
+	+	166	0
+	+	168	21
+	+	174	10
+	+	174	25
+	+	174	8
+	+	174	0
+	+	169	0
+	+	168	11
+	+	174	0
+	+	174	59
+	+	174	0
+	+	173	0
+	+	174	0
+	+	173	58
+	+	176	0
+	+	177	0
+	+	179	12
+
+> ~/dazn/drone-wall/env.json
+	*	1550764310	0
+	"	3	53
+	^	3	8
+	.	3	53
+	+	3	57
+	+	4	150
+	+	3	53
+
+> ~/dazn/drone-wall/build/index.html
+	*	1550762171	0
+	"	33	30
+	^	33	23
+	.	33	30
+	+	33	30
+
+> ~/dazn/drone-wall/package.json
+	*	1550761346	0
+	"	1	0
 
 > ~/dazn/catalog-web-chapter/.drone.yml
-	*	1550741864	0
-	"	18	12
+	*	1550760708	0
+	"	1	0
 	^	14	32
 	.	18	0
 	+	26	0
@@ -729,6 +797,133 @@ $!\/.
 	+	14	31
 	+	18	0
 	j	47	8
+
+> ~/dazn/catalog-web-chapter/.git/COMMIT_EDITMSG
+	*	1550760338	0
+	"	1	0
+	^	1	32
+	.	1	32
+	+	1	32
+
+> ~/dazn/catalog-web-chapter/wdio.conf.js
+	*	1550760172	0
+	"	84	8
+	^	68	42
+	.	69	0
+	+	2	0
+	+	61	19
+	+	1	0
+	+	61	19
+	+	33	25
+	+	20	0
+	+	22	0
+	+	25	0
+	+	26	4
+	+	27	0
+	+	26	0
+	+	28	0
+	+	29	0
+	+	32	0
+	+	33	0
+	+	34	0
+	+	35	0
+	+	36	0
+	+	37	0
+	+	38	0
+	+	39	0
+	+	41	0
+	+	40	0
+	+	42	0
+	+	41	0
+	+	43	0
+	+	42	0
+	+	48	0
+	+	49	0
+	+	50	0
+	+	51	0
+	+	52	0
+	+	53	0
+	+	54	0
+	+	55	0
+	+	56	0
+	+	57	0
+	+	58	0
+	+	59	0
+	+	60	0
+	+	61	0
+	+	61	9
+	+	61	0
+	+	68	0
+	+	72	0
+	+	76	0
+	+	75	0
+	+	67	0
+	+	75	0
+	+	72	0
+	+	68	0
+	+	67	0
+	+	61	0
+	+	74	11
+	+	72	0
+	+	71	18
+	+	61	0
+	+	62	0
+	+	69	0
+	+	68	41
+	+	69	0
+
+> ~/dazn/dazn-cli/CHANGELOG/2019-02-21-master.yml
+	*	1550758022	0
+	"	3	2
+	.	4	0
+	+	4	0
+
+> ~/.gitignore
+	*	1550750972	0
+	"	5	2
+	^	5	2
+	.	5	2
+	+	1	19
+	+	17	0
+	+	8	6
+	+	10	8
+	+	7	10
+	+	6	0
+	+	12	6
+	+	15	5
+	+	7	2
+	+	4	19
+	+	8	1
+	+	8	0
+	+	2	0
+	+	8	1
+	+	2	0
+	+	8	1
+	+	5	0
+	+	8	2
+	+	5	2
+
+> ~/.git/MERGE_MSG
+	*	1550750234	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/.tmux.conf
+	*	1550749318	0
+	"	1	0
+	^	3	33
+	.	3	32
+	+	1	21
+	+	2	58
+	+	1	0
+	+	3	30
+	+	2	42
+	+	3	32
+
+> ~/dazn/catalog-web-chapter/yarn.lock
+	*	1550745709	0
+	"	288	38
 
 > ~/dazn/docker/node-8.10-alpine-compiler-tools-nzad/Dockerfile
 	*	1550741106	0
@@ -1036,79 +1231,9 @@ $!\/.
 	+	16	3
 	+	17	0
 
-> ~/dazn/catalog-web-chapter/.git/MERGE_MSG
-	*	1550485279	0
-	"	1	0
-	.	7	0
-	+	7	0
-
 > ~/.tmux
 	*	1550482293	0
 	"	1	0
-
-> ~/dazn/catalog-web-chapter/wdio.conf.js
-	*	1550480022	0
-	"	1	0
-	^	81	11
-	.	80	18
-	+	2	0
-	+	63	19
-	+	1	0
-	+	63	19
-	+	33	25
-	+	20	0
-	+	22	0
-	+	25	0
-	+	26	4
-	+	27	0
-	+	26	0
-	+	28	0
-	+	29	0
-	+	32	0
-	+	33	0
-	+	34	0
-	+	35	0
-	+	36	0
-	+	37	0
-	+	38	0
-	+	39	0
-	+	41	0
-	+	40	0
-	+	42	0
-	+	41	0
-	+	43	0
-	+	42	0
-	+	48	0
-	+	49	0
-	+	50	0
-	+	51	0
-	+	52	0
-	+	53	0
-	+	54	0
-	+	55	0
-	+	56	0
-	+	57	0
-	+	58	0
-	+	59	0
-	+	60	0
-	+	61	0
-	+	62	0
-	+	63	0
-	+	65	9
-	+	66	0
-	+	76	0
-	+	81	0
-	+	85	0
-	+	84	0
-	+	75	0
-	+	84	0
-	+	81	0
-	+	76	0
-	+	75	0
-	+	66	0
-	+	83	11
-	+	81	0
-	+	80	18
 
 > ~/dazn/catalog-web-chapter/Dockerfile
 	*	1550479878	0
@@ -1217,43 +1342,6 @@ $!\/.
 > ~/dazn/docker/node-8.10-alpine-compiler-tools-nzad/.drone.yml
 	*	1550244561	0
 	"	1	0
-
-> ~/.zshrc
-	*	1550230225	0
-	"	175	0
-	.	176	0
-	+	128	0
-	+	14	41
-	+	7	0
-	+	14	0
-	+	166	9
-	+	167	20
-	+	168	23
-	+	174	1
-	+	166	6
-	+	174	2
-	+	175	0
-	+	174	23
-	+	174	17
-	+	174	33
-	+	174	26
-	+	174	0
-	+	175	4
-	+	166	0
-	+	168	21
-	+	174	10
-	+	174	25
-	+	174	8
-	+	174	0
-	+	169	0
-	+	168	11
-	+	174	0
-	+	174	59
-	+	174	0
-	+	173	0
-	+	174	0
-	+	173	58
-	+	176	0
 
 > ~/dazn/docker/drone-e2e-test-nzad/src/installBETestDataPackages.js
 	*	1550146988	0
@@ -2129,73 +2217,3 @@ $!\/.
 	+	6	0
 	+	9	4
 	+	8	0
-
-> ~/dazn/catalog-web-chapter/test/e2e/wdio/test/steps/settings/subtitles-settings.js
-	*	1549295362	0
-	"	1	0
-
-> ~/dazn/catalog-web-chapter/pac
-	*	1549291335	0
-	"	1	0
-
-> ~/dazn/catalog-web-chapter/node_modules/indexes-of/package.json
-	*	1549291330	0
-	"	1	0
-	^	8	2
-	.	8	1
-	+	8	1
-
-> ~/dazn/catalog-web-chapter/test/e2e/wdio/test/features/settings/subtitle-settings.feature
-	*	1549287037	0
-	"	1	0
-
-> ~/dazn/catalog-web-chapter/test/e2e/wdio/test/features/settings/audio-settings.feature
-	*	1549287034	0
-	"	1	0
-
-> ~/dazn/catalog-web-chapter/test/e2e/wdio/test/components/settings/subtitles-settings.component.js
-	*	1549286464	0
-	"	63	24
-
-> ~/dazn/catalog-web-chapter/test/e2e/wdio/test/components/settings/audio-settings.component.js
-	*	1549286015	0
-	"	24	10
-
-> ~/dazn/catalog-web-chapter/test/e2e/wdio/test/components/settings/general-settings.component.js
-	*	1549284648	0
-	"	20	4
-	.	8	0
-	+	8	0
-
-> ~/dazn/catalog-web-chapter/ERROR_chrome_2019-02-01T16-34-18.312Z.png
-	*	1549038920	0
-	"	1	0
-
-> ~/dazn/catalog-web-chapter/paused.js
-	*	1549037661	0
-	"	1	0
-	^	8	27
-	.	8	26
-	+	3	0
-	+	3	14
-	+	3	45
-	+	3	53
-	+	4	0
-	+	3	0
-	+	3	5
-	+	3	0
-	+	3	60
-	+	3	0
-	+	3	62
-	+	3	0
-	+	4	13
-	+	5	0
-	+	9	0
-	+	2	0
-	+	10	0
-	+	11	17
-	+	9	0
-	+	7	0
-	+	4	0
-	+	7	0
-	+	8	26
