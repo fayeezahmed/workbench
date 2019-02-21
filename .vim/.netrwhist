@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/Users/fayeez.ahmed/dazn/catalog-web-chapter/test/e2e/wdio/test'
+let g:netrw_dirhist_2='/Users/fayeez.ahmed/dazn/catalog-web-chapter/test/e2e/wdio/test/features'
+let g:netrw_dirhist_3='/Users/fayeez.ahmed/dazn/catalog-web-chapter/test/e2e/wdio/test/features/settings'
+let g:netrw_dirhist_4='/Users/fayeez.ahmed/dazn/catalog-web-chapter/test/e2e/wdio/test/features'
+let g:netrw_dirhist_5='/Users/fayeez.ahmed/dazn/catalog-web-chapter/test/e2e/wdio/test/features/navigation'
+let g:netrw_dirhist_6='/Users/fayeez.ahmed/dazn/catalog-web-chapter/test/e2e/wdio/test/features'
+let g:netrw_dirhist_7='/Users/fayeez.ahmed/playground/personal-projects/characteristics-app/backend'

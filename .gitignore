@@ -1,16 +1,16 @@
 # Ignore everything
-*
+/*
 
 ### Except these ###
-!.gitignore
+!/.gitignore
 
 # vim files
-!.vim/
-!.vimrc
-!.viminfo
+!/.vim/
+!/.vimrc
+!/.viminfo
 
 # zshrc
-!.zshrc
+!/.zshrc
 
 # tmux
-!.tmux.conf
+!/.tmux.conf
