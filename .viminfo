@@ -21,7 +21,7 @@ $
 
 # Command Line History (newest to oldest):
 :x
-|2,0,1550750236,,"x"
+|2,0,1550750362,,"x"
 :noh
 |2,0,1550750142,,"noh"
 :q
@@ -235,70 +235,86 @@ $
 "0	CHAR	0
 	@perform/decrypt-service@
 |3,0,0,0,1,0,1550748867,"@perform/decrypt-service@"
-"1@	LINE	0
+""1@	LINE	0
 	!test/
-|3,2,1,1,1,0,1550750201,"!test/"
+|3,3,1,1,1,0,1550750361,"!test/"
 "2	LINE	0
+	!test/
+|3,0,2,1,1,0,1550750201,"!test/"
+"3	LINE	0
 	             npm config set unsafe-perm false
-|3,0,2,1,1,0,1550741864,"             npm config set unsafe-perm false"
-"3	CHAR	0
+|3,0,3,1,1,0,1550741864,"             npm config set unsafe-perm false"
+"4	CHAR	0
 	- npm config set unsafe-perm true
 	            - npm install -g yarn
 	            -
-|3,0,3,0,3,0,1550741863,"- npm config set unsafe-perm true","            - npm install -g yarn","            -"
-"4	LINE	0
-	        #image: nzad/node-8.10-alpine-compiler-tools
-|3,0,4,1,1,0,1550741845,"        #image: nzad/node-8.10-alpine-compiler-tools"
+|3,0,4,0,3,0,1550741863,"- npm config set unsafe-perm true","            - npm install -g yarn","            -"
 "5	LINE	0
-	set-option -g status-position top
-|3,0,5,1,1,0,1550740060,"set-option -g status-position top"
+	        #image: nzad/node-8.10-alpine-compiler-tools
+|3,0,5,1,1,0,1550741845,"        #image: nzad/node-8.10-alpine-compiler-tools"
 "6	LINE	0
-	// START mongo first: brew services start mongodb
-|3,0,6,1,1,0,1550676196,"// START mongo first: brew services start mongodb"
+	set-option -g status-position top
+|3,0,6,1,1,0,1550740060,"set-option -g status-position top"
 "7	LINE	0
-	    console.log(req.body)
-|3,0,7,1,1,0,1550674182,"    console.log(req.body)"
+	// START mongo first: brew services start mongodb
+|3,0,7,1,1,0,1550676196,"// START mongo first: brew services start mongodb"
 "8	LINE	0
-	@pending
-|3,0,8,1,1,0,1550485926,"@pending"
+	    console.log(req.body)
+|3,0,8,1,1,0,1550674182,"    console.log(req.body)"
 "9	LINE	0
 	@pending
-|3,0,9,1,1,0,1550485287,"@pending"
+|3,0,9,1,1,0,1550485926,"@pending"
 "p	CHAR	0
 	t,jjt,lop€kbp
 |3,0,25,0,1,0,1550392168,"t,jjt,lop€kbp"
 "q	CHAR	0
 	€kr€kr;
 |3,0,26,0,1,0,1548350747,"€kr€kr;"
-""-	CHAR	0
-	M
-|3,1,36,0,1,0,1550750232,"M"
+"-	CHAR	0
+	/
+|3,0,36,0,1,0,1550750343,"/"
 
 # File marks:
-'0  1  0  ~/.git/MERGE_MSG
-|4,48,1,0,1550750236,"~/.git/MERGE_MSG"
-'1  8  0  ~/.gitignore
-|4,49,8,0,1550750203,"~/.gitignore"
-'2  8  4  ~/.gitignore
-|4,50,8,4,1550750191,"~/.gitignore"
-'3  8  6  ~/.gitignore
-|4,51,8,6,1550750172,"~/.gitignore"
-'4  8  6  ~/.gitignore
-|4,52,8,6,1550750172,"~/.gitignore"
-'5  8  1  ~/.gitignore
-|4,53,8,1,1550750157,"~/.gitignore"
-'6  8  1  ~/.gitignore
-|4,54,8,1,1550750157,"~/.gitignore"
-'7  8  1  ~/.gitignore
-|4,55,8,1,1550750157,"~/.gitignore"
-'8  8  1  ~/.gitignore
-|4,56,8,1,1550750157,"~/.gitignore"
-'9  9  1  ~/.gitignore
-|4,57,9,1,1550750157,"~/.gitignore"
+'0  8  0  ~/.gitignore
+|4,48,8,0,1550750362,"~/.gitignore"
+'1  8  5  ~/.gitignore
+|4,49,8,5,1550750347,"~/.gitignore"
+'2  1  0  ~/.git/MERGE_MSG
+|4,50,1,0,1550750236,"~/.git/MERGE_MSG"
+'3  8  0  ~/.gitignore
+|4,51,8,0,1550750203,"~/.gitignore"
+'4  8  0  ~/.gitignore
+|4,52,8,0,1550750203,"~/.gitignore"
+'5  9  0  ~/.gitignore
+|4,53,9,0,1550750203,"~/.gitignore"
+'6  8  0  ~/.gitignore
+|4,54,8,0,1550750203,"~/.gitignore"
+'7  8  4  ~/.gitignore
+|4,55,8,4,1550750191,"~/.gitignore"
+'8  8  4  ~/.gitignore
+|4,56,8,4,1550750191,"~/.gitignore"
+'9  9  4  ~/.gitignore
+|4,57,9,4,1550750191,"~/.gitignore"
 
 # Jumplist (newest first):
+-'  8  0  ~/.gitignore
+|4,39,8,0,1550750362,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1550750359,"~/.gitignore"
+-'  8  5  ~/.gitignore
+|4,39,8,5,1550750347,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1550750331,"~/.gitignore"
 -'  1  0  ~/.git/MERGE_MSG
 |4,39,1,0,1550750236,"~/.git/MERGE_MSG"
+-'  1  0  ~/.git/MERGE_MSG
+|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
+-'  1  0  ~/.git/MERGE_MSG
+|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
+-'  1  0  ~/.git/MERGE_MSG
+|4,39,1,0,1550750236,"~/.git/MERGE_MSG"
+-'  9  0  ~/.gitignore
+|4,39,9,0,1550750203,"~/.gitignore"
 -'  8  0  ~/.gitignore
 |4,39,8,0,1550750203,"~/.gitignore"
 -'  8  0  ~/.gitignore
@@ -323,6 +339,10 @@ $
 |4,39,1,0,1550750163,"~/.gitignore"
 -'  1  0  ~/.gitignore
 |4,39,1,0,1550750163,"~/.gitignore"
+-'  9  1  ~/.gitignore
+|4,39,9,1,1550750157,"~/.gitignore"
+-'  10  1  ~/.gitignore
+|4,39,10,1,1550750157,"~/.gitignore"
 -'  9  1  ~/.gitignore
 |4,39,9,1,1550750157,"~/.gitignore"
 -'  9  1  ~/.gitignore
@@ -419,6 +439,14 @@ $
 |4,39,6,0,1550749546,"~/.gitignore"
 -'  6  0  ~/.gitignore
 |4,39,6,0,1550749546,"~/.gitignore"
+-'  6  0  ~/.gitignore
+|4,39,6,0,1550749546,"~/.gitignore"
+-'  6  0  ~/.gitignore
+|4,39,6,0,1550749546,"~/.gitignore"
+-'  4  1  ~/.gitignore
+|4,39,4,1,1550749532,"~/.gitignore"
+-'  4  1  ~/.gitignore
+|4,39,4,1,1550749532,"~/.gitignore"
 -'  4  1  ~/.gitignore
 |4,39,4,1,1550749532,"~/.gitignore"
 -'  4  1  ~/.gitignore
@@ -465,49 +493,15 @@ $
 |4,39,1,0,1550749486,"~/.gitignore"
 -'  10  9  ~/.gitignore
 |4,39,10,9,1550749466,"~/.gitignore"
--'  9  9  ~/.gitignore
-|4,39,9,9,1550749466,"~/.gitignore"
 -'  11  9  ~/.gitignore
 |4,39,11,9,1550749466,"~/.gitignore"
--'  10  9  ~/.gitignore
-|4,39,10,9,1550749466,"~/.gitignore"
 -'  11  9  ~/.gitignore
 |4,39,11,9,1550749466,"~/.gitignore"
--'  10  9  ~/.gitignore
-|4,39,10,9,1550749466,"~/.gitignore"
--'  10  9  ~/.gitignore
-|4,39,10,9,1550749466,"~/.gitignore"
--'  10  9  ~/.gitignore
-|4,39,10,9,1550749466,"~/.gitignore"
--'  10  9  ~/.gitignore
-|4,39,10,9,1550749466,"~/.gitignore"
--'  10  9  ~/.gitignore
-|4,39,10,9,1550749466,"~/.gitignore"
--'  10  9  ~/.gitignore
-|4,39,10,9,1550749466,"~/.gitignore"
--'  10  9  ~/.gitignore
-|4,39,10,9,1550749466,"~/.gitignore"
--'  8  9  ~/.gitignore
-|4,39,8,9,1550749466,"~/.gitignore"
--'  10  9  ~/.gitignore
-|4,39,10,9,1550749466,"~/.gitignore"
--'  9  9  ~/.gitignore
-|4,39,9,9,1550749466,"~/.gitignore"
--'  11  9  ~/.gitignore
-|4,39,11,9,1550749466,"~/.gitignore"
--'  10  9  ~/.gitignore
-|4,39,10,9,1550749466,"~/.gitignore"
 
 # History of marks within files (newest to oldest):
 
-> ~/.git/MERGE_MSG
-	*	1550750234	0
-	"	1	0
-	.	1	0
-	+	1	0
-
 > ~/.gitignore
-	*	1550750201	0
+	*	1550750361	0
 	"	8	0
 	.	8	0
 	+	1	19
@@ -522,6 +516,12 @@ $
 	+	4	19
 	+	8	1
 	+	8	0
+
+> ~/.git/MERGE_MSG
+	*	1550750234	0
+	"	1	0
+	.	1	0
+	+	1	0
 
 > ~/.tmux.conf
 	*	1550749318	0
