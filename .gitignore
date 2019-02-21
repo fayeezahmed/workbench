@@ -5,7 +5,7 @@
 !.gitignore
 
 # vim files
-!.vim/*
+!.vim/
 !.vimrc
 !.viminfo
 
