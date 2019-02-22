@@ -16,8 +16,14 @@ Plugin 'w0rp/ale'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tmux/tmux'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'patstockwell/vim-monokai-tasty'
 call vundle#end()            " required
 filetype on
+
+" Color scheme setup
+let g:vim_monokai_tasy_italic = 1
+colorscheme vim-monokai-tasty
+let g:lightline = { 'colorscheme': 'monokai_tasty' } 
 
 set term=xterm-256color
 
@@ -28,6 +34,7 @@ set tabstop=4 shiftwidth=4 expandtab
 set softtabstop=4
 set number
 set path+=~/dazn/catalog-web-chapter/**
+set suffixesadd=.js,.jsx
 set bs=2
 set hlsearch
 let &t_SI = "\<Esc>]50;CursorShape=1\x7"
