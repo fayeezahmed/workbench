@@ -174,6 +174,3 @@ function ofv(){
    fi
 }
 
-
-### PERSONAL TOKENS ###
-GITHUB_TOKEN="6fb0b3125e63b3efbdf4b2d789c77a01b4389e66"
