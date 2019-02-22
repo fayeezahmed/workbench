@@ -17,15 +17,19 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'tmux/tmux'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'patstockwell/vim-monokai-tasty'
+Plugin 'itchyny/lightline.vim'
 call vundle#end()            " required
 filetype on
 
 " Color scheme setup
 let g:vim_monokai_tasy_italic = 1
 colorscheme vim-monokai-tasty
-let g:lightline = { 'colorscheme': 'monokai_tasty' } 
-
+set laststatus=2
 set term=xterm-256color
+if !has('gui_running')
+  set t_Co=256
+endif
+set noshowmode
 
 autocmd VimEnter * silent exec "! echo -ne '\e[1 q'"
 autocmd VimLeave * silent exec "! echo -ne '\e[5 q'" 
