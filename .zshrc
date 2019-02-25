@@ -174,3 +174,6 @@ function ofv(){
    fi
 }
 
+setopt cdablevars
+personalprojects=~/playground/personal-projects
+

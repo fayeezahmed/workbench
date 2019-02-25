@@ -18,6 +18,7 @@ Plugin 'tmux/tmux'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'patstockwell/vim-monokai-tasty'
 Plugin 'itchyny/lightline.vim'
+Plugin 'universal-ctags/ctags'
 call vundle#end()            " required
 filetype on
 
