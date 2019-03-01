@@ -177,3 +177,4 @@ function ofv(){
 setopt cdablevars
 personalprojects=~/playground/personal-projects
 
+ctags=/usr/local/bin/ctags

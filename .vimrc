@@ -19,6 +19,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'patstockwell/vim-monokai-tasty'
 Plugin 'itchyny/lightline.vim'
 Plugin 'universal-ctags/ctags'
+Plugin 'vimwiki/vimwiki'
 call vundle#end()            " required
 filetype on
 
@@ -72,3 +73,4 @@ let g:ctrlp_custom_ignore = {
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 "" Open file in a new buffer if file already open
 let g:ctrlp_switch_buffer = 'et'
+set tags=tags;/
