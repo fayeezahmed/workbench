@@ -1,0 +1,12 @@
+== Daily log Fri 1-3-19 ==
+
+| What I did today                                                                                           | Notes                                            |
+|------------------------------------------------------------------------------------------------------------|--------------------------------------------------|
+| Re-tested VEL-2705 bugs                                                                                    |                                                  |
+| Tried to run e2e against staging                                                                           | no data-test-ids on staging - should we do this? |
+| Investigated lean coffee - improve pipeline. Turned on check to make sure branch is up to date with master |                                                  |
+
+
+| Issues/blockers | 
+|-----------------|
+|                 |

@@ -1,6 +1,17 @@
 = Work tasks  = 
-    * Speak with UAT if we need help to set up accounts or any help reproducing/investigating if we havn't got the time
-    * Create chat room with Craig and other test devs for asking about potential issues
-    * Let the rest of the team know about the process
-    * Forward stand up invites to craig
-    * Move todo items to here
+
+=== To update in Stand up ===
+    * [[Daily log]] - stuff that I did today
+
+=== Task list ===
+    * [X] Run E2E tests against staging
+        * [ ] Should we run e2e tests against staging/testing?If so, create task to expose data-test-ids there
+    * [ ] Let the rest of the team know about the process in stand up on Monday
+    * [ ] Investigate browserstack with wdio - use help chapter
+    * [ ] Move todo items to here
+
+
+==== Done ====
+    * [X] Look at improving pipeline stuff
+    * [X] Create chat room with Craig and other test devs for asking about potential issues
+    * [X] Forward stand up invites to craig
