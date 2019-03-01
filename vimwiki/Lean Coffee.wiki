@@ -1,0 +1,5 @@
+= Lean Coffee =
+Monthly's can be found [[https://livesport.atlassian.net/wiki/spaces/VEL/pages/1106871445/Lean+Coffee+Monthly|here]]
+
+== Assigned to me ==
+    * [[Improve our pipeline]]

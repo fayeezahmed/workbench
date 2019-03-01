@@ -1,0 +1,5 @@
+= DAZN = 
+    * Automation - things related to test automation
+    * [[Lean Coffee]]- things related to lean coffee
+    * Sprint - things related to sprint work
+    * 

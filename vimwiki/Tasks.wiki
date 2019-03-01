@@ -1,1 +1,6 @@
-This is a test
+= Work tasks  = 
+    * Speak with UAT if we need help to set up accounts or any help reproducing/investigating if we havn't got the time
+    * Create chat room with Craig and other test devs for asking about potential issues
+    * Let the rest of the team know about the process
+    * Forward stand up invites to craig
+    * Move todo items to here
