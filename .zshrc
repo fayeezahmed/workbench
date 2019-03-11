@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=":/Applications/Visual Studio Code.app/Contents/Resources/app/bin":$PATH
+export PATH=":/Applications/Xcode.app/Contents/Developer/:/Applications/Visual Studio Code.app/Contents/Resources/app/bin":$PATH
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
 
@@ -175,6 +175,6 @@ function ofv(){
 }
 
 setopt cdablevars
-personalprojects=~/playground/personal-projects
+pp=~/playground/personal-projects
 
 ctags=/usr/local/bin/ctags

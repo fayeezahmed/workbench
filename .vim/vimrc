@@ -74,3 +74,16 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 "" Open file in a new buffer if file already open
 let g:ctrlp_switch_buffer = 'et'
 set tags=tags;/
+
+"""VIM WIKI HTML TEMPLATE"""
+
+""let g:vimwiki_list = [{
+""  \ 'path': '~/vimwiki/',
+""  \ 'template_path': '~/vimwiki/templates/',
+""  \ 'template_default': 'default',
+""  \ 'template_ext': '.html'}]
+
+"""ALE - ESLINT"""
+"" Auto fix files on save
+let g:ale_fix_on_save = 1
+
