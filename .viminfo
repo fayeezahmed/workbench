@@ -10,32 +10,704 @@
 
 # hlsearch on (H) or off (h):
 ~h
+# Last Search Pattern:
+~MSle0~/has
+
+# Last Substitute Search Pattern:
+~MSle0&config
+
+# Last Substitute String:
+$
+
 # Command Line History (newest to oldest):
 :q
-|2,0,1550827421,,"q"
+|2,0,1564044337,,"q"
+:x
+|2,0,1564044325,,"x"
+:q!
+|2,0,1564044267,,"q!"
+:PluginInstall
+|2,0,1564044220,,"PluginInstall"
+:source ~/.vim/vimrc
+|2,0,1564044217,,"source ~/.vim/vimrc"
+:w
+|2,0,1564044214,,"w"
+:lopen
+|2,0,1564044150,,"lopen"
+:119
+|2,0,1564044079,,"119"
+:55
+|2,0,1564044064,,"55"
+:12
+|2,0,1564044017,,"12"
+:Q!
+|2,0,1564043989,,"Q!"
+:Gblame
+|2,0,1564043650,,"Gblame"
+:GBlame
+|2,0,1564041187,,"GBlame"
+:10861
+|2,0,1563984680,,"10861"
+:e ~/Desktop/oldzshrc.txt
+|2,0,1563984631,,"e ~/Desktop/oldzshrc.txt"
+:vsplit
+|2,0,1563984620,,"vsplit"
+:source ~/.vimrc
+|2,0,1564041261,,"source ~/.vimrc"
+:Q
+|2,0,1563985674,,"Q"
+:W
+|2,0,1563985010,,"W"
+:NERDTree
+|2,0,1563983045,,"NERDTree"
+:YcmRestartServer
+|2,0,1563979455,,"YcmRestartServer"
+:Plugin
+|2,0,1563979177,,"Plugin"
+:l
+|2,0,1563979124,,"l"
+:q1
+|2,0,1563978765,,"q1"
+:w!
+|2,0,1563978764,,"w!"
 
 # Search String History (newest to oldest):
+?/has
+|2,1,1564044055,47,"has"
+?/hasIta
+|2,1,1564043953,47,"hasIta"
+?/buttonList
+|2,1,1564043926,47,"buttonList"
+?/radio
+|2,1,1564043904,47,"radio"
+?/feature
+|2,1,1564043654,47,"feature"
+?/yml
+|2,1,1564041118,47,"yml"
+?/.py
+|2,1,1564041114,47,".py"
+?/py
+|2,1,1564041112,47,"py"
+?/.js
+|2,1,1564041106,47,".js"
+?/json
+|2,1,1563984716,47,"json"
+?/j
+|2,1,1563984711,47,"j"
+?/_vim
+|2,1,1563984687,47,"_vim"
+?/vim
+|2,1,1563984671,47,"vim"
+?/vi
+|2,1,1563984669,47,"vi"
+?/git
+|2,1,1564042814,47,"git"
+?/ZPLUg
+|2,1,1564042406,47,"ZPLUg"
+?/plugins
+|2,1,1564042353,47,"plugins"
+?/zplug
+|2,1,1564041688,47,"zplug"
+?/enhance
+|2,1,1564041675,47,"enhance"
+?/zsh
+|2,1,1564041673,47,"zsh"
+?/bind
+|2,1,1564041569,47,"bind"
+?/Plugin
+|2,1,1564041198,47,"Plugin"
+?/Protected
+|2,1,1563985328,47,"Protected"
+?/protected
+|2,1,1563985325,47,"protected"
+?/isDach
+|2,1,1563985050,47,"isDach"
+?/should
+|2,1,1563984807,47,"should"
+?/alias
+|2,1,1563983864,47,"alias"
+?/grep
+|2,1,1563983823,47,"grep"
+?/tube
+|2,1,1563983098,47,"tube"
+?/getContent
+|2,1,1563982771,47,"getContent"
+?/region
+|2,1,1563982734,47,"region"
+?/isDachCountry
+|2,1,1563982145,47,"isDachCountry"
+?/isDcach
+|2,1,1563976406,47,"isDcach"
+?/depen
+|2,1,1563975235,47,"depen"
+?/packages/catalog-bootstrap/src/bootstrap/proxies/startup.proxy.js
+|2,1,1563978887,47,"packages/catalog-bootstrap/src/bootstrap/proxies/startup.proxy.js"
 
 # Expression History (newest to oldest):
 
 # Input Line History (newest to oldest):
+@y
+|2,3,1563979284,,"y"
 
 # Debug Line History (newest to oldest):
 
 # Registers:
+"0	CHAR	0
+	{
+	        value: settingsPageContentDictionaryKeys.YOUTH_PROTECTION_ID_OPTION_3,
+	    },
+	
+|3,0,0,0,4,0,1564043895,"{","        value: settingsPageContentDictionaryKeys.YOUTH_PROTECTION_ID_OPTION_3,","    },",""
+""1	LINE	0
+	import { featureToggleNames } from '../../shared/constants/featureToggles.constants';
+|3,1,1,1,1,0,1564044136,"import { featureToggleNames } from '../../shared/constants/featureToggles.constants';"
+"2	LINE	0
+	
+|3,0,2,1,1,0,1564044085,""
+"3	LINE	0
+	    get hasItalianYPEnabled() {
+	        return self.localFeatureTogglesStore.getFeatureToggle(
+	            featureToggleNames.ITALIAN_YOUTH_PROTECTION
+	        );
+	    },
+|3,0,3,1,5,0,1564044083,"    get hasItalianYPEnabled() {","        return self.localFeatureTogglesStore.getFeatureToggle(","            featureToggleNames.ITALIAN_YOUTH_PROTECTION","        );","    },"
+"4	LINE	0
+	    hasItalianYPEnabled: youthProtectionStore.hasItalianYPEnabled,
+|3,0,4,1,1,0,1564044066,"    hasItalianYPEnabled: youthProtectionStore.hasItalianYPEnabled,"
+"5	LINE	0
+	                    hasItalianYPEnabled={this.props.hasItalianYPEnabled}
+|3,0,5,1,1,0,1564044058,"                    hasItalianYPEnabled={this.props.hasItalianYPEnabled}"
+"6	LINE	0
+	        hasItalianYPEnabled: PropTypes.bool.isRequired,
+|3,0,6,1,1,0,1564044056,"        hasItalianYPEnabled: PropTypes.bool.isRequired,"
+"7	LINE	0
+	    });
+|3,0,7,1,1,0,1564044032,"    });"
+"8	LINE	0
+	
+	    it('should render the correct amount of id options with feature toggle', () => {
+	        const component = mount(
+	            <IdVerification
+	                onSubmit={Function.prototype}
+	                onError={Function.prototype}
+	                hasItalianYPEnabled
+	            />
+	        );
+	        expect(component.find('RadioInput')).toHaveLength(4);
+|3,0,8,1,10,0,1564044031,"","    it('should render the correct amount of id options with feature toggle', () => {","        const component = mount(","            <IdVerification","                onSubmit={Function.prototype}","                onError={Function.prototype}","                hasItalianYPEnabled","            />","        );","        expect(component.find('RadioInput')).toHaveLength(4);"
+"9	LINE	0
+	                hasItalianYPEnabled={false}
+|3,0,9,1,1,0,1564044024,"                hasItalianYPEnabled={false}"
+"n	CHAR	0
+	:q:€kb
+|3,0,23,0,1,0,1562146751,":q:€kb"
+"p	CHAR	0
+	t,jjt,lop€kbp
+|3,0,25,0,1,0,1550392168,"t,jjt,lop€kbp"
+"q	CHAR	0
+	<<
+|3,0,26,0,1,0,1552312333,"<<"
+"s	CHAR	0
+	jkvjjjllllllllllllllllllll>
+|3,0,28,0,1,0,1552312449,"jkvjjjllllllllllllllllllll>"
+"-	CHAR	0
+	buttonList
+|3,0,36,0,1,0,1564043934,"buttonList"
 
 # File marks:
-'0  8  2  ~/.gitignore
-|4,48,8,2,1550827421,"~/.gitignore"
+'0  7  0  ~/.gitignore
+|4,48,7,0,1564044337,"~/.gitignore"
+'1  3  12  ~/.gitignore
+|4,49,3,12,1564044325,"~/.gitignore"
+'2  3  12  ~/.gitignore
+|4,50,3,12,1564044325,"~/.gitignore"
+'3  2  3  ~/.vim/vimrc
+|4,51,2,3,1564044267,"~/.vim/vimrc"
+'4  99  1  ~/.vim/vimrc
+|4,52,99,1,1564044255,"~/.vim/vimrc"
+'5  98  1  ~/.vim/vimrc
+|4,53,98,1,1564044255,"~/.vim/vimrc"
+'6  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,54,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+'7  55  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/settings/components/ForgotPin/ForgotPin.js
+|4,55,55,0,1564044067,"~/dazn/catalog-web-chapter/packages/catalog-web/src/settings/components/ForgotPin/ForgotPin.js"
+'8  43  16  ~/dazn/catalog-web-chapter/packages/catalog-web/src/settings/components/ForgotPin/ForgotPin.js
+|4,56,43,16,1564044060,"~/dazn/catalog-web-chapter/packages/catalog-web/src/settings/components/ForgotPin/ForgotPin.js"
+'9  43  16  ~/dazn/catalog-web-chapter/packages/catalog-web/src/settings/components/ForgotPin/ForgotPin.js
+|4,57,43,16,1564044060,"~/dazn/catalog-web-chapter/packages/catalog-web/src/settings/components/ForgotPin/ForgotPin.js"
 
 # Jumplist (newest first):
--'  8  2  ~/.gitignore
-|4,39,8,2,1550827421,"~/.gitignore"
+-'  7  0  ~/.gitignore
+|4,39,7,0,1564044337,"~/.gitignore"
 -'  1  0  ~/.gitignore
-|4,39,1,0,1550827409,"~/.gitignore"
+|4,39,1,0,1564044334,"~/.gitignore"
+-'  3  12  ~/.gitignore
+|4,39,3,12,1564044325,"~/.gitignore"
+-'  3  12  ~/.gitignore
+|4,39,3,12,1564044325,"~/.gitignore"
+-'  1  0  ~/.gitignore
+|4,39,1,0,1564044293,"~/.gitignore"
+-'  2  3  ~/.vim/vimrc
+|4,39,2,3,1564044267,"~/.vim/vimrc"
+-'  2  3  ~/.vim/vimrc
+|4,39,2,3,1564044267,"~/.vim/vimrc"
+-'  2  3  ~/.vim/vimrc
+|4,39,2,3,1564044267,"~/.vim/vimrc"
+-'  2  3  ~/.vim/vimrc
+|4,39,2,3,1564044267,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1564044258,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1564044258,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1564044258,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1564044258,"~/.vim/vimrc"
+-'  99  1  ~/.vim/vimrc
+|4,39,99,1,1564044255,"~/.vim/vimrc"
+-'  98  1  ~/.vim/vimrc
+|4,39,98,1,1564044255,"~/.vim/vimrc"
+-'  99  1  ~/.vim/vimrc
+|4,39,99,1,1564044255,"~/.vim/vimrc"
+-'  98  1  ~/.vim/vimrc
+|4,39,98,1,1564044255,"~/.vim/vimrc"
+-'  99  1  ~/.vim/vimrc
+|4,39,99,1,1564044255,"~/.vim/vimrc"
+-'  98  1  ~/.vim/vimrc
+|4,39,98,1,1564044255,"~/.vim/vimrc"
+-'  99  1  ~/.vim/vimrc
+|4,39,99,1,1564044255,"~/.vim/vimrc"
+-'  98  1  ~/.vim/vimrc
+|4,39,98,1,1564044255,"~/.vim/vimrc"
+-'  25  27  ~/.vim/vimrc
+|4,39,25,27,1564044243,"~/.vim/vimrc"
+-'  24  27  ~/.vim/vimrc
+|4,39,24,27,1564044243,"~/.vim/vimrc"
+-'  25  27  ~/.vim/vimrc
+|4,39,25,27,1564044243,"~/.vim/vimrc"
+-'  24  27  ~/.vim/vimrc
+|4,39,24,27,1564044243,"~/.vim/vimrc"
+-'  25  27  ~/.vim/vimrc
+|4,39,25,27,1564044243,"~/.vim/vimrc"
+-'  24  27  ~/.vim/vimrc
+|4,39,24,27,1564044243,"~/.vim/vimrc"
+-'  25  27  ~/.vim/vimrc
+|4,39,25,27,1564044243,"~/.vim/vimrc"
+-'  24  27  ~/.vim/vimrc
+|4,39,24,27,1564044243,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1564044195,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1564044195,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1564044195,"~/.vim/vimrc"
+-'  1  0  ~/.vim/vimrc
+|4,39,1,0,1564044195,"~/.vim/vimrc"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,1,0,1564044146,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
+-'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+|4,39,357,1,1564044097,"~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js"
 
 # History of marks within files (newest to oldest):
 
 > ~/.gitignore
-	*	1550827419	0
-	"	8	2
+	*	1564044336	0
+	"	7	0
+	^	3	13
+	.	3	12
+	+	3	12
+
+> ~/.vim/vimrc
+	*	1564044266	0
+	"	2	3
+	^	2	4
+	.	2	3
+	+	24	25
+	+	99	4
+	+	25	27
+	+	2	3
+
+> ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
+	*	1564044144	0
+	"	1	0
+	.	23	0
+	+	117	0
+	+	23	0
+
+> ~/dazn/catalog-web-chapter/packages/catalog-web/src/settings/components/ForgotPin/ForgotPin.js
+	*	1564044066	0
+	"	55	0
+	.	55	0
+	+	20	0
+	+	43	0
+	+	55	0
+
+> ~/dazn/catalog-web-chapter/packages/catalog-web/src/settings/components/IdVerification/IdVerification.test.js
+	*	1564044032	0
+	"	16	0
+	^	14	59
+	.	16	0
+	+	12	0
+	+	14	58
+	+	16	0
+
+> ~/dazn/catalog-web-chapter/packages/catalog-web/integrationTests/YouthProtection/IdVerification.test.js
+	*	1564044001	0
+	"	12	0
+	^	1	2
+	.	1	0
+	+	1	0
+
+> ~/dazn/catalog-web-chapter/packages/catalog-web/src/settings/components/IdVerification/IdVerification.js
+	*	1564043959	0
+	"	240	0
+	^	202	42
+	.	240	0
+	+	1	0
+	+	59	0
+	+	30	6
+	+	32	76
+	+	191	38
+	+	191	0
+	+	202	41
+	+	240	0
+
+> /private/var/folders/dw/j_w4grks3_57j9rtn0ng3129qk5bhj/T/vYHbSSb/3.fugitiveblame
+	*	1564043742	0
+	"	119	8
+
+> ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.
+	*	1564043644	0
+	"	1	0
+
+> ~/Desktop/newzshrc.txt
+	*	1564043549	0
+	"	10129	0
+
+> ~/Desktop/oldzshrc.txt
+	*	1564043548	0
+	"	2786	1
+
+> ~/.zshrc
+	*	1564043252	0
+	"	220	0
+	^	171	0
+	.	171	0
+	+	207	12
+	+	207	5
+	+	208	5
+	+	213	0
+	+	11	27
+	+	11	46
+	+	11	24
+	+	11	44
+	+	11	0
+	+	11	44
+	+	11	0
+	+	11	14
+	+	11	38
+	+	11	16
+	+	78	24
+	+	11	0
+	+	213	441
+	+	212	33
+	+	220	31
+	+	219	77
+	+	214	0
+	+	211	0
+	+	206	20
+	+	210	18
+	+	209	108
+	+	172	2
+	+	199	27
+	+	212	0
+	+	181	1
+	+	182	0
+	+	173	28
+	+	182	0
+	+	199	0
+	+	170	0
+	+	169	86
+	+	170	0
+	+	169	51
+	+	170	0
+	+	172	0
+	+	170	139
+	+	168	0
+	+	171	0
+
+> ~/ControlP
+	*	1564041207	0
+	"	10	0
+	.	2	0
+	+	1	0
+	+	2	0
+
+> ~/dazn/catalog-web-chapter/.drone.yml
+	*	1564041074	0
+	"	1	0
+
+> ~/dazn/catalog-web-chapter/package.json
+	*	1564041056	0
+	"	1	0
+
+> ~/dazn/catalog-web-chapter/packages/catalog-bootstrap/src/bootstrap/proxies/startup.proxy.js
+	*	1563985679	0
+	"	39	25
+	^	39	26
+	.	39	25
+	+	38	47
+	+	38	12
+	+	38	42
+	+	47	23
+	+	47	11
+	+	38	0
+	+	47	0
+	+	37	28
+	+	38	29
+	+	39	30
+	+	107	63
+	+	37	27
+	+	107	0
+	+	37	23
+	+	38	32
+	+	39	33
+	+	107	58
+	+	38	24
+	+	39	25
+
+> ~/dazn/catalog-web-chapter/ControlP
+	*	1563985322	0
+	"	4	0
+	.	2	0
+	+	1	0
+	+	2	0
+
+> ~/dazn/catalog-web-chapter/packages/catalog-web/src/navigation/stores/Navigation.store.test.js
+	*	1563985128	0
+	"	671	33
+	^	671	34
+	.	671	33
+	+	671	33
+
+> ~/dazn/catalog-web-chapter/packages/catalog-web/src/navigation/stores/Navigation.store.js
+	*	1563985040	0
+	"	1	0
+
+> ~/Desktop/diff.txt
+	*	1563984610	0
+	"	112	7
+
+> ~/dazn/ControlP
+	*	1563984565	0
+	"	10	0
+	.	2	0
+	+	1	0
+	+	2	0
+
+> ~/dazn/catalog-tv-chapter/NERD_tree_1
+	*	1563983759	0
+	"	16	0
+	.	1	0
+	+	1	0
+
+> ~/dazn/catalog-tv-chapter/package.json
+	*	1563983172	0
+	"	25	15
+
+> ~/dazn/catalog-tv-chapter/scripts/start.sh
+	*	1563983072	0
+	"	17	0
+
+> ~/dazn/catalog-web-chapter/packages/catalog-bootstrap/src/bootstrap/bootstrap.js
+	*	1563982837	0
+	"	31	6
+	^	30	7
+
+> ~/dazn/catalog-web-chapter/docs/error.md
+	*	1563982754	0
+	"	1	0
+
+> ~/dazn/catalog-web-chapter/packages/catalog-web/src/stores.js
+	*	1563982749	0
+	"	52	4
+
+> ControlP
+	*	1563982658	0
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/vimwiki/EU Portability users.wiki
+	*	1563979407	0
+	"	1	0
+
+> ~/vimwiki/DAZN.wiki
+	*	1563979403	0
+	"	7	9
+	^	7	26
+	.	7	6
+	+	7	6
+
+> ~/vimwiki/New user card deets.wiki
+	*	1563979379	0
+	"	1	0
+
+> ~/vimwiki/index.wiki
+	*	1563979372	0
+	"	2	8
+
+> ~/dazn/catalog-web-chapter/packages/catalog-web/src/index.js
+	*	1563976799	0
+	"	16	26
+	^	12	27
+	.	12	26
+	+	12	26
+
+> ~/dazn/catalog-web-chapter/NERD_tree_1
+	*	1563976796	0
+	"	47	10
+	.	1	0
+	+	1	0
+
+> ~/dazn/catalog-web-chapter/packages/catalog-web/package.json
+	*	1563975266	0
+	"	95	12
+
+> ~/dazn/catalog-web-chapter/packages/catalog-bootstrap/src/bootstrap/proxies/resourceStrings.proxy.js
+	*	1563974431	0
+	"	21	0
+
+> ~/dazn/catalog-web-chapter/packages/catalog-bootstrap/src/bootstrap/proxies/userProfile.proxy.js
+	*	1563974387	0
+	"	1	0

@@ -1,6 +1,6 @@
 # Ignore everything
 /*
-
+/.vim/bundle/
 ### Except these ###
 !/.gitignore
 
