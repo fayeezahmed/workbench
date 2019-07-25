@@ -178,3 +178,6 @@ setopt cdablevars
 pp=~/playground/personal-projects
 
 ctags=/usr/local/bin/ctags
+
+alias grep='grep -inIER --color=ALWAYS --exclude-dir={node_modules,reports,tags,logs}'
+alias find='find . -path ./node_modules -prune -o -name'

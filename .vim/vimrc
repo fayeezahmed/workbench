@@ -20,6 +20,7 @@ Plugin 'patstockwell/vim-monokai-tasty'
 Plugin 'itchyny/lightline.vim'
 Plugin 'universal-ctags/ctags'
 Plugin 'vimwiki/vimwiki'
+Plugin 'tpope/vim-fugitive'
 call vundle#end()            " required
 filetype on
 
