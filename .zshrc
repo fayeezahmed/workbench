@@ -75,6 +75,7 @@ plugins=(
   sudo
   thor
   docker
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -164,7 +165,12 @@ echo -e "\033]6;1;bg;blue;brightness;33\a"
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
-## Custom Functions 
+############################################################################################################################################
+### ----------------------------------------------- FAYEEZ ZSHRC CUSTOM STUFF GOES HERE -----------------------------------------------  ###
+############################################################################################################################################
+
+### CUSTOM FUNCTIONS START ### 
+# Find and open file with vim
 function ofv(){
   if [ -z "$1" ] 
   then 
@@ -174,10 +180,41 @@ function ofv(){
    fi
 }
 
+# Interactive git diff
+function fshow() {
+  git log --graph --color=always \
+      --format="%C(auto)%h%d %s %C(black)%C(bold)%cr" "$@" \
+  | fzf --ansi --preview "echo {} \
+    | grep -o '[a-f0-9]\{7\}' \
+    | head -1 \
+    | xargs -I % sh -c 'git show --color=always %'" \
+        --bind "enter:execute:
+            (grep -o '[a-f0-9]\{7\}' \
+                | head -1 \
+                | xargs -I % sh -c 'git show --color=always % \
+                | less -R') << 'FZF-EOF'
+            {}
+FZF-EOF"
+}
+### CUSTOM FUNCTIONS END ###
+
 setopt cdablevars
 pp=~/playground/personal-projects
 
 ctags=/usr/local/bin/ctags
 
+### ALIASES START ###
 alias grep='grep -inIER --color=ALWAYS --exclude-dir={node_modules,reports,tags,logs}'
 alias find='find . -path ./node_modules -prune -o -name'
+which='(alias; declare -f) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot'
+### ALIASES END ###
+
+### RANDOM OR FUN THINGS START ###
+matrix() { echo -e "\e[1;40m" ; clear ; while :; do echo $LINES $COLUMNS $(( $RANDOM % $COLUMNS)) $(( $RANDOM % 72 )) ;sleep 0.05; done|awk '{ letters="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()"; c=$4;        letter=substr(letters,c,1);a[$3]=0;for (x in a) {o=a[x];a[x]=a[x]+1; printf "\033[%s;%sH\033[2;32m%s",o,x,letter; printf "\033[%s;%sH\033[1;37m%s\033[0;0H",a[x],x,letter;if (a[x] >= $1) { a[x]=0; } }}' }
+
+disappointed() { echo -n " ಠ_ಠ " |tee /dev/tty| xclip -selection clipboard; }
+
+flip() { echo -n "（╯°□°）╯ ┻━┻" |tee /dev/tty| xclip -selection clipboard; }
+
+shrug() { echo -n "¯\_(ツ)_/¯" |tee /dev/tty| xclip -selection clipboard; }
+### RANDOM OR FUN THINGS END ###
