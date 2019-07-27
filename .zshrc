@@ -3,11 +3,11 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=":/Applications/Xcode.app/Contents/Developer/:/Applications/Visual Studio Code.app/Contents/Resources/app/bin":$PATH
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
-
+ZSH_DISABLE_COMPFIX=true
 source ~/.oh-my-zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/fayeez.ahmed/.oh-my-zsh
-
+export ZSH=~/.oh-my-zsh
+fpath+=('/home/fayeezahmed/.npm-global/lib/node_modules/pure-prompt/functions')
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -65,7 +65,6 @@ ZSH_THEME=""
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
-  zsh-autosuggestions
   yarn 
   web-search 
   jsontools
@@ -75,7 +74,6 @@ plugins=(
   sudo
   thor
   docker
-  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -144,13 +142,14 @@ POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='red'
 POWERLEVEL9K_PROMPT_ADD_NEWLINE=true
 
 
-autoload -U promptinit; promptinit
+autoload -U promptinit; promptinit; prompt pure
 
 # optionally define some options
 PURE_CMD_MAX_EXEC_TIME=10
 
-prompt pure
-
+PURE_PROMPT_SYMBOL='»'
+PURE_GIT_DOWN_ARROW='↓'
+PURE_GIT_UP_ARROW='↑'
 # Colorise the top Tabs of Iterm2 with the same color as background
 # Just change the 18/26/33 wich are the rgb values 
 echo -e "\033]6;1;bg;red;brightness;18\a"
