@@ -199,7 +199,7 @@ FZF-EOF"
 
 setopt cdablevars
 pp=~/playground/personal-projects
-
+wpp=/mnt/c/Development
 ctags=/usr/local/bin/ctags
 
 ### ALIASES START ###
@@ -217,3 +217,4 @@ flip() { echo -n "（╯°□°）╯ ┻━┻" |tee /dev/tty| xclip -selection
 
 shrug() { echo -n "¯\_(ツ)_/¯" |tee /dev/tty| xclip -selection clipboard; }
 ### RANDOM OR FUN THINGS END ###
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

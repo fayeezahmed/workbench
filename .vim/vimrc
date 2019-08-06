@@ -96,3 +96,7 @@ else
   let &t_SI = "\<Esc>]50;CursorShape=2\x7"
   let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 endif
+
+"" Macros
+"" Boilerplate java class with main method - no imports
+let @j = 'ipublic class MyClass {	public static void main(String[€kr args€kr{		// Stuff goes here, change the class name and te€kbhe s€kbarguments'
