@@ -1,6 +1,6 @@
 # If you come from bash you might have to change your $PATH.
 export XCODE=/Applications/Xcode.app/Contents/Developer/
-export VSCODE=/Applications/Visual Studio Code.app/Contents/Resources/app/bin
+export VSCODE="/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 export ANDROID_SDK_TOOLS=$HOME/Library/Android/sdk/tools/
 export ANDROID_SDK_PLATFORM_TOOLS=$HOME/Library/Android/sdk/platform-tools/
 export PATH=$XCODE:$VSCODE:$ANDROID_SDK_TOOLS:$ANDROID_SDK_PLATFORM_TOOLS:$HOME/bin:/usr/local/bin:$PATH
