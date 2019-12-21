@@ -2,7 +2,7 @@ if &compatible
 
 
 end
-
+set encoding=utf-8
 syntax on
 filetype plugin indent on
 set omnifunc=syntaxcomplete#Complete
@@ -87,7 +87,7 @@ set tags=tags;/
 
 """ALE - ESLINT"""
 "" Auto fix files on save
-let g:ale_fix_on_save = 1
+let g:ale_fix_on_save = 0
 
 "" Vim cursor
 if exists('$TMUX')
