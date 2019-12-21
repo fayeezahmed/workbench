@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/oh-my
+~MSle0~/racesWon
 
 # Last Substitute Search Pattern:
 ~MSle0&config
@@ -17,14 +17,37 @@
 $
 
 # Command Line History (newest to oldest):
-:x
 :q
+:w
+:vsp
+:87
+:29
+:34
+:sp
+:3
+:5
+:75
 :q!
+:NERDTree
+:x
+:PluginInstall
+:e! ~/.vim/vimrc
+:vsplit
+:registers
+:e! ~/.vim/vimrc!
+:e ~/.vim/vimrc!
+:e ~/.vim/vimrc
+:noh
+:no
+:enew
+:Q
+:q:
+:java_syntax_highlight_functions = 1
+:colorscheme badwolf
+:X
 :c
 :cnext
-:PluginInstall
 :source ~/.vim/vimrc
-:w
 :lopen
 :119
 :55
@@ -34,11 +57,8 @@ $
 :GBlame
 :10861
 :e ~/Desktop/oldzshrc.txt
-:vsplit
 :source ~/.vimrc
-:Q
 :W
-:NERDTree
 :YcmRestartServer
 :Plugin
 :l
@@ -46,6 +66,32 @@ $
 :w!
 
 # Search String History (newest to oldest):
+?/racesWon
+?/useState
+?/logo
+?/findKey
+?/lastWin
+?/races
+?/dob
+?/setDob
+?/setData
+?/Stats
+?/src
+?/getDrivers
+?/parsed
+?/getDriversStats
+?/sorc
+?/Mac
+?/mac
+?/main
+?/syntax
+?/jav
+?/colo
+?/tags
+?/ctag
+?/wpp
+?/pp 
+?/pp
 ?/oh-my
 ?/fpath
 ?/autoload
@@ -54,7 +100,6 @@ $
 ?/pure
 ?/prompt
 ?/PROMPT
-?/syntax
 ?/zsh
 ?/plugin
 ?/synax
@@ -71,28 +116,6 @@ $
 ?/.js
 ?/json
 ?/j
-?/_vim
-?/vim
-?/vi
-?/git
-?/ZPLUg
-?/plugins
-?/enhance
-?/bind
-?/Plugin
-?/Protected
-?/protected
-?/isDach
-?/should
-?/alias
-?/grep
-?/tube
-?/getContent
-?/region
-?/isDachCountry
-?/isDcach
-?/depen
-?/packages/catalog-bootstrap/src/bootstrap/proxies/startup.proxy.js
 
 # Expression History (newest to oldest):
 
@@ -102,26 +125,50 @@ $
 # Input Line History (newest to oldest):
 
 # Registers:
-"0	LINE	0
-	import { featureToggleNames } from '../../shared/constants/featureToggles.constants';
-""1	LINE	0
-	echo $ZSH
+"0	CHAR	0
+	image
+"1	LINE	0
+	                console.log(racesWon)
 "2	LINE	0
-	prompt pure
+	                console.log('hfahl')
 "3	LINE	0
-	  zsh-autosuggestions
-"4	LINE	0
-	  zsh-syntax-highlighting
+	test('should not return any drivers stat if they hav no``)
+"4	CHAR	0
+	{ useState }
 "5	LINE	0
-	:x
+	import logo from './logo.svg';
 "6	LINE	0
-	:q
-"7	LINE	0
-	:x
-"8	LINE	0
-	import { featureToggleNames } from '../../shared/constants/featureToggles.constants';
-"9	LINE	0
+	// Test cases
+	// key = "images"
+	// 1. {}
+	// 2. 
+	const test2 = {
+	    "hello": {
+	        "images": {}
+	    }
+	}
 	
+	const test3 = {
+	    "hello": {
+	        "key": "value"
+	    },
+	    "images": {}
+	}
+	
+	const test4 = {
+	    "hello": [],
+	    "world": []
+	}
+"7	LINE	0
+	        console.log(obj)
+"8	LINE	0
+	            return out
+"9	LINE	0
+				if(out.length > 0) {
+					return 0;
+	            }
+"j@	CHAR	0
+	ipublic class MyClass {	public static void main(String[€kr args€kr{		// Stuff goes here, change the class name and te€kbhe s€kbarguments
 "n	CHAR	0
 	:q:€kb
 "p	CHAR	0
@@ -130,118 +177,94 @@ $
 	<<
 "s	CHAR	0
 	jkvjjjllllllllllllllllllll>
-"-	CHAR	0
-	
+""-	CHAR	0
+	 0
 
 # File marks:
-'0  6  23  ~/.zshrc
-'1  10  0  ~/.zshrc
-'2  21  0  ~/.profile
-'3  1  0  ~/.zshrc
-'4  145  46  ~/.zshrc
-'5  94  3  ~/.zshrc
-'6  152  22  ~/.zshrc
-'7  139  18  ~/.zshrc
-'8  68  2  ~/.zshrc
-'9  9  5  ~/.vim/vimrc
+'0  84  28  /mnt/c/Development/f1-search/src/utils/apiCalls.js
+'1  4  0  /mnt/c/Development/f1-search/src/utils/findKey.js
+'2  26  30  /mnt/c/Development/f1-search/src/Components/Search/Search.js
+'3  70  57  /mnt/c/Development/f1-search/src/utils/apiCalls.js
+'4  1  0  ~/.vim/vimrc
+'5  25  30  ~/.vim/vimrc
+'6  18  0  /mnt/c/Development/f1-search/package.json
+'7  7  0  /mnt/c/Development/f1-leaderboard/package.json
+'8  16  13  ~/.tmux.conf
+'9  14  9  ~/.tmux.conf
 
 # Jumplist (newest first):
--'  6  23  ~/.zshrc
--'  1  0  ~/.zshrc
--'  10  0  ~/.zshrc
--'  21  0  ~/.profile
--'  22  0  ~/.profile
--'  1  0  ~/.profile
--'  145  46  ~/.zshrc
--'  94  3  ~/.zshrc
--'  152  22  ~/.zshrc
--'  128  27  ~/.zshrc
--'  17  0  ~/.zshrc
--'  139  18  ~/.zshrc
--'  150  7  ~/.zshrc
--'  68  2  ~/.zshrc
--'  62  74  ~/.zshrc
--'  9  5  ~/.vim/vimrc
+-'  84  28  /mnt/c/Development/f1-search/src/utils/apiCalls.js
+-'  36  0  /mnt/c/Development/f1-search/src/utils/apiCalls.js
+-'  28  21  /mnt/c/Development/f1-search/src/Components/SearchOutput/SearchOutput.js
+-'  1  14  /mnt/c/Development/f1-search/src/Components/SearchOutput/SearchOutput.js
+-'  34  53  /mnt/c/Development/f1-search/src/Components/Search/Search.js
+-'  2  0  /mnt/c/Development/f1-search/src/App.js
+-'  1  0  /mnt/c/Development/f1-search/src/App.js
+-'  23  0  /mnt/c/Development/f1-search/src/utils/apiCalls.js
+-'  1  23  /mnt/c/Development/f1-search/src/utils/apiCalls.js
+-'  86  24  /mnt/c/Development/f1-search/src/utils/apiCalls.js
+-'  2  18  /mnt/c/Development/f1-search/src/utils/apiCalls.js
+-'  16  0  /mnt/c/Development/f1-search/src/utils/findKey.js
+-'  14  0  /mnt/c/Development/f1-search/NERD_tree_1
+-'  25  2  /mnt/c/Development/f1-search/NERD_tree_1
+-'  1  0  /mnt/c/Development/f1-search/NERD_tree_1
+-'  4  0  /mnt/c/Development/f1-search/src/utils/findKey.js
+-'  10  1  /mnt/c/Development/f1-search/src/utils/findKey.js
+-'  8  5  /mnt/c/Development/f1-search/src/utils/findKey.js
+-'  3  33  /mnt/c/Development/f1-search/src/utils/findKey.js
+-'  80  24  /mnt/c/Development/f1-search/src/utils/apiCalls.js
+-'  82  20  /mnt/c/Development/f1-search/src/utils/apiCalls.js
+-'  55  24  /mnt/c/Development/f1-search/src/Components/SearchOutput/SearchOutput.js
+-'  54  16  /mnt/c/Development/f1-search/src/Components/SearchOutput/SearchOutput.js
+-'  63  28  /mnt/c/Development/f1-search/src/Components/SearchOutput/SearchOutput.js
+-'  67  0  /mnt/c/Development/f1-search/src/Components/SearchOutput/SearchOutput.js
+-'  15  0  /mnt/c/Development/f1-search/src/Components/SearchOutput/SearchOutput.js
+-'  12  8  /mnt/c/Development/f1-search/src/Components/SearchOutput/SearchOutput.js
+-'  13  15  /mnt/c/Development/f1-search/src/Components/SearchOutput/SearchOutput.js
+-'  95  20  /mnt/c/Development/f1-search/src/utils/apiCalls.js
+-'  97  47  /mnt/c/Development/f1-search/src/utils/apiCalls.js
+-'  85  24  /mnt/c/Development/f1-search/src/utils/apiCalls.js
+-'  99  24  /mnt/c/Development/f1-search/src/utils/apiCalls.js
+-'  26  30  /mnt/c/Development/f1-search/src/Components/Search/Search.js
+-'  7  3  /mnt/c/Development/f1-search/src/Components/Search/Search.js
+-'  6  3  /mnt/c/Development/f1-search/src/Components/Search/Search.js
+-'  5  3  /mnt/c/Development/f1-search/src/Components/Search/Search.js
+-'  1  0  /mnt/c/Development/f1-search/src/Components/Search/Search.js
+-'  79  21  /mnt/c/Development/f1-search/src/utils/apiCalls.js
+-'  65  0  /mnt/c/Development/f1-search/src/utils/apiCalls.js
+-'  70  0  /mnt/c/Development/f1-search/src/utils/apiCalls.js
+-'  78  0  /mnt/c/Development/f1-search/src/utils/apiCalls.js
+-'  103  0  /mnt/c/Development/f1-search/src/utils/apiCalls.js
+-'  60  0  /mnt/c/Development/f1-search/src/utils/apiCalls.js
+-'  51  0  /mnt/c/Development/f1-search/src/utils/apiCalls.js
+-'  48  0  /mnt/c/Development/f1-search/src/utils/apiCalls.js
+-'  45  0  /mnt/c/Development/f1-search/src/utils/apiCalls.js
+-'  33  0  /mnt/c/Development/f1-search/src/utils/apiCalls.js
+-'  16  0  /mnt/c/Development/f1-search/src/utils/apiCalls.js
+-'  9  0  /mnt/c/Development/f1-search/src/utils/apiCalls.js
+-'  49  0  /mnt/c/Development/f1-search/NERD_tree_1
+-'  51  2  /mnt/c/Development/f1-search/NERD_tree_1
+-'  110  19  /mnt/c/Development/f1-search/src/utils/apiCalls.js
+-'  111  0  /mnt/c/Development/f1-search/src/utils/apiCalls.js
+-'  66  15  /mnt/c/Development/f1-search/src/utils/apiCalls.js
+-'  77  9  /mnt/c/Development/f1-search/src/utils/apiCalls.js
+-'  15  0  /mnt/c/Development/f1-search/src/utils/apiCalls.js
+-'  62  0  /mnt/c/Development/f1-search/NERD_tree_1
+-'  75  2  /mnt/c/Development/f1-search/NERD_tree_1
 -'  1  0  ~/.vim/vimrc
--'  1  0  ~/Dockerfile
--'  103  2  ~/.zshrc
--'  66  0  ~/.zshrc
--'  65  26  ~/.zshrc
--'  64  18  ~/.zshrc
--'  63  53  ~/.zshrc
--'  9  11  ~/.zshrc
--'  7  24  ~/.zshrc
--'  2  0  ~/.zshrc
--'  97  0  ~/.zshrc
--'  25  0  ~/.zshrc
--'  96  0  ~/.zshrc
--'  7  0  ~/.gitignore
--'  1  0  ~/.gitignore
--'  3  12  ~/.gitignore
--'  3  12  ~/.gitignore
--'  1  0  ~/.gitignore
--'  2  3  ~/.vim/vimrc
--'  98  1  ~/.vim/vimrc
--'  97  1  ~/.vim/vimrc
--'  24  27  ~/.vim/vimrc
--'  23  27  ~/.vim/vimrc
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  357  1  ~/dazn/catalog-web-chapter/packages/catalog-web/src/youthProtection/stores/YouthProtection.store.js
--'  1  0  ~/Dockerfile
--'  7  0  ~/.gitignore
--'  1  0  ~/.gitignore
--'  3  12  ~/.gitignore
--'  9  5  ~/.vim/vimrc
--'  1  0  ~/.vim/vimrc
--'  1  0  ~/Dockerfile
--'  9  5  ~/.vim/vimrc
--'  1  0  ~/.vim/vimrc
--'  1  0  ~/Dockerfile
--'  153  22  ~/.zshrc
+-'  25  30  ~/.vim/vimrc
+-'  18  0  /mnt/c/Development/f1-search/package.json
+-'  1  0  /mnt/c/Development/f1-search/package.json
+-'  7  0  /mnt/c/Development/f1-leaderboard/package.json
+-'  1  0  /mnt/c/Development/f1-leaderboard/package.json
+-'  16  13  ~/.tmux.conf
+-'  1  0  ~/.tmux.conf
+-'  14  9  ~/.tmux.conf
+-'  9  26  ~/.tmux.conf
+-'  8  7  ~/.tmux.conf
+-'  6  4  ~/.tmux.conf
+-'  7  4  ~/.tmux.conf
+-'  154  1  /mnt/c/Development/datastructures_algorithms/UnionFind/Percolation.java
 
 # Bar lines, copied verbatim:
 |1,4
@@ -434,10 +457,451 @@ $
 
 # History of marks within files (newest to oldest):
 
+> /mnt/c/Development/f1-search/NERD_tree_1
+	"	14	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> /mnt/c/Development/f1-search/src/utils/findKey.js
+	"	14	0
+	.	16	0
+	+	3	0
+	+	10	0
+	+	8	16
+	+	8	0
+	+	10	0
+	+	4	11
+	+	10	0
+	+	7	0
+	+	7	0
+	+	4	0
+	+	4	0
+	+	9	0
+	+	4	0
+	+	16	0
+	+	10	0
+	+	3	0
+	+	16	0
+
+> /mnt/c/Development/f1-search/ControlP
+	"	1	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> /mnt/c/Development/f1-search/src/utils/apiCalls.js
+	"	84	28
+	^	84	39
+	.	84	0
+	+	99	16
+	+	71	25
+	+	72	0
+	+	71	3
+	+	72	39
+	+	73	0
+	+	74	89
+	+	75	49
+	+	79	20
+	+	110	19
+	+	70	56
+	+	79	15
+	+	83	0
+	+	99	0
+	+	75	16
+	+	83	15
+	+	99	0
+	+	84	28
+	+	85	0
+	+	100	0
+	+	99	0
+	+	85	0
+	+	96	17
+	+	95	21
+	+	97	60
+	+	97	27
+	+	97	27
+	+	98	0
+	+	97	30
+	+	75	58
+	+	81	35
+	+	80	0
+	+	84	27
+	+	84	35
+	+	84	0
+	+	84	0
+
+> /mnt/c/Development/f1-search/src/App.js
+	"	2	0
+	.	2	0
+	+	2	0
+
+> /mnt/c/Development/f1-search/src/Components/Search/Search.js
+	"	34	53
+	^	34	54
+	.	34	53
+	+	5	21
+	+	5	22
+	+	6	26
+	+	8	0
+	+	7	4
+	+	5	3
+	+	6	3
+	+	7	18
+	+	44	7
+	+	25	56
+	+	26	0
+	+	25	33
+	+	26	26
+	+	27	14
+	+	19	0
+	+	18	0
+	+	19	31
+	+	27	47
+	+	74	41
+	+	75	41
+	+	76	41
+	+	20	0
+	+	21	0
+	+	20	29
+	+	21	18
+	+	30	0
+	+	30	0
+	+	28	41
+	+	29	36
+	+	1	24
+	+	34	53
+
+> /mnt/c/Development/f1-search/src/Components/SearchOutput/SearchOutput.js
+	"	28	21
+	^	29	84
+	.	29	83
+	+	6	20
+	+	7	20
+	+	8	19
+	+	9	21
+	+	14	0
+	+	11	15
+	+	63	35
+	+	13	15
+	+	63	53
+	+	63	48
+	+	63	0
+	+	52	20
+	+	63	15
+	+	53	24
+	+	55	19
+	+	54	0
+	+	63	0
+	+	62	0
+	+	63	0
+	+	54	0
+	+	58	24
+	+	59	20
+	+	63	0
+	+	60	23
+	+	60	0
+	+	63	0
+	+	57	0
+	+	1	0
+	+	29	83
+
+> /mnt/c/Development/f1-search/src/utils/apiCalls.test.js
+	"	16	0
+	.	17	0
+	+	17	0
+	+	17	0
+	+	15	0
+	+	15	0
+	+	17	0
+	+	17	0
+
+> /mnt/c/Development/f1-search/src/utils/.apiCalls.js.swp
+	"	1	0
+
+> /mnt/c/Development/f1-search/.gitignore
+	"	20	1
+	^	20	2
+	.	20	1
+	+	20	1
+
+> ~/.vim/vimrc
+	"	1	0
+	^	25	31
+	.	25	30
+	+	23	25
+	+	99	4
+	+	24	27
+	+	2	3
+	+	5	0
+	+	5	0
+	+	9	5
+	+	33	0
+	+	32	0
+	+	32	0
+	+	104	0
+	+	101	9
+	+	101	0
+	+	104	10
+	+	104	0
+	+	104	133
+	+	104	0
+	+	101	0
+	+	103	10
+	+	102	55
+	+	25	30
+
+> /mnt/c/Development/f1-search/package.json
+	"	18	0
+
+> /mnt/c/Development/f1-leaderboard/package.json
+	"	7	0
+
+> ~/.tmux.conf
+	"	16	13
+	^	16	14
+	.	16	13
+	+	20	0
+	+	19	0
+	+	2	0
+	+	18	0
+	+	6	23
+	+	7	0
+	+	8	0
+	+	9	0
+	+	7	20
+	+	8	20
+	+	9	20
+	+	6	7
+	+	7	8
+	+	8	7
+	+	9	7
+	+	6	20
+	+	7	20
+	+	8	20
+	+	9	20
+	+	6	24
+	+	9	24
+	+	11	0
+	+	10	0
+	+	4	0
+	+	11	27
+	+	12	9
+	+	13	9
+	+	14	9
+	+	12	27
+	+	13	27
+	+	14	27
+	+	11	9
+	+	12	9
+	+	13	9
+	+	14	9
+	+	16	13
+
+> /mnt/c/Development/datastructures_algorithms/UnionFind/Percolation.java
+	"	154	1
+
+> /mnt/c/Development/datastructures_algorithms/StacksQueues/Deque.java
+	"	29	0
+	^	29	0
+	.	30	0
+	+	1	14
+	+	4	0
+	+	30	44
+	+	30	26
+	+	30	22
+	+	30	44
+	+	30	59
+	+	30	0
+	+	30	0
+	+	30	0
+	+	30	59
+	+	30	0
+	+	30	0
+	+	30	44
+	+	30	21
+	+	30	22
+	+	30	0
+	+	30	0
+	+	5	0
+	+	6	0
+	+	30	0
+	+	6	22
+	+	6	22
+	+	10	21
+	+	13	22
+	+	14	44
+	+	17	21
+	+	20	0
+	+	25	21
+	+	28	0
+	+	30	0
+
+> ~/.vim/vimrc!
+	"	1	0
+	.	2	0
+	+	2	0
+
+> /mnt/c/Development/datastructures_algorithms/UnionFind/Percolation.
+	"	1	0
+
+> /mnt/c/Development/datastructures_algorithms/StacksQueues/deque.java
+	"	1	0
+	^	2	0
+	.	2	0
+	+	1	0
+	+	4	0
+	+	2	0
+
+> /mnt/c/Development/datastructures_algorithms/UnionFind/NERD_tree_1
+	"	8	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> /mnt/c/Development/datastructures_algorithms/NERD_tree_1
+	"	1	0
+	.	1	0
+	+	1	0
+	+	1	0
+
+> /mnt/c/Development/f1-live-app/.gitignore
+	"	1	11
+	^	1	12
+	.	2	0
+	+	2	0
+
+> /mnt/c/Development/f1-live-app/NERD_tree_1
+	"	6	0
+	.	1	0
+	+	1	0
+	+	1	0
+	+	1	0
+
+> /mnt/c/Development/f1-live-app/src/App.js
+	"	8	6
+	.	8	0
+	+	8	0
+
+> /mnt/c/Development/f1-live-app/src/App.test.js
+	"	1	0
+
 > ~/.zshrc
-	"	6	23
-	^	6	24
-	.	6	23
+	"	203	1
+	^	202	24
+	.	202	3
 	+	206	12
 	+	206	5
 	+	207	5
@@ -489,6 +953,18 @@ $
 	+	145	46
 	+	10	0
 	+	6	23
+	+	202	3
+
+> /mnt/c/Development/f1-live-app/ControlP
+	"	10	0
+	.	2	0
+	+	2	0
+
+> /mnt/c/Development/f1-live-app/package.json
+	"	15	0
+
+> ~/README.md
+	"	3	0
 
 > ~/.profile
 	"	21	0
@@ -496,18 +972,6 @@ $
 	.	21	0
 	+	22	0
 	+	21	0
-
-> ~/.vim/vimrc
-	"	9	5
-	^	9	6
-	.	9	5
-	+	23	25
-	+	98	4
-	+	24	27
-	+	2	3
-	+	5	0
-	+	5	0
-	+	9	5
 
 > ~/Dockerfile
 	"	1	0

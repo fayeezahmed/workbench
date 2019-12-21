@@ -218,3 +218,7 @@ flip() { echo -n "（╯°□°）╯ ┻━┻" |tee /dev/tty| xclip -selection
 shrug() { echo -n "¯\_(ツ)_/¯" |tee /dev/tty| xclip -selection clipboard; }
 ### RANDOM OR FUN THINGS END ###
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+### Remove swp files 
+alias rmswp='ls */**/.*.swp && rm */**/.*.swp'
+
