@@ -14,3 +14,7 @@
 
 # tmux
 !/.tmux.conf
+
+#swp files
+.*.swp
+.*.swo

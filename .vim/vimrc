@@ -102,6 +102,20 @@ endif
 "" Boilerplate java class with main method - no imports
 let @j = 'ipublic class MyClass {	public static void main(String[€kr args€kr{		// Stuff goes here, change the class name and te€kbhe s€kbarguments'
 
+"" More natural splitting
+set splitbelow
+set splitright
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""" MACROS """""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""
+"" COMMENTING OUT CSS
+let @c="I/* \<Esc>A */\<Esc>"
+let @v="^3x$2h3x"
+
+""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""WINDOWS"""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""
 "" WINDOWS STUFF - comment out on Mac or linux
 if (&term =~ 'xterm' && &t_Co == 256)
     set t_ut= | set ttyscroll=1

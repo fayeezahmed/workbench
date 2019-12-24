@@ -18,3 +18,11 @@ if [ -t 1 ]; then
     exec zsh
 fi
 ```
+## Macros
+
+How to record a macro:
+`q<letter><command>q` - `letter` is any letter from a-z to store into that register
+
+## Vim References
+- A quick tour of steve loshs massive vimrc
+- Learn vim script the hard way 
