@@ -23,6 +23,10 @@ fi
 How to record a macro:
 `q<letter><command>q` - `letter` is any letter from a-z to store into that register
 
+### CSS Macros
+*COMMENT CSS LINE* - `@c`
+*UNCOMMENT CSS LINE* - `@v`
+
 ## Vim References
 - A quick tour of steve loshs massive vimrc
 - Learn vim script the hard way 
