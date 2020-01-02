@@ -25,6 +25,10 @@ You may have to install oh-my-zsh again if your terminal looks off, do this:
 
 Once you've done this, make sure you checkout the latest .zsh from this master since the above install will overwrite the file.
 
+#### Theme
+Install powerlevel 10k theme `https://github.com/romkatv/powerlevel10k#oh-my-zsh`
+Then type `p10k configure` and follow instructions if you are new
+
 #### Install zsh-syntax-highlighting
 Do the following:
 `git clone https://github.com/zsh-users/zsh-syntax-highlighting $HOME/`

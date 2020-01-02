@@ -1,6 +1,11 @@
 # Ignore everything
 /*
 /.vim/bundle/
+#
+# swp files too
+.*.swp
+.*.swo
+
 ### Except these ###
 !/.gitignore
 
@@ -15,6 +20,7 @@
 # tmux
 !/.tmux.conf
 
-#swp files
-.*.swp
-.*.swo
+# powerlevel 10k theme for zsh config file
+!.p10k.zsh
+
+### Except end ###
