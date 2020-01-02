@@ -18,6 +18,13 @@ if [ -t 1 ]; then
     exec zsh
 fi
 ```
+
+### Install oh-my-zsh
+You may have to install oh-my-zsh again if your terminal looks off, do this: 
+`sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
+
+Once you've done this, make sure you checkout the latest .zsh from this master since the above install will overwrite the file.
+
 ## Macros
 
 How to record a macro:
