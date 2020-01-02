@@ -225,6 +225,9 @@ alias rmswp='ls */**/.*.swp && rm */**/.*.swp'
 ### Add zsh-syntax-highlighting
 source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+### TMUX colours to work ###
+export TERM=xterm-256color
+
 #### FAYEEZ END
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.

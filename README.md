@@ -48,3 +48,7 @@ How to record a macro:
 ## Vim References
 - A quick tour of steve loshs massive vimrc
 - Learn vim script the hard way 
+
+## tmux
+Install tmux plugin manager here: `https://github.com/tmux-plugins/tpm#installation`
+
