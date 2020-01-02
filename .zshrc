@@ -222,5 +222,9 @@ shrug() { echo -n "¯\_(ツ)_/¯" |tee /dev/tty| xclip -selection clipboard; }
 ### Remove swp files 
 alias rmswp='ls */**/.*.swp && rm */**/.*.swp'
 
+### Add zsh-syntax-highlighting
+source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
 #### FAYEEZ END
+
 
