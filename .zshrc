@@ -228,6 +228,9 @@ source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 ### TMUX colours to work ###
 export TERM=xterm-256color
 
+### CTAGS setup ###
+alias ctags='ctags -R --exclude=.git --exclude=node_modules'
+
 #### FAYEEZ END
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
