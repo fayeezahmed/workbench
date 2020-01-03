@@ -13,10 +13,10 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'w0rp/ale'
+Plugin 'patstockwell/vim-monokai-tasty'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tmux/tmux'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'patstockwell/vim-monokai-tasty'
 Plugin 'itchyny/lightline.vim'
 Plugin 'universal-ctags/ctags'
 Plugin 'vimwiki/vimwiki'
@@ -77,7 +77,7 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 "" Open file in a new buffer if file already open
 let g:ctrlp_switch_buffer = 'et'
 set tags=tags;/
-
+let g:ctrlp_match_window = 'results:35'
 """VIM WIKI HTML TEMPLATE"""
 
 ""let g:vimwiki_list = [{
@@ -122,3 +122,7 @@ if (&term =~ 'xterm' && &t_Co == 256)
     set t_ut= | set ttyscroll=1
 endif
 
+"" Lightline colorscheme
+let g:lightline = {
+      \ 'colorscheme': 'molokai',
+      \ }
