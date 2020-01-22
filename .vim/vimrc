@@ -76,8 +76,10 @@ let g:ctrlp_custom_ignore = {
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 "" Open file in a new buffer if file already open
 let g:ctrlp_switch_buffer = 'et'
-set tags=tags;/
-let g:ctrlp_match_window = 'results:35'
+" ctags optimization
+set autochdir
+set tags=tags;
+let g:ctrlp_match_window = 'results:25'
 """VIM WIKI HTML TEMPLATE"""
 
 ""let g:vimwiki_list = [{
@@ -113,7 +115,7 @@ set splitright
 "" COMMENTING OUT CSS
 let @c="I/* \<Esc>A */\<Esc>"
 let @v="^3x$2h3x"
-
+let @r="impor€kb€kb€kb€kbimport React from 'react€kr;import€kb€kb€kb€kb€kb€kbfunction Component(€kr {cos€kbnst €kb€kb€kb€kb€kb€kbfun€kb€kb€kb€kb€kb	€kbreturn (	d€kb>di€kb€kb€kb<div>	€kb</div€ku€kd>€ku€kl class€kb€kb€kb€kb€kbdata-testid='COMPOEN€kb€kbNENTjjjoexport default Component;:€kb"
 """"""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""WINDOWS"""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""
