@@ -19,6 +19,11 @@ if [ -t 1 ]; then
 fi
 ```
 
+### Install Vundle
+Type this in the console:
+`git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+For more information go here: https://github.com/VundleVim/Vundle.vim#quick-start
+
 ### Install oh-my-zsh
 You may have to install oh-my-zsh again if your terminal looks off, do this: 
 `sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"`
