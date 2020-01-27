@@ -2,6 +2,12 @@ if &compatible
 
 
 end
+
+
+if has('python3') && !has('patch-8.1.201') 
+  silent! python3 1
+endif
+
 set encoding=utf-8
 syntax on
 filetype plugin indent on
@@ -16,7 +22,7 @@ Plugin 'w0rp/ale'
 Plugin 'patstockwell/vim-monokai-tasty'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tmux/tmux'
-Plugin 'Valloric/YouCompleteMe'
+Plugin 'ycm-core/YouCompleteMe'
 Plugin 'itchyny/lightline.vim'
 Plugin 'universal-ctags/ctags'
 Plugin 'vimwiki/vimwiki'
