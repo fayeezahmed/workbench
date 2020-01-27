@@ -1,6 +1,6 @@
 # Ignore everything
 /*
-/.vim/bundle/
+/.vim/bundle/*
 #
 # swp files too
 .*.swp
