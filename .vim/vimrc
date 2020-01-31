@@ -122,6 +122,7 @@ set splitright
 let @c="I/* \<Esc>A */\<Esc>"
 let @v="^3x$2h3x"
 let @r="impor€kb€kb€kb€kbimport React from 'react€kr;import€kb€kb€kb€kb€kb€kbfunction Component(€kr {cos€kbnst €kb€kb€kb€kb€kb€kbfun€kb€kb€kb€kb€kb	€kbreturn (	d€kb>di€kb€kb€kb<div>	€kb</div€ku€kd>€ku€kl class€kb€kb€kb€kb€kbdata-testid='COMPOEN€kb€kbNENTjjjoexport default Component;:€kb"
+let @h='i<!doctype html><html lang="en€kr><head><meta charset="utf-8€kr><title> Standard HM€kbTML</title><meta name="description€kr cib€kb€kbontent €kb="HTL€kbML5 Standard€kr><meta a€kbname="author€kr content="Fayeez Ahmed€kr><link rel="stylesheet€kr href="css//€kbstyles.css?v=1.0€kr>€kb<h€kb.€kb/head><body><scrp€kbipt src="script.js>/€kb</script>€kb</body>€kb</html>'
 """"""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""WINDOWS"""""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""
