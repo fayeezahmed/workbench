@@ -105,6 +105,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 #### FAYEEZ START
+tmux
+
 export XCODE=/Applications/Xcode.app/Contents/Developer/
 export VSCODE="/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 export ANDROID_HOME="/Users/fayeez.ahmed/Library/Android/sdk"
