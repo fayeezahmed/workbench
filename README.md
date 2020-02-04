@@ -59,6 +59,7 @@ How to record a macro:
 ### CSS Macros
 *COMMENT CSS LINE* - `@c`
 *UNCOMMENT CSS LINE* - `@v`
+*HTML BOILERPLATE* - `@h`
 
 ## Vim References
 - A quick tour of steve loshs massive vimrc

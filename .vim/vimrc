@@ -30,6 +30,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'pangloss/vim-javascript'
 Plugin 'christoomey/vim-conflicted'
+Plugin 'mileszs/ack.vim'
 call vundle#end()            " required
 filetype on
 
@@ -115,6 +116,13 @@ let @j = 'ipublic class MyClass {	public static void main(String[€kr args€kr{	
 set splitbelow
 set splitright
 
+"" Ag / ack
+let g:ackprg = 'ag --vimgrep --smart-case'
+cnoreabbrev ag Ack
+cnoreabbrev aG Ack
+cnoreabbrev Ag Ack
+cnoreabbrev AG Ack
+
 """"""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""" MACROS """""""""""""""""""""""
 """"""""""""""""""""""""""""""""""""""""""""""""""
@@ -135,3 +143,5 @@ endif
 let g:lightline = {
       \ 'colorscheme': 'molokai',
       \ }
+
+
