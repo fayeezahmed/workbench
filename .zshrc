@@ -105,7 +105,12 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 #### FAYEEZ START
-tmux
+if tmux info &> /dev/null; then 
+    echo "TMUX is already running.. not going to start it again" 
+else
+    echo "TMUX starting" 
+    tmux
+fi
 
 export XCODE=/Applications/Xcode.app/Contents/Developer/
 export VSCODE="/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
