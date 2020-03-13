@@ -115,9 +115,11 @@ fi
 export XCODE=/Applications/Xcode.app/Contents/Developer/
 export VSCODE="/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 export ANDROID_HOME="/Users/fayeez.ahmed/Library/Android/sdk"
+export ANDROID_SDK_ROOT=$ANDROID_HOME
 export ANDROID_SDK_TOOLS=$HOME/Library/Android/sdk/tools/
 export ANDROID_SDK_PLATFORM_TOOLS=$HOME/Library/Android/sdk/platform-tools/
-export PATH=$XCODE:$VSCODE:$ANDROID_SDK_TOOLS:$ANDROID_SDK_PLATFORM_TOOLS:$HOME/bin:/usr/local/bin:$PATH
+export TIZEN_STUDIO=/Users/fayeez.ahmed/tizen-studio/
+export PATH=$XCODE:$VSCODE:$ANDROID_HOME:$ANDROID_SDK_TOOLS:$ANDROID_SDK_PLATFORM_TOOLS:$HOME/bin:/usr/local/bin:$PATH:$TIZEN_STUDIO/tools:$TIZEN_STUDIO/tools/ide/bin
 
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
@@ -203,6 +205,22 @@ function fshow() {
             {}
 FZF-EOF"
 }
+
+function fshowReverse() {
+  git log --reverse --graph --color=always \
+      --format="%C(auto)%h%d %s %C(black)%C(bold)%cr" "$@" \
+  | fzf --ansi --preview "echo {} \
+    | grep -o '[a-f0-9]\{7\}' \
+    | head -1 \
+    | xargs -I % sh -c 'git show --color=always %'" \
+        --bind "enter:execute:
+            (grep -o '[a-f0-9]\{7\}' \
+                | head -1 \
+                | xargs -I % sh -c 'git show --color=always % \
+                | less -R') << 'FZF-EOF'
+            {}
+FZF-EOF"
+}
 ### CUSTOM FUNCTIONS END ###
 
 setopt cdablevars
@@ -271,3 +289,5 @@ load-nvmrc
 
 #### FAYEEZ END
 
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
