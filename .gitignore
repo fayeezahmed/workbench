@@ -8,6 +8,7 @@
 
 ### Except these ###
 !/.gitignore
+!/.gitconfig
 
 # vim files
 !/.vim/

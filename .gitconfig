@@ -1,0 +1,11 @@
+[user]
+	email = fayeezahmed@gmail.com
+	name = Fayeez Ahmed
+[credential]
+	helper = osxkeychain
+[alias]
+	conflicted = !vim +Conflicted
+[mergetool "vim-conflicted"]
+	cmd = vim +Conflicted
+[merge]
+	tool = vim +Conflicted
