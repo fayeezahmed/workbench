@@ -8,7 +8,6 @@ if has('python3') && !has('patch-8.1.201')
   silent! python3 1
 endif
 
-set encoding=utf-8
 syntax on
 filetype plugin indent on
 set omnifunc=syntaxcomplete#Complete
@@ -42,6 +41,13 @@ Plugin 'honza/vim-snippets'
 Plugin 'ryanoasis/vim-devicons'
 call vundle#end()            " required
 filetype on
+
+"" Font
+""set guifont=JetBrains_Mono
+set encoding=utf-8
+
+let g:webdevicons_enable = 1
+let g:webdevicons_enable_nerdtree = 1
 
 augroup javascript_folding
     au!
@@ -115,8 +121,6 @@ let g:ctrlp_match_window = 'results:25'
 let g:ale_fix_on_save = 0
 
 "" Vim cursor
-let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
-let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
 if exists('$TMUX')
     let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
     let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
@@ -160,7 +164,7 @@ endif
 
 "" Lightline colorscheme
 let g:lightline = {
-      \ 'colorscheme': 'molokai',
+      \ 'colorscheme': 'OceanicNext',
       \ }
 
 
