@@ -24,4 +24,7 @@
 # powerlevel 10k theme for zsh config file
 !.p10k.zsh
 
+# iterm2 config
+!iterm.json
+
 ### Except end ###
