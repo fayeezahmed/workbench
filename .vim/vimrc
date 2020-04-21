@@ -21,7 +21,6 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'w0rp/ale'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tmux/tmux'
-Plugin 'ycm-core/YouCompleteMe'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'itchyny/lightline.vim'
 Plugin 'universal-ctags/ctags'
@@ -32,9 +31,16 @@ Plugin 'prettier/vim-prettier'
 Plugin 'metakirby5/codi.vim'
 Plugin 'mattn/emmet-vim'
 
-" Syntax highlighting start
+"" Autocomplete
+Plugin 'Shougo/deoplete.nvim'
+Plugin 'roxma/nvim-yarp'
+Plugin 'roxma/vim-hug-neovim-rpc'
+let g:deoplete#enable_at_startup = 1
+
+"Syntax highlighting start
 ""Plugin 'leafgarland/typescript-vim'
 ""Plugin 'pangloss/vim-javascript'
+
 Plugin 'maxmellon/vim-jsx-pretty'
 Plugin 'mhartington/oceanic-next'
 Plugin 'othree/yajs.vim'
@@ -105,10 +111,10 @@ set hlsearch
 let g:ycm_min_num_of_chars_for_completion = 4
 let g:ycm_min_num_identifier_candidate_chars = 4
 let g:ycm_enable_diagnostic_highlighting = 0
-let g:ycm_max_num_candidates = 25
+""let g:ycm_max_num_candidates = 25
 
 " Don't show YCM's preview window 
-""set completeopt-=preview
+set completeopt-=preview
 let g:ycm_add_preview_to_completeopt = 1
 
 " ###### CTRLP options ######
