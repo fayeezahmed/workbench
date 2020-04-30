@@ -23,16 +23,11 @@ fi
 ## tmux
 Install tmux plugin manager here: `https://github.com/tmux-plugins/tpm#installation`
 
-### Install Vundle
-Type this in the console:
-`git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
-For more information go here: https://github.com/VundleVim/Vundle.vim#quick-start
-
+### Plugin Manager
+Uses Vim-Plug which automatically installs if it doesn't exist.
 
 ### VIM
-Note: For YCM - it might actually cause issues since there is a bug with VIM using python3.7 until VIM v8.2\*. In this case, you will need to install vim via `brew` - for mac users.
-In this case, you also might have to `brew unlink python` then `brew install vim`. Also note that make sure all the folders required are under your control and remember, Google is your friend
-
+Uses Neovim under the hood. Aliased `vim` to point to `nvim`
 
 ### Install oh-my-zsh
 You may have to install oh-my-zsh again if your terminal looks off, do this: 
@@ -64,5 +59,6 @@ How to record a macro:
 ## Vim References
 - A quick tour of steve loshs massive vimrc
 - Learn vim script the hard way 
-
+- Practical VIM - Oreilly
+- Modern VIM - Oreilly
 
