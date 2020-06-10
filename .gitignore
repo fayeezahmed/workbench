@@ -19,6 +19,7 @@
 
 # zshrc
 !/.zshrc
+!/.zshenv
 
 # tmux
 !/.tmux.conf
