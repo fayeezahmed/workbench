@@ -5,7 +5,8 @@
 # swp files too
 .*.swp
 .*.swo
-
+.config/coc/*
+.vim/plugged/*
 ### Except these ###
 !/.gitignore
 !/.gitconfig

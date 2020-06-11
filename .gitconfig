@@ -3,6 +3,7 @@
 	name = Fayeez Ahmed
 [credential]
 	helper = osxkeychain
+    useHttpPath=true
 [alias]
 	conflicted = !vim +Conflicted
 [mergetool "vim-conflicted"]

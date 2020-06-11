@@ -30,7 +30,6 @@ Plug 'tpope/vim-repeat'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'w0rp/ale'
 Plug 'scrooloose/nerdtree'
-Plug 'ternjs/tern_for_vim', { 'do': 'npm install' }
 Plug 'itchyny/lightline.vim'
 Plug 'universal-ctags/ctags'
 Plug 'vimwiki/vimwiki'
@@ -167,6 +166,22 @@ else
     let &t_EI = "\<Esc>]50;CursorShape=0\x7"
     let &t_SR = "\<Esc>]50;CursorShape=2\x7"
 endif
+
+""""""""""""""""""""""
+"" COC.VIM SETUP START
+""""""""""""""""""""""
+"" Setup typescript and javascript server
+let g:coc_global_extensions = [ 'coc-tsserver' ]
+
+"" Setup coc-prettier and coc-eslint only if they exist in the project
+if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
+  let g:coc_global_extensions += ['coc-prettier']
+endif
+
+if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
+  let g:coc_global_extensions += ['coc-eslint']
+endif
+
 
 "" Macros
 "" Boilerplate java class with main method - no imports
