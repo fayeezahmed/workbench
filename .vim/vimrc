@@ -46,6 +46,7 @@ Plug 'roxma/vim-hug-neovim-rpc'
 ""let g:deoplete#enable_at_startup = 1
 "" Intellisense
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'rking/ag.vim'
 
 "Syntax highlighting start
 Plug 'maxmellon/vim-jsx-pretty'
@@ -182,6 +183,26 @@ if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
   let g:coc_global_extensions += ['coc-eslint']
 endif
 
+"" For showing documentation when pressing K over some method
+nnoremap <silent> K :call CocAction('doHover')<CR>
+
+"" Show Coclist diagnostic list using Space-d - use :CocList for more lists
+nnoremap <silent> <space>d :<C-u>CocList diagnostics<cr>
+"" Fuzzy search files
+nnoremap <silent> <space>f :<C-u>CocList files<CR>
+
+"" For easy go to next and prev diagnostic error
+nmap <silent> ]g <Plug>(coc-diagnostic-prev)
+nmap <silent> [g <Plug>(coc-diagnostic-next)
+
+"" Show symbols list using Space-s
+nnoremap <silent> <space>s :<C-u>CocList -I symbols<cr>
+
+""""""""""""""""""""""
+"" COC.VIM SETUP END
+""""""""""""""""""""""
+"" Ag root directory rather than cwd
+let g:ag_working_path_mode="r"
 
 "" Macros
 "" Boilerplate java class with main method - no imports

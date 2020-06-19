@@ -2,11 +2,20 @@
 
 This repo contains my standard tools so that I don't have to remember what I have to install each time on a new machine.
 
+## Contents
+1. [Tools](#tools)
+2. [Start ZSH](#start-zsh)
+3. [Tools to Install](#tools-to-install)
+4. [Macros](#macros)
+5. [Vim References](#references)
+
+<a name="tools"></a>
 ## Tools
 * Vim
 * Zshrc
 * Tmux
 
+<a name="start-zsh"></a>
 ## Start ZSH
 To start zsh, use the following command:
 * `zsh`
@@ -18,9 +27,11 @@ if [ -t 1 ]; then
     exec zsh
 fi
 ```
+
+<a name="tools-to-install"></a>
 ## Tools to install
 
-## tmux
+### tmux
 Install tmux plugin manager here: `https://github.com/tmux-plugins/tpm#installation`
 
 ### Plugin Manager
@@ -28,6 +39,9 @@ Uses Vim-Plug which automatically installs if it doesn't exist.
 
 ### VIM
 Uses Neovim under the hood. Aliased `vim` to point to `nvim`
+
+### Ag
+Grep within files - follow these instructions: https://github.com/rking/ag.vim
 
 ### Install oh-my-zsh
 You may have to install oh-my-zsh again if your terminal looks off, do this: 
@@ -46,6 +60,7 @@ Do the following:
 ### fshow()
 To get fshow working - Follow install instructions here: https://github.com/junegunn/fzf
 
+<a name="macros"></a>
 ## Macros
 
 How to record a macro:
@@ -56,6 +71,7 @@ How to record a macro:
 *UNCOMMENT CSS LINE* - `@v`
 *HTML BOILERPLATE* - `@h`
 
+<a name="references"></a>
 ## Vim References
 - A quick tour of steve loshs massive vimrc
 - Learn vim script the hard way 
