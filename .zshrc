@@ -121,7 +121,7 @@ export ANDROID_SDK_ROOT=$ANDROID_HOME
 export ANDROID_SDK_TOOLS=$HOME/Library/Android/sdk/tools/
 export ANDROID_SDK_PLATFORM_TOOLS=$HOME/Library/Android/sdk/platform-tools/
 export TIZEN_STUDIO=/Users/fayeez.ahmed/tizen-studio/
-export PATH=$XCODE:$VSCODE:$ANDROID_HOME:$ANDROID_SDK_TOOLS:$ANDROID_SDK_PLATFORM_TOOLS:$HOME/bin:/usr/local/bin:$PATH:$TIZEN_STUDIO/tools:$TIZEN_STUDIO/tools/ide/bin
+export PATH=$XCODE:$VSCODE:$ANDROID_HOME:$ANDROID_SDK_TOOLS:$ANDROID_SDK_PLATFORM_TOOLS:$HOME/bin:/usr/local/bin:$TIZEN_STUDIO/tools:$TIZEN_STUDIO/tools/ide/bin:/Users/fayeez.ahmed/git-fuzzy/bin:$PATH
 
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
@@ -254,6 +254,13 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
+#### RENAME FILE EXTENSIONS
+autoload -U zmv
+# you don't need the following two now, but put them also in your .zshrc
+alias zcp='zmv -C'
+alias zln='zmv -L'
+# Usage (ext1 and ext2 are the file extensions you swap out): 
+# zmv '^*.ext1' '$f.ext2'
 #### FAYEEZ END
 
 

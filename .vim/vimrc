@@ -142,13 +142,17 @@ let g:ctrlp_switch_buffer = 'et'
 set autochdir
 set tags=tags;
 let g:ctrlp_match_window = 'results:25'
+"
 """VIM WIKI HTML TEMPLATE"""
-
-""let g:vimwiki_list = [{
-""  \ 'path': '~/vimwiki/',
-""  \ 'template_path': '~/vimwiki/templates/',
-""  \ 'template_default': 'default',
-""  \ 'template_ext': '.html'}]
+ let g:vimwiki_list = [{
+	\ 'path': '~/vimwiki',
+	\ 'template_path': '~/vimwiki/templates/',
+	\ 'template_default': 'default',
+	\ 'syntax': 'markdown',
+	\ 'ext': '.md',
+	\ 'path_html': '~/vimwiki/site_html/',
+	\ 'custom_wiki2html': 'vimwiki_markdown',
+    \ 'template_ext': '.tpl'}]
 
 """ALE - ESLINT"""
 "" Auto fix files on save
@@ -222,6 +226,7 @@ let @v="^3x$2h3x"
 let @r="impor€kb€kb€kb€kbimport React from 'react€kr;import€kb€kb€kb€kb€kb€kbfunction Component(€kr {cos€kbnst €kb€kb€kb€kb€kb€kbfun€kb€kb€kb€kb€kb	€kbreturn (	d€kb>di€kb€kb€kb<div>	€kb</div€ku€kd>€ku€kl class€kb€kb€kb€kb€kbdata-testid='COMPOEN€kb€kbNENTjjjoexport default Component;:€kb"
 "" HTML boilerplate
 let @h="i<!DOCTYPE html><html lang=\"en€kr><head><meta charset=\"utf-8€kr><title> Standard HTML</title><meta name=\"description€kr cib€kb€kbontent €kb=\"HTML5 Standard€kr><meta a€kbname=\"author€kr content=\"Fayeez Ahmed€kr><link rel=\"stylesheet€kr href=\"css//€kbstyles.css?v=1.0€kr>€kb<h€kb.€kb/head><body><scrp€kbipt src=\"script.js\"></script>€kb</body>€kb</html>\<Esc>"
+let @w="xAÄkbv%yApcs[)"
     
 """""""""""""""""""""""""""""""""""""""""""""""""
 """"""""""""""""""""WINDOWS"""""""""""""""""""""""
