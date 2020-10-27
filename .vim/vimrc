@@ -50,6 +50,8 @@ Plug 'rking/ag.vim'
 
 "Syntax highlighting start
 Plug 'maxmellon/vim-jsx-pretty'
+Plug 'leafgarland/typescript-vim'
+Plug 'HerringtonDarkholme/yats.vim'
 Plug 'mhartington/oceanic-next'
 Plug 'morhetz/gruvbox'
 Plug 'othree/yajs.vim'
