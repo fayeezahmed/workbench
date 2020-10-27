@@ -107,12 +107,17 @@ source $ZSH/oh-my-zsh.sh
 alias vim="nvim"
 
 #### FAYEEZ START
-if tmux info &> /dev/null; then 
-    echo "TMUX is already running.. not going to start it again" 
-else
-    echo "TMUX starting" 
-    tmux
-fi
+
+# Vim keybindings
+set -o vi
+
+[ -z "${TMUX}" ] && echo "Starting tmux.."; tmux
+#if tmux info &> /dev/null; then 
+#    echo "TMUX is already running.. not going to start it again" 
+#else
+#    echo "TMUX starting" 
+#    tmux
+#fi
 
 export XCODE=/Applications/Xcode.app/Contents/Developer/
 export VSCODE="/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
