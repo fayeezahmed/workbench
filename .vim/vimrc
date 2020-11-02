@@ -12,6 +12,7 @@ syntax on
 filetype plugin indent on
 ""set omnifunc=syntaxcomplete#Complete
 set laststatus=2
+set mouse=a
 
 """"""""""""""""""""""""""""""""""
 "" PLUGIN MANAGER - VIM-PLUG START
