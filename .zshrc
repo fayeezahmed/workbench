@@ -219,7 +219,7 @@ shrug() { echo -n "¯\_(ツ)_/¯" |tee /dev/tty| xclip -selection clipboard; }
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 ### Remove swp files 
-alias rmswp='ls */**/.*.swp && rm */**/.*.swp'
+alias rmswp='ls ~/.local/share/nvim/swap/*.swp && rm ~/.local/share/nvim/swap/*.swp'
 
 ### Add zsh-syntax-highlighting
 source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

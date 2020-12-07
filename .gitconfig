@@ -12,3 +12,13 @@
 	tool = vimdiff
 [diff]
 	tool = vimdiff
+[url "https://15716909cab8b1853e48f85fc36c2434e6cb505b@github.com/"]
+	insteadOf = git@github.com:
+	insteadOf = git@github.com:
+	insteadOf = ssh://git@github.com/
+	insteadOf = https://github.com/
+	insteadOf = git://github.com/
+	insteadOf = git@github.com:
+	insteadOf = ssh://git@github.com/
+	insteadOf = https://github.com/
+	insteadOf = git://github.com/
