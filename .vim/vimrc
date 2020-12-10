@@ -114,7 +114,7 @@ let g:lightline_theme='oceanicnext'
 set tabstop=4 softtabstop=0 expandtab shiftwidth=2 smarttab
 set number
 ""set relativenumber
-set path+=~/dazn/catalog-tv-chapter/**;node_modules/@dazn/;
+set path+=~/dazn/catalog-tv-chapter/src/**,~/dazn/catalog-tv-chapter/test/**,~/dazn/catalog-tv-chapter/webpack/**,~/dazn/catalog-tv-chapter/scripts/**,~/dazn/catalog-tv-chapter/node_modules/@dazn/focus-manager/**,
 set suffixesadd=.js,.jsx
 set bs=2
 set hlsearch
