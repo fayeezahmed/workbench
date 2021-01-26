@@ -126,6 +126,7 @@ export ANDROID_SDK_ROOT=$ANDROID_HOME
 export ANDROID_SDK_TOOLS=$HOME/Library/Android/sdk/tools/
 export ANDROID_SDK_PLATFORM_TOOLS=$HOME/Library/Android/sdk/platform-tools/
 export TIZEN_STUDIO=/Users/fayeez.ahmed/tizen-studio/
+
 export PATH=$XCODE:$VSCODE:$ANDROID_HOME:$ANDROID_SDK_TOOLS:$ANDROID_SDK_PLATFORM_TOOLS:$HOME/bin:/usr/local/bin:$TIZEN_STUDIO/tools:$TIZEN_STUDIO/tools/ide/bin:/Users/fayeez.ahmed/git-fuzzy/bin:$PATH
 
 export NVM_DIR="$HOME/.nvm"
@@ -205,6 +206,7 @@ alias grep='grep -inIER --color=ALWAYS --exclude-dir={node_modules,reports,tags,
 alias find='find . -path ./node_modules -prune -o -name'
 which='(alias; declare -f) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot'
 alias chrome_nocors='open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security' # Mac only command
+alias sublime='/Applications/Sublime\ Text.app/Contents/MacOS/Sublime\ Text'
 ### ALIASES END ###
 
 ### RANDOM OR FUN THINGS START ###
