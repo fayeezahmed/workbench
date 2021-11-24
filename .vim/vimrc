@@ -21,7 +21,9 @@ set mouse=a
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+  augroup install_plugins_on_enter
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+  augroup END
 endif
 
 call plug#begin('~/.vim/plugged')
@@ -36,9 +38,12 @@ Plug 'universal-ctags/ctags'
 Plug 'vimwiki/vimwiki'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-unimpaired'
-Plug 'prettier/vim-prettier'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'metakirby5/codi.vim'
 Plug 'mattn/emmet-vim'
+
+"" Typescript
+Plug 'leafgarland/typescript-vim'
 
 "" Vim Theme
 Plug 'arcticicestudio/nord-vim'
@@ -51,15 +56,6 @@ Plug 'roxma/vim-hug-neovim-rpc'
 "" Intellisense
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'rking/ag.vim'
-
-"Syntax highlighting start
-Plug 'maxmellon/vim-jsx-pretty'
-Plug 'leafgarland/typescript-vim'
-Plug 'HerringtonDarkholme/yats.vim'
-Plug 'othree/yajs.vim'
-Plug 'othree/html5.vim'
-Plug 'othree/javascript-libraries-syntax.vim'
-" Syntax highglighting end
 
 Plug 'christoomey/vim-conflicted'
 Plug 'ryanoasis/vim-devicons'
@@ -75,15 +71,22 @@ set shell=zsh
 "" set guifont=MesloLGS_NF:h18
 set encoding=utf-8
 set guifont=FiraCode_Nerd_Font_Mono:h30
-autocmd VimEnter * NERDTree
-autocmd VimEnter * wincmd p
 let g:webdevicons_enable = 1
 let g:webdevicons_enable_nerdtree = 1
 let NERDTreeShowHidden=1
-let g:prettier#autoformat=0
-let g:prettier#config#arrow_parens = get(g:,'prettier#config#arrow_parens', 'always')
 
-autocmd BufWritePre *.js,*.json,*.css,*.scss,*.less,*.graphql Prettier
+augroup prettier
+  autocmd!
+  let g:prettier#autoformat_config_files = ['/config/prettier/.prettierrc']
+  let g:prettier#config#arrow_parens = get(g:,'prettier#config#arrow_parens', 'always')
+  autocmd BufWritePre *.js,*.json,*.css,*.scss,*.less,*.graphql,*.yml,*.yaml,*.ts,*.tsx PrettierAsync
+augroup END
+
+augroup vim_enter
+  autocmd!
+  autocmd VimEnter * NERDTree
+  autocmd VimEnter * wincmd p
+augroup END
 augroup javascript_folding
     au!
     au FileType javascript setlocal foldmethod=syntax 
@@ -171,6 +174,16 @@ else
     let &t_EI = "\<Esc>]50;CursorShape=0\x7"
     let &t_SR = "\<Esc>]50;CursorShape=2\x7"
 endif
+
+"""""""""""""""""
+"" CUSTOM AUTOCMD
+"""""""""""""""""
+"" Hybrid line numbers
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END
 
 """"""""""""""""""""""
 "" COC.VIM SETUP START
