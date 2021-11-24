@@ -1,5 +1,16 @@
+[includeIf "gitdir:~/dazn/**"]
+  path = ~/.gitconfig-work
+[includeIf "gitdir:~/learning/**"]
+  path = ~/.gitconfig-personal
+[includeIf "gitdir:~/personal/**"]
+  path = ~/.gitconfig-personal
+[includeIf "gitdir:~/.vim/**"]
+  path = ~/.gitconfig-personal
+[includeIf "gitdir:~/.tmux/**"]
+  path = ~/.gitconfig-personal
+[includeIf "gitdir:~/vimwiki/**"]
+  path = ~/.gitconfig-personal
 [user]
-	email = fayeezahmed@gmail.com
 	name = Fayeez Ahmed
 [credential]
 	helper = osxkeychain
@@ -12,3 +23,5 @@
 	tool = vimdiff
 [diff]
 	tool = vimdiff
+[url "git@github.com:"]
+    insteadOf = https://github.com/
