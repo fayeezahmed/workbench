@@ -11,6 +11,7 @@ This repo contains my standard tools so that I don't have to remember what I hav
 
 <a name="tools"></a>
 ## Tools
+* Homebrew
 * Vim
 * Zshrc
 * Tmux
@@ -30,6 +31,9 @@ fi
 
 <a name="tools-to-install"></a>
 ## Tools to install
+
+### Homebrew
+Install homebrew here: https://brew.sh/
 
 ### tmux
 Install tmux plugin manager here: `https://github.com/tmux-plugins/tpm#installation`
