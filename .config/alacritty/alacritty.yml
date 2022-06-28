@@ -1,0 +1,14 @@
+font:
+    normal:
+      family: MesloLGS NF
+      style: Regular
+    bold:
+      family: MesloLGS NF
+      style: Bold
+    italic:
+      family: MesloLGS NF
+      style: Italic
+    size: 16
+
+key_bindings:
+  - { key: Key3, mods: Alt, chars: "#" }
