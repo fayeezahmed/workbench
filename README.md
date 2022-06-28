@@ -11,6 +11,10 @@ This repo contains my standard tools so that I don't have to remember what I hav
 
 <a name="tools"></a>
 ## Tools
+* Yabai
+* Alacritty
+* Spacebar
+* Skhd
 * Homebrew
 * Vim
 * Zshrc
@@ -69,6 +73,17 @@ To get fshow working - Follow install instructions here: https://github.com/june
 
 How to record a macro:
 `q<letter><command>q` - `letter` is any letter from a-z to store into that register
+
+### Window Management
+Reference: https://cbrgm.net/post/2021-05-5-setup-macos/
+This installs the following:
+- yabai
+- skhd
+- spacebar
+- alacr
+
+Run: `./wm.sh`
+
 
 ### CSS Macros
 *COMMENT CSS LINE* - `@c`
