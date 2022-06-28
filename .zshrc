@@ -72,7 +72,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 plugins=(
     git
     jsontools
-    osx
+    macos
     node
     docker
 )
@@ -129,8 +129,9 @@ export TIZEN_STUDIO=/Users/fayeez.ahmed/tizen-studio/
 
 export PATH=$XCODE:$VSCODE:$ANDROID_HOME:$ANDROID_SDK_TOOLS:$ANDROID_SDK_PLATFORM_TOOLS:$HOME/bin:/usr/local/bin:$TIZEN_STUDIO/tools:$TIZEN_STUDIO/tools/ide/bin:/Users/fayeez.ahmed/git-fuzzy/bin:$PATH
 
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+#. "/usr/local/opt/nvm/nvm.sh"
 ZSH_DISABLE_COMPFIX=true
 
 # Colorise the top Tabs of Iterm2 with the same color as background
@@ -271,4 +272,4 @@ alias zln='zmv -L'
 #### FAYEEZ END
 
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/git-fuzzy/bin:$PATH"
