@@ -31,4 +31,8 @@
 # iterm2 config
 !iterm.json
 
+# window management script
+!wm.sh
+!.yabairc
+!.skhdrc
 ### Except end ###

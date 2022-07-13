@@ -30,8 +30,8 @@ installPackage skhd koekeishiya/formulae/skhd
 ##############
 ## SPACEBAR ##
 ##############
-#installPackage spacebar cmacrae/formulae/spacebar
-#brew install homebrew/cask-fonts/font-fontawesome
+installPackage spacebar cmacrae/formulae/spacebar
+brew install homebrew/cask-fonts/font-fontawesome
 
 ##########################
 ## ALACRITTY - Terminal ##

@@ -1,4 +1,6 @@
-[includeIf "gitdir:~/dazn/**"]
+[includeIf "gitdir:~/**"]
+  path = ~/.gitconfig-personal
+[includeIf "gitdir:~/newsuk/**"]
   path = ~/.gitconfig-work
 [includeIf "gitdir:~/learning/**"]
   path = ~/.gitconfig-personal
