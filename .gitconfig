@@ -28,3 +28,6 @@
     insteadOf = https://github.com/
 [difftool]
 	prompt = false
+[user]
+	email = fahmed@skedulo.com
+	name = Fayeez Ahmed
