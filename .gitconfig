@@ -1,6 +1,6 @@
 [includeIf "gitdir:~/**"]
   path = ~/.gitconfig-personal
-[includeIf "gitdir:~/newsuk/**"]
+[includeIf "gitdir:~/skedulo/**"]
   path = ~/.gitconfig-work
 [includeIf "gitdir:~/learning/**"]
   path = ~/.gitconfig-personal
@@ -12,13 +12,12 @@
   path = ~/.gitconfig-personal
 [includeIf "gitdir:~/vimwiki/**"]
   path = ~/.gitconfig-personal
-[user]
-	name = Fayeez Ahmed
 [credential]
 	helper = osxkeychain
     useHttpPath=true
 [alias]
 	conflicted = !vim +Conflicted
+	d = difftool
 [mergetool "vim-conflicted"]
 	cmd = vim +Conflicted
 [merge]
@@ -27,3 +26,5 @@
 	tool = vimdiff
 [url "git@github.com:"]
     insteadOf = https://github.com/
+[difftool]
+	prompt = false

@@ -9,7 +9,7 @@
 .vim/plugged/*
 ### Except these ###
 !/.gitignore
-!/.gitconfig
+!/.gitconfig*
 
 # vim files
 !/.config
