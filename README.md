@@ -6,8 +6,9 @@ This repo contains my standard tools so that I don't have to remember what I hav
 1. [Tools](#tools)
 2. [Start ZSH](#start-zsh)
 3. [Tools to Install](#tools-to-install)
-4. [Macros](#macros)
-5. [Vim References](#references)
+4. [SSH](SSH)
+5. [Macros](#macros)
+6. [Vim References](#references)
 
 <a name="tools"></a>
 ## Tools
@@ -69,6 +70,44 @@ Do the following:
 To get fshow working - Follow install instructions here: https://github.com/junegunn/fzf
 
 <a name="macros"></a>
+
+## SSH
+
+Usually I have multiple github users, one for work and one for personal. There are a few things to do to make sure this works with this setup.
+
+1. Create multiple SSH keys [here|https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent]
+2. Add all the keys to the ssh-agent like so:
+  1. `ssh-add -k ~/.ssh/private_key`
+3. Create an ssh config file under `~/.ssh/config` and paste the following information (replace the templated []):
+   ```javascript
+  # Default Config - Work profile
+  Host work
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_ed25519
+    IdentitiesOnly yes
+ 
+  # Secondary Config - Personal profile
+  Host personal
+    HostName github.com
+    User git
+    IdentityFile ~/.ssh/id_ed_personal
+    IdentitiesOnly yes
+
+   ```
+4. When cloning a git repository instead of doing this:
+`git clone git@github.com:fayeezahmed/workbench.git`
+
+Do this (replace the github.com with the Host in above ssh config):
+`git clone git@personal:fayeezahmed/workbench.git`
+
+5. If I've already cloned it, do the following:
+`git remote set-url workbench git@personal:fayeezahmed/workbench.git`
+
+References:
+- https://jeffbrown.tech/multiple-github-accounts-ssh/
+- https://superuser.com/questions/232373/how-to-tell-git-which-private-key-to-use
+
 ## Macros
 
 How to record a macro:
