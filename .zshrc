@@ -200,7 +200,7 @@ wpp=/mnt/c/Development
 ctags=/usr/local/bin/ctags
 
 ### ALIASES START ###
-alias grep='grep -inIER --color=ALWAYS --exclude-dir={node_modules,reports,tags,logs}'
+alias grep='grep -inIE --color=ALWAYS --exclude-dir={node_modules}'
 alias find='find . -path ./node_modules -prune -o -name'
 which='(alias; declare -f) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot'
 alias chrome_nocors='open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security' # Mac only command
