@@ -51,7 +51,7 @@ installPackage skhd koekeishiya/formulae/skhd
 ##############
 ## SPACEBAR ##
 ##############
-installPackage spacebar cmacrae/formulae/spacebar
+#installPackage spacebar cmacrae/formulae/spacebar
 brew install homebrew/cask-fonts/font-fontawesome
 
 ##########################
