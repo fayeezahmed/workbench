@@ -27,50 +27,65 @@ function checkBrew(){
   fi
 }
 
+function outputStatusMsg() {
+  statusMsg=$1
+  echo "$(tput setaf 6) $(tput setab 0)...$statusMsg......."
+}
+
 ##########
 ## BREW ##
 ##########
+outputStatusMsg "CHECKING BREW"
 checkBrew
 
 ##########################################
 ## OH MY ZSH && ZSH SYNTAX HIGHLIGHTING ##
 ##########################################
+outputStatusMsg "CHECKING ZSH SYNTAX HIGHLIGHTING"
 brew install zsh-syntax-highlighting
 git checkout ~/.zshrc
 
 ####################
 ## POWERLEVEL 10K ##
 ####################
+outputStatusMsg "CHECKING P10K THEME FOR ZSH"
 brew install romkatv/powerlevel10k/powerlevel10k
+STRING="powerlevel10k/powerlevel10k.zsh-theme"
+if  grep -q $STRING ~/.zshrc ; then
+  echo "$(tput setaf 3) Already inserted \"source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme\"" ; 
+else
+  echo "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme" >>~/.zshrc
+fi
+
 
 ############
 ## NEOVIM ##
 ############
+outputStatusMsg "CHECKING NEOVIM"
 installPackage neovim neovim
 
 ###########
 ## YABAI ##
 ###########
+outputStatusMsg "CHECKING YABAI"
 installPackage yabai koekeishiya/formulae/yabai
 
 ##########
 ## SKHD ##
 ##########
+outputStatusMsg "CHECKING SKHD"
 installPackage skhd koekeishiya/formulae/skhd
 
 ##############
 ## SPACEBAR ##
 ##############
+# Leaving spacebar commented incase I use linux
 #installPackage spacebar cmacrae/formulae/spacebar
+outputStatusMsg "CHECKING FONT AWESOME"
 brew install homebrew/cask-fonts/font-fontawesome
-
-##########################
-## ALACRITTY - Terminal ##
-##########################
-brew install --cask alacritty
-
 
 ##########################
 ## KITTY - Terminal ##
 ##########################
+outputStatusMsg "CHECKING KITTY"
 brew install --cask kitty

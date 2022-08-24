@@ -267,4 +267,3 @@ alias zln='zmv -L'
 
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/git-fuzzy/bin:$PATH"
-source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
