@@ -17,16 +17,26 @@ function installPackage(){
   fi
 }
 
+function checkBrew(){
+  which -s brew
+  if [[ $? != 0 ]] ; then
+    # Install Homebrew
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  else
+    brew update
+  fi
+}
+
 ##########
 ## BREW ##
 ##########
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+checkBrew
 
 ##########################################
 ## OH MY ZSH && ZSH SYNTAX HIGHLIGHTING ##
 ##########################################
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 brew install zsh-syntax-highlighting
+git checkout ~/.zshrc
 
 ####################
 ## POWERLEVEL 10K ##
