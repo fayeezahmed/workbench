@@ -112,6 +112,14 @@ nvm install node
 #########
 ## FZF ##
 #########
+outputStatusMsg "CHECKING FZF"
 brew install fzf
 # To install useful key bindings and fuzzy completion:
 $(brew --prefix)/opt/fzf/install
+
+##########
+## yarn ##
+##########
+outputStatusMsg "CHECKING YARN & NPM"
+curl -o- -L https://yarnpkg.com/install.sh | bash
+
