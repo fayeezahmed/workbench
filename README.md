@@ -11,15 +11,25 @@ This repo contains my standard tools so that I don't have to remember what I hav
 6. [Vim References](#references)
 
 <a name="tools"></a>
-## Tools
-* Yabai
-* Alacritty
-* Spacebar
-* Skhd
-* Homebrew
-* Vim
-* Zshrc
-* Tmux
+
+## Installation
+Run:
+```zsh
+./wm.sh
+```
+This will install the following:
+- Homebrew
+- OH MY ZSH & ZSH SYNTAX HIGHLIGHTING
+- Powerlevel 10k
+- Neovim
+- Yabai
+- SKHD
+- Spacebar
+- Fontawesome
+- Kitty
+- Stats
+- NVM & Node
+- FZF
 
 <a name="start-zsh"></a>
 ## Start ZSH
@@ -36,12 +46,6 @@ fi
 
 <a name="tools-to-install"></a>
 ## Tools to install
-
-### Homebrew
-Install homebrew here: https://brew.sh/
-
-### tmux
-Install tmux plugin manager here: `https://github.com/tmux-plugins/tpm#installation`
 
 ### Plugin Manager
 Uses Vim-Plug which automatically installs if it doesn't exist.
@@ -102,7 +106,13 @@ Do this (replace the github.com with the Host in above ssh config):
 `git clone git@personal:fayeezahmed/workbench.git`
 
 5. If I've already cloned it, do the following:
-`git remote set-url workbench git@personal:fayeezahmed/workbench.git`
+
+```zsh
+# rename it so it's easier to reference and so you don't forget where it's from
+git remote rename origin workbench
+git remote set-url workbench git@personal:fayeezahmed/workbench.git`
+
+```
 
 References:
 - https://jeffbrown.tech/multiple-github-accounts-ssh/
@@ -112,17 +122,6 @@ References:
 
 How to record a macro:
 `q<letter><command>q` - `letter` is any letter from a-z to store into that register
-
-### Window Management
-Reference: https://cbrgm.net/post/2021-05-5-setup-macos/
-This installs the following:
-- yabai
-- skhd
-- spacebar
-- alacr
-
-Run: `./wm.sh`
-
 
 ### CSS Macros
 *COMMENT CSS LINE* - `@c`
