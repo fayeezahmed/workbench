@@ -107,3 +107,11 @@ export NVM_DIR=$HOME/.nvm;
 source $NVM_DIR/nvm.sh;
 # install latest version of node at least
 nvm install node
+
+
+#########
+## FZF ##
+#########
+brew install fzf
+# To install useful key bindings and fuzzy completion:
+$(brew --prefix)/opt/fzf/install
