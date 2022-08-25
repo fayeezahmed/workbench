@@ -97,3 +97,13 @@ brew install --cask kitty
 outputStatusMsg "CHECKING STATS - ram cpu icons for menu bar"
 echo "https://github.com/exelban/stats"
 brew install --cask stats
+
+#########
+## NVM ##
+#########
+outputStatusMsg "CHECKING NVM & NODE"
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+export NVM_DIR=$HOME/.nvm;
+source $NVM_DIR/nvm.sh;
+# install latest version of node at least
+nvm install node
