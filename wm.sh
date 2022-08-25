@@ -84,8 +84,16 @@ installPackage skhd koekeishiya/formulae/skhd
 outputStatusMsg "CHECKING FONT AWESOME"
 brew install homebrew/cask-fonts/font-fontawesome
 
-##########################
+######################
 ## KITTY - Terminal ##
-##########################
+######################
 outputStatusMsg "CHECKING KITTY"
 brew install --cask kitty
+
+
+###########
+## STATS ##
+###########
+outputStatusMsg "CHECKING STATS - ram cpu icons for menu bar"
+echo "https://github.com/exelban/stats"
+brew install --cask stats
