@@ -71,7 +71,7 @@ set shell=zsh
 " Font
 "" set guifont=MesloLGS_NF:h18
 set encoding=utf-8
-set guifont=FiraCode_Nerd_Font_Mono:h30
+set guifont=MesloLGS_NF:h30
 let g:webdevicons_enable = 1
 let g:webdevicons_enable_nerdtree = 1
 let NERDTreeShowHidden=1
