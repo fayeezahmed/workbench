@@ -18,50 +18,52 @@ set mouse=a
 "" PLUGIN MANAGER - VIM-PLUG START
 """"""""""""""""""""""""""""""""""
 "" Install if not installed
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  augroup install_plugins_on_enter
-    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-  augroup END
-endif
+""if empty(glob('~/.vim/autoload/plug.vim'))
+""  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+""    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+""  augroup install_plugins_on_enter
+""    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+""  augroup END
+""endif
+""
+""call plug#begin('~/.vim/plugged')
+""
+""Plug 'tpope/vim-surround'
+""Plug 'tpope/vim-repeat'
+""Plug 'ctrlpvim/ctrlp.vim'
+""Plug 'w0rp/ale'
+""Plug 'scrooloose/nerdtree'
+""Plug 'itchyny/lightline.vim'
+""Plug 'universal-ctags/ctags'
+""Plug 'vimwiki/vimwiki'
+""Plug 'tpope/vim-fugitive'
+""Plug 'tpope/vim-unimpaired'
+""Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+""Plug 'metakirby5/codi.vim'
+""Plug 'mattn/emmet-vim'
+""Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
+"""" Treesitter
+""Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
+""
+"""" Typescript
+""Plug 'leafgarland/typescript-vim'
+""
+"""" Vim Theme
+""Plug 'arcticicestudio/nord-vim', { 'branch': 'main' }
+""
+"""" Autocomplete
+""""Plug 'Shougo/deoplete.nvim'
+""Plug 'roxma/nvim-yarp'
+""Plug 'roxma/vim-hug-neovim-rpc'
+""""let g:deoplete#enable_at_startup = 1
+"""" Intellisense
+""Plug 'neoclide/coc.nvim', {'branch': 'release'}
+""Plug 'rking/ag.vim'
+""
+""Plug 'christoomey/vim-conflicted'
+""Plug 'ryanoasis/vim-devicons'
 
-call plug#begin('~/.vim/plugged')
-
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-repeat'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'w0rp/ale'
-Plug 'scrooloose/nerdtree'
-Plug 'itchyny/lightline.vim'
-Plug 'universal-ctags/ctags'
-Plug 'vimwiki/vimwiki'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-unimpaired'
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-Plug 'metakirby5/codi.vim'
-Plug 'mattn/emmet-vim'
-Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
-
-"" Typescript
-Plug 'leafgarland/typescript-vim'
-
-"" Vim Theme
-Plug 'arcticicestudio/nord-vim', { 'branch': 'main' }
-
-"" Autocomplete
-""Plug 'Shougo/deoplete.nvim'
-Plug 'roxma/nvim-yarp'
-Plug 'roxma/vim-hug-neovim-rpc'
-""let g:deoplete#enable_at_startup = 1
-"" Intellisense
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'rking/ag.vim'
-
-Plug 'christoomey/vim-conflicted'
-Plug 'ryanoasis/vim-devicons'
-
-call plug#end()
+""call plug#end()
 """"""""""""""""""""""""""""""""""
 "" PLUGIN MANAGER - VIM-PLUG END
 """"""""""""""""""""""""""""""""""
@@ -85,7 +87,7 @@ augroup END
 
 augroup vim_enter
   autocmd!
-  autocmd VimEnter * NERDTree
+  ""autocmd VimEnter * NvimTreeOpen
   autocmd VimEnter * wincmd p
 augroup END
 augroup javascript_folding
@@ -250,4 +252,4 @@ if (&term =~ 'xterm' && &t_Co == 256)
     set t_ut= | set ttyscroll=1
 endif
 
-colorscheme nord
+""colorscheme nord
