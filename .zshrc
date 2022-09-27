@@ -105,12 +105,13 @@ source $ZSH/oh-my-zsh.sh
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
+# ALIASES ARE DEFINED IN $ZSH_CUSTOM/fayeez_custom/aliases.zsh
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vim="nvim"
+
 
 #### FAYEEZ START
 
@@ -143,7 +144,6 @@ echo -e "\033]6;1;bg;blue;brightness;33\a"
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [[ -f /Users/fayeez.ahmed/v5/packages/wdio-lambda-runner/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/fayeez.ahmed/v5/packages/wdio-lambda-runner/node_modules/tabtab/.completions/sls.zsh
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
 
 ############################################################################################################################################
 ### ----------------------------------------------- FAYEEZ ZSHRC CUSTOM STUFF GOES HERE -----------------------------------------------  ###
@@ -199,14 +199,6 @@ pp=~/playground/personal-projects
 wpp=/mnt/c/Development
 ctags=/usr/local/bin/ctags
 
-### ALIASES START ###
-alias grep='grep -inIE --color=ALWAYS --exclude-dir={node_modules}'
-alias find='find . -path ./node_modules -prune -o -name'
-which='(alias; declare -f) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot'
-alias chrome_nocors='open -n -a /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --args --user-data-dir="/tmp/chrome_dev_test" --disable-web-security' # Mac only command
-alias sublime='/Applications/Sublime\ Text.app/Contents/MacOS/Sublime\ Text'
-### ALIASES END ###
-
 ### RANDOM OR FUN THINGS START ###
 matrix() { echo -e "\e[1;40m" ; clear ; while :; do echo $LINES $COLUMNS $(( $RANDOM % $COLUMNS)) $(( $RANDOM % 72 )) ;sleep 0.05; done|awk '{ letters="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789@#$%^&*()"; c=$4;        letter=substr(letters,c,1);a[$3]=0;for (x in a) {o=a[x];a[x]=a[x]+1; printf "\033[%s;%sH\033[2;32m%s",o,x,letter; printf "\033[%s;%sH\033[1;37m%s\033[0;0H",a[x],x,letter;if (a[x] >= $1) { a[x]=0; } }}' }
 
@@ -218,14 +210,8 @@ shrug() { echo -n "¯\_(ツ)_/¯" |tee /dev/tty| xclip -selection clipboard; }
 ### RANDOM OR FUN THINGS END ###
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-### Remove swp files 
-alias rmswp='ls ~/.local/share/nvim/swap/*.swp && rm ~/.local/share/nvim/swap/*.swp'
-
 ### TMUX colours to work ###
 export TERM=xterm-256color
-
-### CTAGS setup ###
-alias ctags='ctags -R --exclude=.git --exclude=node_modules'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -259,11 +245,16 @@ load-nvmrc
 #### RENAME FILE EXTENSIONS
 autoload -U zmv
 # you don't need the following two now, but put them also in your .zshrc
-alias zcp='zmv -C'
-alias zln='zmv -L'
+# aliased in $ZSH_CUSTOM/fayeez_custom/aliases.zsh
 # Usage (ext1 and ext2 are the file extensions you swap out): 
 # zmv '^*.ext1' '$f.ext2'
 #### FAYEEZ END
 
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/git-fuzzy/bin:$PATH"
+export PATH="$HOME/.rbenv/shims:$PATH"
+export PATH="/Users/fayeez/git-fuzzy/bin:$PATH"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/fayeez/.sdkman"
+[[ -s "/Users/fayeez/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/fayeez/.sdkman/bin/sdkman-init.sh"
