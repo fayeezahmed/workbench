@@ -1,0 +1,5 @@
+print("Hello Fayeez Lua")
+require("nvimtree")
+require('plugins')
+require('lsp')
+require('treesitter')
