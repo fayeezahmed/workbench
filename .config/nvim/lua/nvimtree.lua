@@ -73,9 +73,12 @@ nvim_tree.setup {
     dotfiles = false,
     custom = {},
   },
+  renderer = {
+    highlight_git = true,
+  },
   git = {
     enable = true,
-    ignore = true,
+    ignore = false,
     timeout = 500,
   },
   view = {
