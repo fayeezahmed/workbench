@@ -254,7 +254,25 @@ autoload -U zmv
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/git-fuzzy/bin:$PATH"
 export PATH="$HOME/.rbenv/shims:$PATH"
 export PATH="/Users/fayeez/git-fuzzy/bin:$PATH"
+export MAVEN_HOME="$HOME/Downloads/apache-maven-3.8.6"
+PATH="$MAVEN_HOME/bin:$PATH"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/fayeez/.sdkman"
 [[ -s "/Users/fayeez/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/fayeez/.sdkman/bin/sdkman-init.sh"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/fayeez/miniforge3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/fayeez/miniforge3/etc/profile.d/conda.sh" ]; then
+        . "/Users/fayeez/miniforge3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/fayeez/miniforge3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
