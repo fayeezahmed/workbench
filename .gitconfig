@@ -13,21 +13,30 @@
 [includeIf "gitdir:~/vimwiki/**"]
   path = ~/.gitconfig-personal
 [credential]
-	helper = osxkeychain
+	helper = /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
     useHttpPath=true
 [alias]
 	conflicted = !vim +Conflicted
 	d = difftool
-[mergetool "vim-conflicted"]
-	cmd = vim +Conflicted
-[merge]
-	tool = vimdiff
 [diff]
-	tool = vimdiff
+	tool = nvim -d
 [url "git@github.com:"]
     insteadOf = https://github.com/
-[difftool]
-	prompt = false
 [user]
 	email = fahmed@skedulo.com
 	name = Fayeez Ahmed
+[core]
+	editor = nvim
+[difftool]
+    prompt = true
+[diff]
+    tool = nvimdiff
+[difftool "nvimdiff"]
+    cmd = "nvim -d \"$LOCAL\" \"$BASE\" \"$REMOTE\""
+[merge]
+	tool = vimdiff
+[mergetool]
+	keepBackup = false
+[mergetool "vimdiff"]
+	cmd = nvim -d $LOCAL $MERGED $REMOTE -c '$wincmd w' -c 'wincmd J'
+

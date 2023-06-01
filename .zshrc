@@ -286,3 +286,4 @@ bindkey '^S' history-incremental-search-forward
 
 export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 bindkey -v
+export PATH="/home/fayeez.ahmed/git-fuzzy/bin:$PATH"
