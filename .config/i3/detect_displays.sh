@@ -39,7 +39,7 @@ function setup_display() {
 function set_autorandr_display() {
 	display_name=$1
 	case "${display_name}" in
-	home1)
+	home)
 		autorandr --change home
 		;;
 	work)
