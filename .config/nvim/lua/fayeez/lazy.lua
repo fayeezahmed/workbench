@@ -41,7 +41,7 @@ require("lazy").setup({
             local configs = require("nvim-treesitter.configs")
 
             configs.setup({
-                ensure_installed = { "tsx", "java", "c", "lua", "vim", "vimdoc", "query", "elixir", "heex", "javascript", "typescript", "html" },
+                ensure_installed = { "groovy", "tsx", "java", "c", "lua", "vim", "vimdoc", "query", "elixir", "heex", "javascript", "typescript", "html" },
                 sync_install = false,
                 highlight = { enable = true },
                 indent = { enable = true },
@@ -75,8 +75,8 @@ require("lazy").setup({
         "tpope/vim-fugitive",
         config = function()
             vim.keymap.set("n", "<leader>gs", vim.cmd.Git)
-            vim.keymap.set("n", "<leader>gp", function() vim.cmd('Git "pull"')end)
-            vim.keymap.set("n", "<leader>gst", function() vim.cmd('Git "stash"')end)
+            vim.keymap.set("n", "<leader>gp", function() vim.cmd('Git "pull"') end)
+            vim.keymap.set("n", "<leader>gst", function() vim.cmd('Git "stash"') end)
         end
     },
     -- LSP
@@ -140,7 +140,7 @@ require("lazy").setup({
 
             require('mason').setup({})
             require('mason-lspconfig').setup({
-                ensure_installed = { 'prettier', 'jdtls', 'tsserver', 'eslint', 'sumneko_lua' },
+                ensure_installed = { 'jdtls', 'tsserver', 'eslint', 'sumneko_lua' },
                 handlers = {
 
                     -- this first function is the "default handler"
