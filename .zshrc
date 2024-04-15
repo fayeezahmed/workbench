@@ -1,5 +1,4 @@
-emulate sh
-. ~/.profile
+emulate sh . ~/.profile
 emulate zsh
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -114,9 +113,22 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+if [ -f ~/.zsh/zsh_gr ]; then
+  source ~/.zsh/zsh_gr
+else 
+  print "[INFO]: No zsh_gr found in .zsh dir."
+fi
 
 
 #### FAYEEZ START
+
+if [ -z "$SSH_AUTH_SOCK" ] ; then
+    eval "$(ssh-agent -s)"
+    ssh-add /home/fayeez.ahmed/.ssh/id_ed25519
+fi
+
+export SSH_ASKPASS=/usr/bin/ssh-askpass
 
 # Vim keybindings
 set -o vi
@@ -128,7 +140,7 @@ export ANDROID_SDK_TOOLS=$HOME/Library/Android/sdk/tools/
 export ANDROID_SDK_PLATFORM_TOOLS=$HOME/Library/Android/sdk/platform-tools/
 export TIZEN_STUDIO=/Users/fayeez.ahmed/tizen-studio/
 
-export PATH=$XCODE:$VSCODE:$ANDROID_HOME:$ANDROID_SDK_TOOLS:$ANDROID_SDK_PLATFORM_TOOLS:$HOME/bin:/usr/local/bin:$TIZEN_STUDIO/tools:$TIZEN_STUDIO/tools/ide/bin:/Users/fayeez.ahmed/git-fuzzy/bin:$PATH
+export PATH=$XCODE:$VSCODE:$ANDROID_HOME:$ANDROID_SDK_TOOLS:$ANDROID_SDK_PLATFORM_TOOLS:$HOME/bin:/usr/local/bin:$TIZEN_STUDIO/tools:$TIZEN_STUDIO/tools/ide/bin:$PATH
 
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
@@ -254,36 +266,31 @@ autoload -U zmv
 #### FAYEEZ END
 
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/git-fuzzy/bin:$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="$HOME/.rbenv/shims:$PATH"
-export PATH="/Users/fayeez/git-fuzzy/bin:$PATH"
-export MAVEN_HOME="$HOME/Downloads/apache-maven-3.8.6"
+export MAVEN_HOME=/usr/local/share/apache-maven-3.8.8/
 PATH="$MAVEN_HOME/bin:$PATH"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/fayeez/.sdkman"
 [[ -s "/Users/fayeez/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/fayeez/.sdkman/bin/sdkman-init.sh"
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/Users/fayeez/miniforge3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/Users/fayeez/miniforge3/etc/profile.d/conda.sh" ]; then
-        . "/Users/fayeez/miniforge3/etc/profile.d/conda.sh"
-    else
-        export PATH="/Users/fayeez/miniforge3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
 export MAVEN_OPTS='-Xmx512m -Xms512m'
 
 bindkey '^R' history-incremental-search-backward
 bindkey '^S' history-incremental-search-forward
 
-export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64:/usr/bin/java
 bindkey -v
 export PATH="/home/fayeez.ahmed/git-fuzzy/bin:$PATH"
+
+# Scala for gatling
+export SCALA_HOME=/usr/local/share/scala-2.12.18/
+
+export PATH="$PATH:$SCALA_HOME/bin"
+export PATH="$PATH:/home/fayeez.ahmed/.local/share/coursier/bin"
+
+
+# JDTLS
+export PATH="$PATH:/home/fayeez.ahmed/jdtls/bin/"
+

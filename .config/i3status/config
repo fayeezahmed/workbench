@@ -11,24 +11,35 @@ general {
         interval = 5
 }
 
+order += "memory"
 order += "disk /"
 order += "battery all"
 order += "load"
+order += "cpu_usage"
 order += "tztime local"
 
 battery all {
-        format = "%status %percentage %remaining"
+        format = " %status%percentage %remaining "
+        status_chr = "⚡"
+        status_full = "🔋FULL "
 }
 
 tztime local {
-        format = "%Y-%m-%d %H:%M:%S"
+        format = "  📅 %d-%m-%y 🕛 %H:%M  "
 }
 
 load {
-        format = "%1min"
+        format = "  %1min  "
 }
 
 disk "/" {
-        format = "%avail"
+        format = "  💾 %avail  "
 }
 
+memory {
+    format = "free: %free available: %available"
+  }
+
+cpu_usage {
+    format = " %usage "
+  }

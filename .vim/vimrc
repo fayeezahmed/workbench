@@ -1,255 +1,18 @@
-if &compatible
+set nocompatible
 
-
-end
-
-
-if has('python3') && !has('patch-8.1.201') 
-  silent! python3 1
-endif
-
-syntax on
-filetype plugin indent on
-""set omnifunc=syntaxcomplete#Complete
-set laststatus=2
-set mouse=a
-
-""""""""""""""""""""""""""""""""""
-"" PLUGIN MANAGER - VIM-PLUG START
-""""""""""""""""""""""""""""""""""
-"" Install if not installed
-""if empty(glob('~/.vim/autoload/plug.vim'))
-""  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-""    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-""  augroup install_plugins_on_enter
-""    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-""  augroup END
-""endif
-""
-""call plug#begin('~/.vim/plugged')
-""
-""Plug 'tpope/vim-surround'
-""Plug 'tpope/vim-repeat'
-""Plug 'ctrlpvim/ctrlp.vim'
-""Plug 'w0rp/ale'
-""Plug 'scrooloose/nerdtree'
-""Plug 'itchyny/lightline.vim'
-""Plug 'universal-ctags/ctags'
-""Plug 'vimwiki/vimwiki'
-""Plug 'tpope/vim-fugitive'
-""Plug 'tpope/vim-unimpaired'
-""Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
-""Plug 'metakirby5/codi.vim'
-""Plug 'mattn/emmet-vim'
-""Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app && yarn install' }
-"""" Treesitter
-""Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
-""
-"""" Typescript
-""Plug 'leafgarland/typescript-vim'
-""
-"""" Vim Theme
-""Plug 'arcticicestudio/nord-vim', { 'branch': 'main' }
-""
-"""" Autocomplete
-""""Plug 'Shougo/deoplete.nvim'
-""Plug 'roxma/nvim-yarp'
-""Plug 'roxma/vim-hug-neovim-rpc'
-""""let g:deoplete#enable_at_startup = 1
-"""" Intellisense
-""Plug 'neoclide/coc.nvim', {'branch': 'release'}
-""Plug 'rking/ag.vim'
-""
-""Plug 'christoomey/vim-conflicted'
-""Plug 'ryanoasis/vim-devicons'
-
-""call plug#end()
-""""""""""""""""""""""""""""""""""
-"" PLUGIN MANAGER - VIM-PLUG END
-""""""""""""""""""""""""""""""""""
-" Using external zsh commands - stored in ~/.zshenv
-set shell=zsh
-
-" Font
-"" set guifont=MesloLGS_NF:h18
-set encoding=utf-8
-set guifont=MesloLGS_NF:h30
-let g:webdevicons_enable = 1
-let g:webdevicons_enable_nerdtree = 1
-let NERDTreeShowHidden=1
-
-augroup prettier
-  autocmd!
-  let g:prettier#autoformat_config_files = ['/config/prettier/.prettierrc']
-  let g:prettier#config#arrow_parens = get(g:,'prettier#config#arrow_parens', 'always')
-  autocmd BufWritePre *.js,*.json,*.css,*.scss,*.less,*.graphql,*.yml,*.yaml,*.ts,*.tsx PrettierAsync
-augroup END
-
-augroup vim_enter
-  autocmd!
-  ""autocmd VimEnter * NvimTreeOpen
-  autocmd VimEnter * wincmd p
-augroup END
-augroup javascript_folding
-    au!
-    au FileType javascript setlocal foldmethod=syntax 
-    au FileType javascript setlocal foldlevel=99
-augroup END
-
-" Color scheme setup
-let g:vim_jsx_pretty_colorful_config = 1
-let g:used_javascript_libs = 'underscore,backbone,react,d3,jasmine,chai'
 syntax enable
-" for vim 8
-set t_Co=256
- if (has("termguicolors"))
-  set t_Co=256
-  set termguicolors
- endif
- if &term =~ '256color'
-  " disable Background Color Erase (BCE) so that color schemes
-  " render properly when inside 256-color tmux and GNU screen.
-  set t_ut=
-endif
+filetype plugin on
 
-"" Modified to 2 spaces from: https://stackoverflow.com/questions/1878974/redefine-tab-as-4-spaces
-set tabstop=4 softtabstop=0 expandtab shiftwidth=2 smarttab
-set number
-""set relativenumber
-set path+=~/dazn/catalog-tv-chapter/src/**,~/dazn/catalog-tv-chapter/test/**,~/dazn/catalog-tv-chapter/webpack/**,~/dazn/catalog-tv-chapter/scripts/**,~/dazn/catalog-tv-chapter/node_modules/@dazn/focus-manager/**,
-set suffixesadd=.js,.jsx
-set bs=2
-set hlsearch
+" FINDING FILES
+set path+=** " two stars (**) means search through the directories recursively
+set wildmenu " gives me a display of possible files if there are multiple
+set wildmode=longest:full,full
 
-" Start autocompletion after 4 chars
-let g:ycm_min_num_of_chars_for_completion = 4
-let g:ycm_min_num_identifier_candidate_chars = 4
-let g:ycm_enable_diagnostic_highlighting = 0
-""let g:ycm_max_num_candidates = 25
+" Browser tweaks
+let g:netrw_banner=0
+let g:netrw_browse_split=4
+let g:netrw_altv=1
+let g:netrw_liststyle=3
+let g:netrw_list_hide=netrw_gitignore#Hide()
+let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 
-" ###### CTRLP options ######
-"" Remap ctrlp to easier shortcut
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-
-"" Ignore typical files from search
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip
-let g:ctrlp_custom_ignore = '\v[\/]\.(git|hg|svn)$'
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\v\.(exe|so|dll)$',
-  \ 'link': 'some_bad_symbolic_links',
-  \ }
-"" Ignore all those in .gitignore
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
-"" Open file in a new buffer if file already open
-let g:ctrlp_switch_buffer = 'et'
-" ctags optimization
-set autochdir
-set tags=tags;
-let g:ctrlp_match_window = 'results:25'
-"
-"""VIM WIKI HTML TEMPLATE"""
- let g:vimwiki_list = [{
-	\ 'path': '~/vimwiki',
-	\ 'template_path': '~/vimwiki/templates/',
-	\ 'template_default': 'default',
-	\ 'syntax': 'markdown',
-	\ 'ext': '.md',
-	\ 'path_html': '~/vimwiki/site_html/',
-	\ 'custom_wiki2html': 'vimwiki_markdown',
-    \ 'template_ext': '.tpl'}]
-
-"""ALE - ESLINT"""
-"" Auto fix files on save
-let g:ale_fix_on_save = 0
-"" map ALENext and ALEPrevious to \ak and \aj respectively, \ is the leader
-nmap <silent> <leader>ak :ALENext<cr>
-nmap <silent> <leader>aj :ALEPrevious<cr>
-
-"" Vim cursor
-if exists('$TMUX')
-    let &t_SI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=1\x7\<Esc>\\"
-    let &t_EI = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=0\x7\<Esc>\\"
-    let &t_SR = "\<Esc>Ptmux;\<Esc>\<Esc>]50;CursorShape=2\x7\<Esc>\\"
-else
-    let &t_SI = "\<Esc>]50;CursorShape=1\x7"
-    let &t_EI = "\<Esc>]50;CursorShape=0\x7"
-    let &t_SR = "\<Esc>]50;CursorShape=2\x7"
-endif
-
-"""""""""""""""""
-"" CUSTOM AUTOCMD
-"""""""""""""""""
-"" Hybrid line numbers
-augroup numbertoggle
-  autocmd!
-  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
-  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
-augroup END
-
-""""""""""""""""""""""
-"" COC.VIM SETUP START
-""""""""""""""""""""""
-"" Setup typescript and javascript server
-let g:coc_global_extensions = [ 'coc-tsserver' ]
-
-"" Setup coc-prettier and coc-eslint only if they exist in the project
-if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
-  let g:coc_global_extensions += ['coc-prettier']
-endif
-
-if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
-  let g:coc_global_extensions += ['coc-eslint']
-endif
-
-"" For showing documentation when pressing K over some method
-nnoremap <silent> K :call CocAction('doHover')<CR>
-
-"" Show Coclist diagnostic list using Space-d - use :CocList for more lists
-nnoremap <silent> <space>d :<C-u>CocList diagnostics<cr>
-"" Fuzzy search files
-nnoremap <silent> <space>f :<C-u>CocList files<CR>
-
-"" For easy go to next and prev diagnostic error
-nmap <silent> ]g <Plug>(coc-diagnostic-prev)
-nmap <silent> [g <Plug>(coc-diagnostic-next)
-
-"" Show symbols list using Space-s
-nnoremap <silent> <space>s :<C-u>CocList -I symbols<cr>
-
-""""""""""""""""""""""
-"" COC.VIM SETUP END
-""""""""""""""""""""""
-"" Ag root directory rather than cwd
-let g:ag_working_path_mode="r"
-
-"" Macros
-"" Boilerplate java class with main method - no imports
-let @j = 'ipublic class MyClass {	public static void main(String[€kr args€kr{		// Stuff goes here, change the class name and te€kbhe s€kbarguments'
-
-"" More natural splitting
-set splitbelow
-set splitright
-
-""""""""""""""""""""""""""""""""""""""""""""""""""
-""""""""""""""""""" MACROS """""""""""""""""""""""
-""""""""""""""""""""""""""""""""""""""""""""""""""
-"" CSS commenting
-let @c="I/* \<Esc>A */\<Esc>"
-let @v="^3x$2h3x"
-"" React boilerplate
-let @r="impor€kb€kb€kb€kbimport React from 'react€kr;import€kb€kb€kb€kb€kb€kbfunction Component(€kr {cos€kbnst €kb€kb€kb€kb€kb€kbfun€kb€kb€kb€kb€kb	€kbreturn (	d€kb>di€kb€kb€kb<div>	€kb</div€ku€kd>€ku€kl class€kb€kb€kb€kb€kbdata-testid='COMPOEN€kb€kbNENTjjjoexport default Component;:€kb"
-"" HTML boilerplate
-let @h="i<!DOCTYPE html><html lang=\"en€kr><head><meta charset=\"utf-8€kr><title> Standard HTML</title><meta name=\"description€kr cib€kb€kbontent €kb=\"HTML5 Standard€kr><meta a€kbname=\"author€kr content=\"Fayeez Ahmed€kr><link rel=\"stylesheet€kr href=\"css//€kbstyles.css?v=1.0€kr>€kb<h€kb.€kb/head><body><scrp€kbipt src=\"script.js\"></script>€kb</body>€kb</html>\<Esc>"
-let @w="xAÄkbv%yApcs[)"
-    
-"""""""""""""""""""""""""""""""""""""""""""""""""
-""""""""""""""""""""WINDOWS"""""""""""""""""""""""
-""""""""""""""""""""""""""""""""""""""""""""""""""
-"" WINDOWS STUFF - comment out on Mac or linux
-if (&term =~ 'xterm' && &t_Co == 256)
-    set t_ut= | set ttyscroll=1
-endif
-
-""colorscheme nord

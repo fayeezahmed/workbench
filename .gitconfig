@@ -18,12 +18,13 @@
 [alias]
 	conflicted = !vim +Conflicted
 	d = difftool
+
 [diff]
-	tool = nvim -d
+	tool = nvimdiff
 [url "git@github.com:"]
     insteadOf = https://github.com/
 [user]
-	email = fahmed@skedulo.com
+	email = fayeez.ahmed@globalrelay.net
 	name = Fayeez Ahmed
 [core]
 	editor = nvim

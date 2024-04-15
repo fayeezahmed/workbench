@@ -32,6 +32,14 @@ function outputStatusMsg() {
   echo "$(tput setaf 6) $(tput setab 0)...$statusMsg......."
 }
 
+function getPackageManager(){
+  if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    local pkgManager=apt
+  elif [[ "$OSTYPE" == "darwin"* ]]; then
+    local pkgManager=brew
+  fi
+}
+
 ##########
 ## BREW ##
 ##########

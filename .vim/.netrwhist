@@ -1,3 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =1
-let g:netrw_dirhist_1='/Users/fayeez.ahmed/dazn/durant-dashboard/src/components/LineChart'
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/home/fayeez.ahmed/globalrelay/task-manager/task-manager/src/main/java/com/globalrelay/taskmanager/domain/model'
+let g:netrw_dirhist_8='/home/fayeez.ahmed/globalrelay/task-manager/task-manager/src/main/java/com/globalrelay/taskmanager/domain'
+let g:netrw_dirhist_7='/home/fayeez.ahmed/globalrelay/task-manager/task-manager/src/main/java/com/globalrelay/taskmanager'
+let g:netrw_dirhist_6='/home/fayeez.ahmed/globalrelay/task-manager/task-manager/src/main/java/com/globalrelay'
+let g:netrw_dirhist_5='/home/fayeez.ahmed/globalrelay/task-manager/task-manager/src/main/java/com'
+let g:netrw_dirhist_4='/home/fayeez.ahmed/globalrelay/task-manager/task-manager/src/main/java'
+let g:netrw_dirhist_3='/home/fayeez.ahmed/globalrelay/task-manager/dev-setup'
+let g:netrw_dirhist_2='/home/fayeez.ahmed/globalrelay/task-manager'
+let g:netrw_dirhist_1='/home/fayeez.ahmed/globalrelay/task-manager/dev-setup'
+let g:netrw_dirhist_0='/home/fayeez.ahmed/globalrelay/task-manager/ckp/helm/cap-task-manager'

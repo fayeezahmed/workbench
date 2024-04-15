@@ -1,31 +1,31 @@
 # Ignore everything
 *
 ### Except these ###
-!/.gitignore
-!/.gitconfig*
+.gitignore
+.gitconfig*
 
 # vim files
-!/.config/nvim/*
-!/.config/i3/*
-!/.config/kitty/*
+.config/nvim/*
+.config/i3/*
+.config/kitty/*
 
-!/.tern-project
+/.tern-project
 
 # zshrc
-!/.zshrc
-!/.zshenv
+.zshrc
+.zshenv
 
 # tmux
-!/.tmux.conf
+.tmux.conf
 
 # powerlevel 10k theme for zsh config file
-!.p10k.zsh
+.p10k.zsh
 
 # iterm2 config
-!iterm.json
+iterm.json
 
 # window management script
-!wm*.sh
-!.yabairc
-!.skhdrc
+wm*.sh
+.yabairc
+.skhdrc
 ### Except end ###
