@@ -85,7 +85,7 @@ local function get_jdtls_paths()
     -- you can find the list here: 
     {
       name = 'JavaSE-17',
-      path = '/usr/bin/java',
+      path = '/usr/lib/jvm/java-17-openjdk-amd64',
     }
     -- https://github.com/eclipse/eclipse.jdt.ls/wiki/Running-the-JAVA-LS-server-from-the-command-line#initialize-request
     --

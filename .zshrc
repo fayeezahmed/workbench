@@ -292,5 +292,5 @@ export PATH="$PATH:/home/fayeez.ahmed/.local/share/coursier/bin"
 
 
 # JDTLS
-export PATH="$PATH:/home/fayeez.ahmed/jdtls/bin/"
+export PATH="$PATH:/home/fayeez.ahmed/jdtls/bin/:/usr/lib/jvm/java-17-openjdk-amd64"
 
