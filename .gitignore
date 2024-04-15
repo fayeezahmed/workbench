@@ -1,20 +1,14 @@
 # Ignore everything
-/*
-/.vim/bundle/*
-#
-# swp files too
-.*.swp
-.*.swo
-.config/coc/*
-.vim/plugged/*
+*
 ### Except these ###
 !/.gitignore
 !/.gitconfig*
 
 # vim files
-!/.config
-!/.vim/
-!/.vimrc
+!/.config/nvim
+!/.config/i3
+!/.config/kitty
+
 !/.tern-project
 
 # zshrc
