@@ -53,16 +53,22 @@ require("lazy").setup({
         dependencies = {
             "nvim-lua/plenary.nvim",
         },
+        branch = "harpoon2",
         keys = {
-            { "<leader>a", "<cmd>lua require('harpoon.mark').add_file()<cr>",        desc = "Mark file with harpoon" },
-            { "<C-a>",     "<cmd>lua require('harpoon.ui').toggle_quick_menu()<cr>", desc = "Show harpoon marks" },
+            { "<leader>a",     "<cmd>lua require('harpoon').setup():list():add()<cr>",                                            desc = "Mark file with harpoon" },
+            { "<C-h>",         "<cmd>lua require('harpoon').setup().ui:toggle_quick_menu(require('harpoon').setup():list())<cr>", desc = "Show Harpoon quick menu" },
 
-            { "<C-7>",     "<cmd>lua require('harpoon.ui').nav_file(1)<cr>",         desc = "Navigate to harpoon marked file 1" },
-            { "<C-8>",     "<cmd>lua require('harpoon.ui').nav_file(2)<cr>",         desc = "Navigate to harpoon marked file 2" },
-            { "<C-9>",     "<cmd>lua require('harpoon.ui').nav_file(3)<cr>",         desc = "Navigate to harpoon marked file 3" },
-            { "<C-0>",     "<cmd>lua require('harpoon.ui').nav_file(4)<cr>",         desc = "Navigate to harpoon marked file 4" },
-            { "<C-n>",     "<cmd>lua require('harpoon.ui').nav_next()<cr>",          desc = "Navigate to the next file in the list" },
-            { "<C-m>",     "<cmd>lua require('harpoon.ui').nav_prev()<cr>",          desc = "Navigate to the previous file in the list" },
+            { "<C-7>",         "<cmd>lua require('harpoon').setup():list():select(1)<cr>",                                        desc = "Navigate to Harpoon marked file 1" },
+            { "<C-8>",         "<cmd>lua require('harpoon').setup():list():select(2)<cr>",                                        desc = "Navigate to Harpoon marked file 2" },
+            { "<C-9>",         "<cmd>lua require('harpoon').setup():list():select(3)<cr>",                                        desc = "Navigate to Harpoon marked file 3" },
+            { "<C-0>",         "<cmd>lua require('harpoon').setup():list():select(4)<cr>",                                        desc = "Navigate to Harpoon marked file 4" },
+            { "<C-n>",         "<cmd>lua require('harpoon').setup():list():next()<cr>",                                           desc = "Navigate to the next file in the list" },
+            { "<C-m>",         "<cmd>lua require('harpoon').setup():list():prev()<cr>",                                           desc = "Navigate to the previous file in the list" },
+
+            { "<leader><C-7>", "<cmd>lua require('harpoon').setup():list():replace_at(1)<cr>",                                    desc = "Replace Harpoon marked file 1" },
+            { "<leader><C-8>", "<cmd>lua require('harpoon').setup():list():replace_at(2)<cr>",                                    desc = "Replace Harpoon marked file 2" },
+            { "<leader><C-9>", "<cmd>lua require('harpoon').setup():list():replace_at(3)<cr>",                                    desc = "Replace Harpoon marked file 3" },
+            { "<leader><C-0>", "<cmd>lua require('harpoon').setup():list():replace_at(4)<cr>",                                    desc = "Replace Harpoon marked file 4" },
         }
     },
     {
@@ -167,9 +173,9 @@ require("lazy").setup({
             })
         end
     },
-    {"tpope/vim-cucumber"},
+    { "tpope/vim-cucumber" },
 
-    { 'mfussenegger/nvim-jdtls' },
+    { 'mfussenegger/nvim-jdtls', dependencies = {"mfussenegger/nvim-dap"}},
     {
         "kdheepak/lazygit.nvim",
         cmd = {
