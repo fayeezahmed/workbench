@@ -25,10 +25,13 @@ require("lazy").setup({
         "rose-pine/neovim",
         name = "rose-pine-moon",
         config = function()
+            require('rose-pine').setup({
+                disable_background = true,
+            })
             color = color or "rose-pine-moon"
             print("hello color config")
             print(color)
-            vim.cmd.colorscheme(color)
+            vim.cmd.colorscheme("rose-pine")
 
             vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
             vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
@@ -175,7 +178,7 @@ require("lazy").setup({
     },
     { "tpope/vim-cucumber" },
 
-    { 'mfussenegger/nvim-jdtls', dependencies = {"mfussenegger/nvim-dap"}},
+    { 'mfussenegger/nvim-jdtls', dependencies = { "mfussenegger/nvim-dap" } },
     {
         "kdheepak/lazygit.nvim",
         cmd = {

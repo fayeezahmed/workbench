@@ -280,7 +280,7 @@ export MAVEN_OPTS='-Xmx512m -Xms512m'
 bindkey '^R' history-incremental-search-backward
 bindkey '^S' history-incremental-search-forward
 
-export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64:/usr/bin/java
+export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))
 bindkey -v
 export PATH="/home/fayeez.ahmed/git-fuzzy/bin:$PATH"
 
