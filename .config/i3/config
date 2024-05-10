@@ -167,7 +167,8 @@ assign [class="Arandr"] $ws9
 assign [class="Blueman-manager"] $ws9
 
 # Autoload some applications on each login
-exec globalrelay
+exec gtk-launch grapp
+exec gtk-launch arandr
 exec anyconnect
 exec blueman-manager
 exec kitty
