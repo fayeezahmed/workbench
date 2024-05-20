@@ -5,10 +5,13 @@
 !.gitconfig*
 
 # vim files
-!.config/nvim/**/*
-!.config/nvim/ftplugin/*
-!.config/i3/**/*
-!.config/kitty/**/*
+!.config/nvim/*
+!.config/nvim/after/*
+!.config/nvim/lua/
+!.config/nvim/lua/fayeez
+!.config/nvim/plugin/*
+!.config/i3/
+!.config/kitty/
 
 /.tern-project
 
