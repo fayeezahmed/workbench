@@ -5,11 +5,12 @@
 !.gitconfig*
 
 # vim files
-!.config/nvim/*
-!.config/nvim/after/*
+!.config/nvim/
+!.config/nvim/after/
+!.config/nvim/after/ftplugin
 !.config/nvim/lua/
 !.config/nvim/lua/fayeez
-!.config/nvim/plugin/*
+!.config/nvim/plugin/
 !.config/i3/
 !.config/kitty/
 
