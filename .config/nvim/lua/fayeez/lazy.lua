@@ -99,7 +99,6 @@ require("lazy").setup({
             vim.g.lsp_zero_extend_lspconfig = 0
         end
     },
-    { 'neovim/nvim-lspconfig' },
     { 'hrsh7th/cmp-nvim-lsp' },
     { 'hrsh7th/nvim-cmp' },
     { 'L3MON4D3/LuaSnip' },
