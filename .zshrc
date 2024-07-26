@@ -120,6 +120,12 @@ else
   print "[INFO]: No zsh_gr found in .zsh dir."
 fi
 
+if [ -f ~/.zsh/zsh_aliases ]; then
+  source ~/.zsh/zsh_aliases
+else 
+  print "[INFO]: No zsh_aliases found in .zsh dir."
+fi
+
 
 #### FAYEEZ START
 

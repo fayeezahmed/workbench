@@ -197,4 +197,10 @@ require("lazy").setup({
             { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
         }
     },
+    {
+        'sbdchd/neoformat',
+        init = function ()
+            vim.g.neoformat_try_node_exe = 1
+        end
+    },
 })
