@@ -1,1 +1,6 @@
 *
+!.gitconfig
+!.gitconfig-personal
+!.gitconfig-work
+!.gitmodules
+!.pk10k.zsh
