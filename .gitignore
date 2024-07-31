@@ -4,3 +4,5 @@
 !.gitconfig-work
 !.gitmodules
 !.pk10k.zsh
+
+!.config/nvim
