@@ -1,8 +1,8 @@
 *
-!.gitconfig
-!.gitconfig-personal
-!.gitconfig-work
-!.gitmodules
-!.pk10k.zsh
+!.p10k.zsh
+!.zsh_env
+!.xinitrc
+!.gitconfig*
+!/.config/
+!/.config/**
 
-!.config/nvim
