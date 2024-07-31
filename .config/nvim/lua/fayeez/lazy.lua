@@ -1,5 +1,6 @@
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
+    {'prisma/vim-prisma'},
     {
         'nvim-telescope/telescope.nvim',
         tag = '0.1.6',
@@ -26,6 +27,7 @@ require("lazy").setup({
             vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
         end
     },
+    --{"Mofiqul/vscode.nvim",config = function() vim.cmd.colorscheme("vscode") end },
     {
         'nvim-treesitter/nvim-treesitter',
         build = ':TSUpdate',
@@ -90,7 +92,7 @@ require("lazy").setup({
     },
     { 'hrsh7th/cmp-nvim-lsp' },
     { 'hrsh7th/nvim-cmp' },
-    { 'L3MON4D3/LuaSnip' },
+    { 'L3MON4D3/LuaSnip', tag = "v2.*"},
     { "williamboman/mason.nvim" },
     { "williamboman/mason-lspconfig.nvim" },
     {
@@ -104,7 +106,7 @@ require("lazy").setup({
             print("LSP CONFIG")
             local lsp_zero = require('lsp-zero')
 
-            lsp_zero.on_attach(function(client, bufnr)
+           lsp_zero.on_attach(function(client, bufnr)
                 -- see :help lsp-zero-keybindings
                 -- to learn the available actions
                 lsp_zero.default_keymaps({ buffer = bufnr })
