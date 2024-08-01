@@ -166,32 +166,32 @@ require("lazy").setup({
             })
         end
     },
-    --{ "tpope/vim-cucumber" },
+    { "tpope/vim-cucumber" },
 
-    --{ 'mfussenegger/nvim-jdtls', dependencies = { "mfussenegger/nvim-dap" } },
-    --{
-    --    "kdheepak/lazygit.nvim",
-    --    cmd = {
-    --        "LazyGit",
-    --        "LazyGitConfig",
-    --        "LazyGitCurrentFile",
-    --        "LazyGitFilter",
-    --        "LazyGitFilterCurrentFile",
-    --    },
-    --    -- optional for floating window border decoration
-    --    dependencies = {
-    --        "nvim-lua/plenary.nvim",
-    --    },
-    --    -- setting the keybinding for LazyGit with 'keys' is recommended in
-    --    -- order to load the plugin when the command is run for the first time
-    --    keys = {
-    --        { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
-    --    }
-    --},
-    --{
-    --    'sbdchd/neoformat',
-    --    init = function ()
-    --        vim.g.neoformat_try_node_exe = 1
-    --    end
-    --},
+    { 'mfussenegger/nvim-jdtls', dependencies = { "mfussenegger/nvim-dap" } },
+    {
+        "kdheepak/lazygit.nvim",
+        cmd = {
+            "LazyGit",
+            "LazyGitConfig",
+            "LazyGitCurrentFile",
+            "LazyGitFilter",
+            "LazyGitFilterCurrentFile",
+        },
+        -- optional for floating window border decoration
+        dependencies = {
+            "nvim-lua/plenary.nvim",
+        },
+        -- setting the keybinding for LazyGit with 'keys' is recommended in
+        -- order to load the plugin when the command is run for the first time
+        keys = {
+            { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
+        }
+    },
+    {
+        'sbdchd/neoformat',
+        init = function ()
+            vim.g.neoformat_try_node_exe = 1
+        end
+    },
 })
