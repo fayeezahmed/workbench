@@ -1,4 +1,3 @@
-vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
     {'prisma/vim-prisma'},
     {

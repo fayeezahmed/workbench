@@ -4,5 +4,20 @@
 !.xinitrc
 !.gitconfig*
 !/.config/
-!/.config/**
 
+!/.config/alacritty/
+!/.config/alacritty/**
+
+!/.config/i3/
+!/.config/i3/**
+!/.config/i3status/
+!/.config/i3status/**
+
+!/.config/kitty/
+!/.config/kitty/**
+
+!/.config/nvim/
+!/.config/nvim/**
+
+!/.config/spacebar/
+!/.config/spacebar/**
