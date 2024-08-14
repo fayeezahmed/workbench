@@ -147,7 +147,7 @@ require("lazy").setup({
 
             require('mason').setup({})
             require('mason-lspconfig').setup({
-                ensure_installed = { 'jdtls', 'tsserver', 'eslint', 'cucumber_language_server' },
+                ensure_installed = { 'jdtls', 'tsserver', 'eslint' },
                 handlers = {
 
                     -- this first function is the "default handler"
@@ -159,24 +159,10 @@ require("lazy").setup({
                     -- this is the "custom handler" for `jdtls`
                     -- noop is an empty function that doesn't do anything
                     jdtls = lsp_zero.noop,
-
-                    cucumber_language_server = {
-                        cucumber = {
-                            features = { "**/*.feature" },
-                            glue = { "**/steps/*.java", "**/StepDefinitions/*.cs" },
-                        },
-                        --on_attach = function(client, bufnr)
-                        --    vim.keymap.set('n', "<C-]>", vim.lsp.buf.textDocument, { buffer = 0 })
-                        --    vim.keymap.set('n', "gn", vim.diagnostic.goto_next, { buffer = 0 })
-                        --    vim.keymap.set('n', "gb", vim.diagnostic.goto_prev, { buffer = 0 })
-                        --end
-                    },
                 }
             })
         end
     },
-    { "tpope/vim-cucumber" },
-
     { 'mfussenegger/nvim-jdtls', dependencies = { "mfussenegger/nvim-dap" } },
     {
         "kdheepak/lazygit.nvim",

@@ -13,6 +13,9 @@
 set $mod Mod1
 set $winMod Mod4
 
+# Start Picom
+exec --no-startup-id picom --detect-rounded-corners --config ~/.config/picom/picom.conf -b
+
 #exec --no-startup-id setxkbmap -model pc105 -layout us,gb -option grp:shifts_toggle
 exec_always --no-startup-id setxkbmap -model pc105 -layout us,gb -option grp:shifts_toggle
 
@@ -241,9 +244,12 @@ bar {
 # exec xrandr --output DVI-I-2-2 --auto --right-of DVI-I-1-1
 # exec xrandr --output HDMI-1 --auto --right-of eDP-1
 
+default_border none
+default_floating_border none
+
 # add some inner and outer gaps
-gaps inner 11
-gaps horizontal 1
+gaps inner 20
+gaps outer 10
 
 
 bindsym $mod+Shift+period exec /home/fayeez.ahmed/.config/i3/test.sh
@@ -262,7 +268,7 @@ bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
 # Wallpaper
-exec_always feh --bg-fill /home/fayeez.ahmed/Pictures/Wallpaper/faruk-kaymak-P_Ne56WEe5s-unsplash.jpg
+exec_always feh --bg-fill /home/fayeez.ahmed/Pictures/muddy-forest.jpg
 
 # Screencast 
 set $screencast bash /home/fayeez.ahmed/screencast.sh

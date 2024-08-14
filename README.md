@@ -16,6 +16,31 @@ Move all files including hidden into the home dir:
 `sudo aptitude install arandr`
 `sudo apt install zsh`
 
+### i3
+Install i3 from Ubuntu [here](https://i3wm.org/docs/repositories.html)
+
+Install feh - `sudo apt install feh`
+
+### Picom
+#### Pre-req
+
+##### Background blur performance
+Enter this code in `/etc/X11/xorg.conf.d/20-intel.conf`
+
+```bash
+Section "Device"
+   Identifier  "Intel Graphics"
+   Driver      "intel"
+   Option      "AccelMethod" "sna"
+   Option      "DRI" "3"
+EndSection
+```
+
+Download and build from source [here](https://github.com/yshui/picom)
+
+For the necessary build tools, use `sudo apt install **paste the libs here**`
+
+
 ### Kitty
 `curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin`
 
@@ -49,6 +74,9 @@ Make sure to run sudo in build step.
 Restart the shell with `zsh`
 
 Load up neovim: `nvim`
+
+#### Install Xclip for copy/paste on nvim
+`sudo apt install xclip`
 
 ### LazyGit
 Install Ubuntu instructions: 
