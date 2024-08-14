@@ -1,16 +1,5 @@
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not (vim.uv or vim.loop).fs_stat(lazypath) then
-    vim.fn.system({
-        "git",
-        "clone",
-        "--filter=blob:none",
-        "https://github.com/folke/lazy.nvim.git",
-        "--branch=stable", -- latest stable release
-        lazypath,
-    })
-end
-vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
+    {'prisma/vim-prisma'},
     {
         'nvim-telescope/telescope.nvim',
         tag = '0.1.6',
@@ -37,6 +26,7 @@ require("lazy").setup({
             vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
         end
     },
+    --{"Mofiqul/vscode.nvim",config = function() vim.cmd.colorscheme("vscode") end },
     {
         'nvim-treesitter/nvim-treesitter',
         build = ':TSUpdate',
@@ -101,7 +91,7 @@ require("lazy").setup({
     },
     { 'hrsh7th/cmp-nvim-lsp' },
     { 'hrsh7th/nvim-cmp' },
-    { 'L3MON4D3/LuaSnip' },
+    { 'L3MON4D3/LuaSnip', tag = "v2.*"},
     { "williamboman/mason.nvim" },
     { "williamboman/mason-lspconfig.nvim" },
     {
@@ -115,7 +105,7 @@ require("lazy").setup({
             print("LSP CONFIG")
             local lsp_zero = require('lsp-zero')
 
-            lsp_zero.on_attach(function(client, bufnr)
+           lsp_zero.on_attach(function(client, bufnr)
                 -- see :help lsp-zero-keybindings
                 -- to learn the available actions
                 lsp_zero.default_keymaps({ buffer = bufnr })
@@ -159,6 +149,19 @@ require("lazy").setup({
                     -- this is the "custom handler" for `jdtls`
                     -- noop is an empty function that doesn't do anything
                     jdtls = lsp_zero.noop,
+
+                    -- Causing issues with <leader>pf and enter on first file open
+                    --cucumber_language_server = {
+                    --    cucumber = {
+                    --        features = { "**/*.feature" },
+                    --        glue = { "**/steps/*.java", "**/StepDefinitions/*.cs" },
+                    --    },
+                    --    --on_attach = function(client, bufnr)
+                    --    --    vim.keymap.set('n', "<C-]>", vim.lsp.buf.textDocument, { buffer = 0 })
+                    --    --    vim.keymap.set('n', "gn", vim.diagnostic.goto_next, { buffer = 0 })
+                    --    --    vim.keymap.set('n', "gb", vim.diagnostic.goto_prev, { buffer = 0 })
+                    --    --end
+                    --},
                 }
             })
         end
@@ -182,5 +185,11 @@ require("lazy").setup({
         keys = {
             { "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
         }
+    },
+    {
+        'sbdchd/neoformat',
+        init = function ()
+            vim.g.neoformat_try_node_exe = 1
+        end
     },
 })

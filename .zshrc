@@ -120,6 +120,12 @@ else
   print "[INFO]: No zsh_gr found in .zsh dir."
 fi
 
+if [ -f ~/.zsh/zsh_aliases ]; then
+  source ~/.zsh/zsh_aliases
+else 
+  print "[INFO]: No zsh_aliases found in .zsh dir."
+fi
+
 
 #### FAYEEZ START
 
@@ -134,7 +140,7 @@ export SSH_ASKPASS=/usr/bin/ssh-askpass
 set -o vi
 
 export VSCODE="/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
-export ANDROID_HOME="/Users/fayeez.ahmed/Library/Android/sdk"
+export ANDROID_HOME="/Users/fayeezahmed/Library/Android/sdk"
 export ANDROID_SDK_ROOT=$ANDROID_HOME
 export ANDROID_SDK_TOOLS=$HOME/Library/Android/sdk/tools/
 export ANDROID_SDK_PLATFORM_TOOLS=$HOME/Library/Android/sdk/platform-tools/
@@ -278,7 +284,7 @@ export SDKMAN_DIR="$HOME/.config/sdkman"
 export MAVEN_OPTS='-Xmx512m -Xms512m'
 
 bindkey '^R' history-incremental-search-backward
-bindkey '^S' history-incremental-search-forward
+bindkey '^S' history-search-forward
 
 export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))
 bindkey -v
