@@ -298,5 +298,5 @@ export PATH="$PATH:/home/fayeez.ahmed/.local/share/coursier/bin"
 
 
 # JDTLS
-export PATH="$PATH:/home/fayeez.ahmed/jdtls/bin/:/usr/lib/jvm/java-17-openjdk-amd64"
+export PATH="$PATH:/home/fayeez.ahmed/Downloads/jdtls/bin/:/usr/lib/jvm/java-21-amazon-corretto/"
 

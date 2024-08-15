@@ -89,8 +89,8 @@ local function get_jdtls_paths()
     ---
     path.runtimes = {
         {
-            name = 'JavaSE-21',
-            path = '/usr/lib/jvm/java-21-amazon-corretto/bin/java',
+            name = 'JavaSE-17',
+            path = '/usr/lib/jvm/java-17-amazon-corretto',
         }
         -- Note: the field `name` must be a valid `ExecutionEnvironment`,
         -- you can find the list here:
@@ -176,7 +176,7 @@ local function jdtls_setup(event)
     -- See: https://github.com/eclipse/eclipse.jdt.ls#running-from-the-command-line
     local cmd = {
         -- 💀
-        '/usr/lib/jvm/java-21-amazon-corretto/bin/java',
+        '/usr/lib/jvm/java-17-amazon-corretto/bin/java',
         '-Declipse.application=org.eclipse.jdt.ls.core.id1',
         '-Dosgi.bundles.defaultStartLevel=4',
         '-Declipse.product=org.eclipse.jdt.ls.core.product',
