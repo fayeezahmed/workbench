@@ -39,7 +39,6 @@ local function get_jdtls_paths()
     if vim.fn.has('mac') == 1 then
         path.platform_config = jdtls_install .. '/config_mac'
     elseif vim.fn.has('unix') == 1 then
-        print('in linux')
         path.platform_config = jdtls_install .. '/config_linux'
     elseif vim.fn.has('win32') == 1 then
         path.platform_config = jdtls_install .. '/config_win'
@@ -47,15 +46,12 @@ local function get_jdtls_paths()
 
     path.bundles = {}
 
-    print('out here')
-    print(path.platform_config)
     ---
     -- Include java-test bundle if present
     ---
     local java_test_path = require('mason-registry')
         .get_package('java-test')
         :get_install_path()
-    print('out here 2')
 
     local java_test_bundle = vim.split(
         vim.fn.glob(java_test_path .. '/extension/server/*.jar'),
@@ -66,7 +62,6 @@ local function get_jdtls_paths()
         vim.list_extend(path.bundles, java_test_bundle)
     end
 
-    print('out here 3')
     ---
     -- Include java-debug-adapter bundle if present
     ---
@@ -90,7 +85,7 @@ local function get_jdtls_paths()
     path.runtimes = {
         {
             name = 'JavaSE-21',
-            path = '/usr/lib/jvm/java-21-amazon-corretto/bin/java',
+            path = '/usr/bin/java',
         }
         -- Note: the field `name` must be a valid `ExecutionEnvironment`,
         -- you can find the list here:
@@ -135,6 +130,7 @@ local function enable_debugger(bufnr)
 end
 
 local function jdtls_on_attach(client, bufnr)
+    print('JAVA on ATTACH')
     if features.debugger then
         enable_debugger(bufnr)
     end
@@ -156,6 +152,7 @@ local function jdtls_on_attach(client, bufnr)
 end
 
 local function jdtls_setup(event)
+    print('JDTLS SETUP <')
     local jdtls = require('jdtls')
 
     local path = get_jdtls_paths()
@@ -176,7 +173,8 @@ local function jdtls_setup(event)
     -- See: https://github.com/eclipse/eclipse.jdt.ls#running-from-the-command-line
     local cmd = {
         -- 💀
-        '/usr/lib/jvm/java-21-amazon-corretto/bin/java',
+        '/usr/lib/jvm/java-17-openjdk-amd64',
+
         '-Declipse.application=org.eclipse.jdt.ls.core.id1',
         '-Dosgi.bundles.defaultStartLevel=4',
         '-Declipse.product=org.eclipse.jdt.ls.core.product',
@@ -287,4 +285,9 @@ local function jdtls_setup(event)
     })
 end
 
-jdtls_setup()
+vim.api.nvim_create_autocmd('FileType', {
+    group = java_cmds,
+    pattern = { 'java' },
+    desc = 'Setup jdtls',
+    callback = jdtls_setup,
+})

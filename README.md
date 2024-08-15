@@ -12,8 +12,7 @@ Move all files including hidden into the home dir:
 
 ## Pre-req installation
 
-`sudo apt install aptitude`
-`sudo aptitude install arandr`
+`sudo apt install aptitude` `sudo aptitude install arandr`
 `sudo apt install zsh`
 
 ### i3
@@ -80,6 +79,18 @@ Install scrot:
 ### LazyGit
 Install Ubuntu instructions: 
 [LazyGit instructions](https://github.com/jesseduffield/lazygit?tab=readme-ov-file#ubuntu)
+
+## Java
+
+Download JDTLS from:
+https://github.com/eclipse-jdtls/eclipse.jdt.ls
+
+Extract the download and update the jdtls path in the jdtls.lua config in neovim
+
+Download JavaSE-* and place the path in the runtimes (not the java bin).
+
+Then in the `cmd` for `start_and_attach` add the actual binary path there
+
 
 ## Useful Vim things
 
