@@ -71,6 +71,11 @@ Load up neovim: `nvim`
 #### Install Xclip for copy/paste on nvim
 `sudo apt install xclip`
 
+#### Screenshots pre-req
+
+Install scrot:
+`sudo apt install scrot`
+
 ### LazyGit
 Install Ubuntu instructions: 
 [LazyGit instructions](https://github.com/jesseduffield/lazygit?tab=readme-ov-file#ubuntu)
