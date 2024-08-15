@@ -13,12 +13,14 @@
 set $mod Mod1
 set $winMod Mod4
 
-# Start Picom
+## Start Picom
 exec --no-startup-id picom --detect-rounded-corners --config ~/.config/picom/picom.conf -b
+
+# Start polybar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 #exec --no-startup-id setxkbmap -model pc105 -layout us,gb -option grp:shifts_toggle
 exec_always --no-startup-id setxkbmap -model pc105 -layout us,gb -option grp:shifts_toggle
-
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -222,19 +224,19 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # full screen picture
-bindsym --release Print exec "scrot -m '/home/fayeez.ahmed/Pictures/Screenshots/%s_%H%M_%d.%m.%Y_$wx$h.png'"
+bindsym --release Print exec "scrot -m '$HOME/Pictures/Screenshots/%s_%H%M_%d.%m.%Y_$wx$h.png'"
 
 # choose region
-bindsym --release Shift+Print exec "scrot -s '/home/fayeez.ahmed/Pictures/Screenshots/%s_%H%M_%d%m%Y_$wx$h.png'"
+bindsym --release Shift+Print exec "scrot -s '$HOME/Pictures/Screenshots/%s_%H%M_%d%m%Y_$wx$h.png'"
 
 # use current focussed window
 bindsym --release $mod+Shift+Print exec "scrot -u -d 3 '/home/fayeez.ahmed/Pictures/Screenshots/%s_%H%M_%d%m%Y_$wx$h.png'"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-        status_command i3status
-}
+#bar {
+#        status_command i3status
+#}
 
 # zoom notification window 
 #for_window [title="^zoom\s?$"] floating enable
@@ -249,8 +251,8 @@ default_border none
 default_floating_border none
 
 # add some inner and outer gaps
-gaps inner 20
-gaps outer 10
+gaps inner 15
+gaps outer 5
 
 
 bindsym $mod+Shift+period exec /home/fayeez.ahmed/.config/i3/test.sh
