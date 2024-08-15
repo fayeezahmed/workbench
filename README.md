@@ -89,7 +89,9 @@ Extract the download and update the jdtls path in the jdtls.lua config in neovim
 
 Download JavaSE-* and place the path in the runtimes (not the java bin).
 
-Then in the `cmd` for `start_and_attach` add the actual binary path there
+Then in the `cmd` for `start_and_attach` add the actual binary path there.
+
+Add the java bin to the $PATH
 
 
 ## Useful Vim things

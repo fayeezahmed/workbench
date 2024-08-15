@@ -1,4 +1,4 @@
-print("Hello JDTLS")
+print('Loading in JDTLS..')
 local java_cmds = vim.api.nvim_create_augroup('java_cmds', { clear = true })
 local cache_vars = {}
 
@@ -34,12 +34,10 @@ local function get_jdtls_paths()
 
     path.java_agent = jdtls_install .. '/lombok.jar'
     path.launcher_jar = vim.fn.glob(jdtls_install .. '/plugins/org.eclipse.equinox.launcher_*.jar')
-    print(path.launcher_jar)
 
     if vim.fn.has('mac') == 1 then
         path.platform_config = jdtls_install .. '/config_mac'
     elseif vim.fn.has('unix') == 1 then
-        print('in linux')
         path.platform_config = jdtls_install .. '/config_linux'
     elseif vim.fn.has('win32') == 1 then
         path.platform_config = jdtls_install .. '/config_win'
@@ -47,15 +45,12 @@ local function get_jdtls_paths()
 
     path.bundles = {}
 
-    print('out here')
-    print(path.platform_config)
     ---
     -- Include java-test bundle if present
     ---
     local java_test_path = require('mason-registry')
         .get_package('java-test')
         :get_install_path()
-    print('out here 2')
 
     local java_test_bundle = vim.split(
         vim.fn.glob(java_test_path .. '/extension/server/*.jar'),
@@ -66,7 +61,6 @@ local function get_jdtls_paths()
         vim.list_extend(path.bundles, java_test_bundle)
     end
 
-    print('out here 3')
     ---
     -- Include java-debug-adapter bundle if present
     ---
