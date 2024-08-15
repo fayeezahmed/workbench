@@ -25,7 +25,8 @@ Install feh - `sudo apt install feh`
 #### Pre-req
 
 ### Polybar
-`sudo apt install polybar`
+`sudo apt install polybar` - if using Ubuntu 24. If not compile and install from source:
+https://github.com/polybar/polybar/wiki/Compiling#dependencies
 
 Read the [Getting started guide](https://github.com/polybar/polybar/wiki)
 
