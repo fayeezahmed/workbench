@@ -20,5 +20,8 @@
 !/.config/nvim/
 !/.config/nvim/**
 
-!/.config/spacebar/
-!/.config/spacebar/**
+!/.config/picom/
+!/.config/picom/**
+
+!/.config/polybar/
+!/.config/polybar/**

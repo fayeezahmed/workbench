@@ -24,17 +24,10 @@ Install feh - `sudo apt install feh`
 ### Picom
 #### Pre-req
 
-##### Background blur performance
-Enter this code in `/etc/X11/xorg.conf.d/20-intel.conf`
+### Polybar
+`sudo apt install polybar`
 
-```bash
-Section "Device"
-   Identifier  "Intel Graphics"
-   Driver      "intel"
-   Option      "AccelMethod" "sna"
-   Option      "DRI" "3"
-EndSection
-```
+Read the [Getting started guide](https://github.com/polybar/polybar/wiki)
 
 Download and build from source [here](https://github.com/yshui/picom)
 
