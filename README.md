@@ -33,6 +33,17 @@ Download and build from source [here](https://github.com/yshui/picom)
 
 For the necessary build tools, use `sudo apt install **paste the libs here**`
 
+#### Fonts
+Install Font Awesome fonts here: 
+https://fontawesome.com/download
+
+Copy the font files to ~/.fonts/
+
+Reload the fonts:
+`sudo fc-cache -f -v`
+
+Double check the fonts exist with:
+`fc-list | grep Font\ Awesome`
 
 ### Kitty
 `curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin`

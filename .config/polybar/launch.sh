@@ -10,8 +10,13 @@ killall -q polybar
 echo "---" | tee -a /tmp/polybar1.log /tmp/polybar2.log
 
 for m in $(polybar --list-monitors | cut -d":" -f1); do
-    MONITOR=$m polybar --reload example --config=$HOME/.config/polybar/config.ini 2>&1 | tee -a /tmp/polybar1.log & disown
+    echo $m # eDP-1
+    if [[ "$m" == "eDP-1" ]]; then
+        continue;
+    fi
+    FC_DEBUG=1 MONITOR=$m polybar --reload external --config=$HOME/.config/polybar/config.ini 2>&1 | tee -a /tmp/polybar1.log & disown
 done
+FC_DEBUG=1 polybar --reload laptop --config=$HOME/.config/polybar/config.ini 2>&1 | tee -a /tmp/polybar1.log & disown
 
 
 echo "Bars launched..."
