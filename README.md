@@ -82,10 +82,15 @@ Load up neovim: `nvim`
 #### Install Xclip for copy/paste on nvim
 `sudo apt install xclip`
 
-#### Screenshots pre-req
+## Other
+
+### Screenshots pre-req
 
 Install scrot:
 `sudo apt install scrot`
+
+### xbacklight
+`sudo apt install brightnessctl`
 
 ### LazyGit
 Install Ubuntu instructions: 
