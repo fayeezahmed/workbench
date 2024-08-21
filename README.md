@@ -79,6 +79,12 @@ Restart the shell with `zsh`
 
 Load up neovim: `nvim`
 
+#### RipGrep
+Install ripgrep:
+https://github.com/BurntSushi/ripgrep?tab=readme-ov-file#installation
+
+`sudo apt-get install ripgrep`
+
 #### Install Xclip for copy/paste on nvim
 `sudo apt install xclip`
 
