@@ -226,6 +226,7 @@ bindsym $mod+r mode "resize"
 
 # full screen picture
 bindsym --release Print exec "scrot -m $HOME/Pictures/Screenshots/%s_%H%M_%d.%m.%Y_$wx$h.png"
+bindsym --release $mod+Ctrl+p exec "scrot -m $HOME/Pictures/Screenshots/%s_%H%M_%d.%m.%Y_$wx$h.png"
 
 # choose region
 bindsym --release Shift+Print exec "scrot -s $HOME/Pictures/Screenshots/%s_%H%M_%d%m%Y_$wx$h.png"
