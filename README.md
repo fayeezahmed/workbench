@@ -12,7 +12,8 @@ Move all files including hidden into the home dir:
 
 ## Pre-req installation
 
-`sudo apt install aptitude` `sudo aptitude install arandr`
+`sudo apt install aptitude`
+`sudo aptitude install arandr`
 `sudo apt install zsh`
 
 ### i3
