@@ -45,10 +45,10 @@ sudo apt install dnf
 sudo dnf install -y gcc-c++ clang git cmake @development-tools python3-sphinx python3-packaging
 
 echo "Installing Polybar dependencies.."
-apt install build-essential git cmake cmake-data pkg-config python3-sphinx python3-packaging libuv1-dev libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev
+sudo apt install build-essential git cmake cmake-data pkg-config python3-sphinx python3-packaging libuv1-dev libcairo2-dev libxcb1-dev libxcb-util0-dev libxcb-randr0-dev libxcb-composite0-dev python3-xcbgen xcb-proto libxcb-image0-dev libxcb-ewmh-dev libxcb-icccm4-dev
 
 echo "Installing optional dependencies for Polybar.."
-apt install libxcb-xkb-dev libxcb-xrm-dev libxcb-cursor-dev libasound2-dev libpulse-dev i3-wm libjsoncpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev
+sudo apt install libxcb-xkb-dev libxcb-xrm-dev libxcb-cursor-dev libasound2-dev libpulse-dev i3-wm libjsoncpp-dev libmpdclient-dev libcurl4-openssl-dev libnl-genl-3-dev
 
 echo "Going to build Polybar.."
 git clone --recursive https://github.com/polybar/polybar
@@ -85,13 +85,12 @@ while true; do
         * ) echo "Please answer yes or no.";;
     esac
 done
-
-if compgen -G "$HOME/Downloads/font-awesome-free*.zip" > /dev/null; then
+if compgen -G $HOME/Downloads/fontawesome-free*.zip > /dev/null; then
     echo "Font awesome zip exists, unzipping.. "
-    unzip "$HOME/Downloads/font-awesome-free*.zip" -d "$HOME/Downloads/font-awesome/"
+    unzip "$HOME/Downloads/fontawesome-free*.zip" -d "$HOME/Downloads/fontawesome/"
     echo "Copying fonts to local .fonts dir.."
-    mkdir $HOME/.fonts/
-    cp $HOME/Downloads/font-awesome/*/otfs/*.otf $HOME/.fonts/
+    mkdir -p $HOME/.fonts/
+    cp $HOME/Downloads/fontawesome/*/otfs/*.otf $HOME/.fonts/
 fi
 
 
