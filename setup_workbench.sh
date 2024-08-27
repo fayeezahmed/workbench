@@ -60,7 +60,7 @@ cmake ..
 make -j$(nproc)
 # Optional. This will install the polybar executable in /usr/bin
 sudo make install
-
+cd
 echo "...done"
 
 
@@ -131,7 +131,7 @@ echo "Installing NPM.."
 echo "First installing nvm"
 git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
 echo "Restarting shell"
-zsh
+source ~/.zshrc
 echo "Now installing node via nvm"
 nvm install node
 echo "...done"
@@ -145,6 +145,7 @@ echo "Cloning repo"
 git clone https://github.com/neovim/neovim
 cd neovim && sudo make CMAKE_BUILD_TYPE=RelWithDebInfo
 cd build && cpack -G DEB && sudo dpkg -i nvim-linux64.deb
+cd
 echo "...done"
 
 ###
@@ -176,10 +177,12 @@ sudo apt install brightnessctl
 # LazyGit
 ###
 echo "Installing LazyGit..."
+cd
 LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
 curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
 tar xf lazygit.tar.gz lazygit
 sudo install lazygit /usr/local/bin
+cd
 echo "...done"
 
 ###
