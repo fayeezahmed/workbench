@@ -93,5 +93,107 @@ if compgen -G $HOME/Downloads/fontawesome-free*.zip > /dev/null; then
     cp $HOME/Downloads/fontawesome/*/otfs/*.otf $HOME/.fonts/
 fi
 
+echo "Reloading font cache"
+sudo fc-cache -f -v
+
+if fc-list | grep 'Font Awesome.*otf'; then
+    echo "Font Awesome files look like they are installed, double check if they're the same ones installed.."
+else
+    echo "NOTE: No Font Awesome files are installed!"
+fi
+
+###
+# Kitty
+###
+echo "Installing Kitty..."
+curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+echo "...done"
+
+###
+# Powerline
+###
+echo "Installing Powerline..."
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
+echo "...done"
+
+###
+# ohmyzsh
+###
+echo "Installing ohmyzsh..."
+git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
+echo "...done"
+
+
+###
+# NPM
+###
+echo "Installing NPM.."
+echo "First installing nvm"
+git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh
+echo "Restarting shell"
+zsh
+echo "Now installing node via nvm"
+nvm install node
+echo "...done"
+
+###
+# NeoVim
+###
+echo "Installing NeoVim from source.."
+sudo apt-get install ninja-build gettext cmake unzip curl build-essential
+echo "Cloning repo"
+git clone https://github.com/neovim/neovim
+cd neovim && sudo make CMAKE_BUILD_TYPE=RelWithDebInfo
+cd build && cpack -G DEB && sudo dpkg -i nvim-linux64.deb
+echo "...done"
+
+###
+# RipGrep
+###
+echo "Installing RipGrep.."
+curl -LO https://github.com/BurntSushi/ripgrep/releases/download/14.1.0/ripgrep_14.1.0-1_amd64.deb
+sudo dpkg -i ripgrep_14.1.0-1_amd64.deb
+echo "...done"
+
+###
+# Xclip
+###
+sudo apt-get install ripgrep
+
+###
+# Scrot
+###
+echo "Installing scrot..."
+sudo apt install scrot
+echo "...done"
+
+###
+# Brightnessctl
+###
+sudo apt install brightnessctl
+
+###
+# LazyGit
+###
+echo "Installing LazyGit..."
+LAZYGIT_VERSION=$(curl -s "https://api.github.com/repos/jesseduffield/lazygit/releases/latest" | grep -Po '"tag_name": "v\K[^"]*')
+curl -Lo lazygit.tar.gz "https://github.com/jesseduffield/lazygit/releases/latest/download/lazygit_${LAZYGIT_VERSION}_Linux_x86_64.tar.gz"
+tar xf lazygit.tar.gz lazygit
+sudo install lazygit /usr/local/bin
+echo "...done"
+
+###
+# Java
+###
+echo "Follow the steps on README to setup Java and JDTLS"
+
+echo "Restarting shell after everything has installed"
+zsh
+echo "Workbench setup..!"
+
+
+
+
+
 
 
