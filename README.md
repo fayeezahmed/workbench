@@ -44,7 +44,7 @@ Reload the fonts:
 `sudo fc-cache -f -v`
 
 Double check the fonts exist with:
-`fc-list | grep Font\ Awesome`
+`fc-list | grep 'Font Awesome*.otf'`
 
 ### Kitty
 `curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin`
@@ -96,7 +96,7 @@ https://github.com/BurntSushi/ripgrep?tab=readme-ov-file#installation
 Install scrot:
 `sudo apt install scrot`
 
-### xbacklight
+### Brightnessctl
 `sudo apt install brightnessctl`
 
 ### LazyGit
