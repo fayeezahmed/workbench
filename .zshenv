@@ -3,3 +3,5 @@ which='(alias; declare -f) | /usr/bin/which --tty-only --read-alias --read-funct
 set_volume() {
     pactl -- set-sink-volume 0 $1%
 }
+
+alias vpn=/opt/cisco/anyconnect/bin/vpn
