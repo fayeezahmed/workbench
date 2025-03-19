@@ -5,9 +5,12 @@ require("lazy").setup({
         tag = '0.1.6',
         dependencies = { 'nvim-lua/plenary.nvim' },
         keys = {
-            { "<leader>pf", "<cmd>lua require('telescope.builtin').find_files()<cr>",                                    desc = "Find project files" },
-            { "<C-p>",      "<cmd>lua require('telescope.builtin').git_files()<cr>",                                     desc = "Find git files" },
+            { "<leader>pf", "<cmd>lua require('telescope.builtin').find_files()<cr>", desc = "Find project files" },
+            { "<C-p>",      "<cmd>lua require('telescope.builtin').git_files()<cr>", desc = "Find git files" },
             { "<leader>ps", "<cmd>lua require('telescope.builtin').grep_string({search = vim.fn.input('Grep > ')})<cr>", desc = "Search grep with telescope" },
+            { "<leader>dd", "<cmd>lua require('telescope.builtin').diagnostics()<cr>", desc = "Get diagnostic list" },
+            { "<leader>ti", "<cmd>lua require('telescope.builtin').lsp_implementations()<cr>", desc = "Go to implementation" },
+            { "<leader>tr", "<cmd>lua require('telescope.builtin').lsp_references()<cr>", desc = "See references" },
         }
     },
     {
@@ -86,7 +89,6 @@ require("lazy").setup({
         config = false,
         init = function()
             vim.g.lsp_zero_extend_cmp = 0
-            vim.g.lsp_zero_extend_lspconfig = 0
         end
     },
     { 'hrsh7th/cmp-nvim-lsp' },
@@ -109,6 +111,14 @@ require("lazy").setup({
                 -- see :help lsp-zero-keybindings
                 -- to learn the available actions
                 lsp_zero.default_keymaps({ buffer = bufnr })
+                lsp_zero.extend_lspconfig({
+                  sign_text = {
+                    error = '✘',
+                    warn = '▲',
+                    hint = '⚑',
+                    info = '»',
+                 },
+                })
             end)
 
             local cmp = require('cmp')
@@ -137,7 +147,7 @@ require("lazy").setup({
 
             require('mason').setup({})
             require('mason-lspconfig').setup({
-                ensure_installed = { 'jdtls', 'tsserver', 'eslint' },
+                ensure_installed = { 'jdtls', 'vtsls', 'eslint' },
                 handlers = {
 
                     -- this first function is the "default handler"
@@ -192,4 +202,5 @@ require("lazy").setup({
             vim.g.neoformat_try_node_exe = 1
         end
     },
+    {"ellisonleao/glow.nvim", config = true, cmd = "Glow"}
 })
