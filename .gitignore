@@ -27,4 +27,5 @@
 !/.config/polybar/**
 
 !setup_workbench.sh
-!/zshrc
+!/zshrc/
+!/zshrc/**
