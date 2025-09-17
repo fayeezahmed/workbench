@@ -4,4 +4,3 @@ set_volume() {
     pactl -- set-sink-volume 0 $1%
 }
 
-alias vpn=/opt/cisco/anyconnect/bin/vpn
