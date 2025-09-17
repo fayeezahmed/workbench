@@ -202,5 +202,6 @@ require("lazy").setup({
             vim.g.neoformat_try_node_exe = 1
         end
     },
-    {"ellisonleao/glow.nvim", config = true, cmd = "Glow"}
+    {"ellisonleao/glow.nvim", config = true, cmd = "Glow"},
+    {'ckipp01/nvim-jenkinsfile-linter', dependencies = { "nvim-lua/plenary.nvim" } }
 })
