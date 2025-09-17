@@ -169,6 +169,7 @@ assign [class="Google-chrome"] $ws2
 assign [class="kitty"] $ws3
 assign [class="zoom"] $ws4
 assign [class="Opera"] $ws5
+assign [class="thunderbird"] $ws5
 assign [class="Global Relay"] $ws8
 assign [class="Arandr"] $ws9
 assign [class="Blueman-manager"] $ws9
